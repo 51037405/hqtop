@@ -1,0 +1,38 @@
+/*footer*/
+/*guarantee*/
+.guarantee li {float:left;width:210px;}
+.aftermarket li {float:left;margin-left:70px;font-size:12px;line-height:24px;}
+.advisory li {float:left;font-size:12px; text-align:center;width:70px;}
+.f14_a {font-size:14px;}
+/*合作伙伴样式*/
+.bellows__header {position: relative;color: white; }
+.bellows__header:before, .bellows__header:after {display: block;position: relative;z-index: 2;}
+.bellows__header h1,.bellows__header h2,.bellows__header font,.bellows__header h4 {color: #333333; font-size:12px;font-weight:0;}
+.bellows__content,.bellows__contenta { padding: 0px; }
+.bellows__content a,.bellows__contenta a {font-size:12px}
+.bellows__content .bellows,.bellows__contenta .bellows { margin-top: 20px; }  
+.bellows__content li {float:left;margin-top:10px; min-width:50px;width:auto !important;width:50px;overflow:visible; }
+.bellows__contenta li {float:left;margin-top:10px; min-width:40px;width:auto !important;width:20px;overflow:visible; display:block}
+.bellows__content li span,.bellows__contenta li span {font-size:12px;color:#999;padding:0 5px;}
+
+#lx_nav2 li {float: left; font-size: 14px; color:#77777; font-weight:bold;display:block;margin-right:20px;}
+#lx_nav2 .li01 { color:#777777;font-weight:bold;text-align:center;cursor:pointer}
+#lx_nav2 .li02 {color: #777777;cursor:pointer;font-weight:normal}
+
+/*副代码样式*/
+.bellows__item:not(.bellows--is-open) > .bellows__content {display:block; }
+.bellows__item.bellows--is-open > .bellows__content-wrapper,.bellows__item.bellows--is-closing > .bellows__content-wrapper { display: block; }
+.bellows__content-wrapper { display: none; }
+.bellows p{ margin-left:30px; line-height:30px;}
+.bellows p a{ color:#777777;}
+/*版权*/
+.clearfix {clear: both;display: block;}
+.footTwo a {margin-right: 18px;margin-left: 18px;}
+.footTwo a:hover{ color:#ff8200;}
+.footall_a{ float:right; color:#777777; font-family:"宋体"; font-size:12px; cursor:pointer; display:inline}
+.footpp{ height: 190px; position:relative;width:100%; border-bottom:#dbdbdb 1px solid;}
+.footpp1{width: 200px;height: 100px;float: left;margin-right: 25px;display: block;}
+.footpp2{width: 115px;height: 137px;float: left;display: block;	position: relative;}
+.foot_img {margin-left: 394px; margin-top: 15px; padding-bottom: 30px;}
+.bellows a:hover{ color:#ff8200; text-decoration:underline;}
+#aio a:hover{ color:#ff8200; text-decoration:underline;}

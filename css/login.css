@@ -1,0 +1,21 @@
+.header{width: 1040px;height: auto;margin: 0 auto;padding: 30px 0px 30px 5px;}
+.content{width: 1040px;height: auto;margin: 0 auto;}
+.footer{width:1040px;height: auto;margin: 0 auto;padding: 30px 0 30px 0;}
+.footer p{text-align: center;  width: 100%;  color: #7d8b8c;  font-family:"Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53, sans-serif;  font-size: 12px;}
+.content .login-box-top{width: 1040px;height: 10px;background: url("../images/loginMainBG.png") no-repeat}
+.content .login-box-main{padding: 10px 0px 0px 10px; background: url("../images/loginMainContentBG.png") repeat}
+.content .login-box-main .ad{margin: 20px auto 20px 85px;width: 400px;height: 330px;}
+.content .login-box-main .info{margin: 20px auto auto 85px;width: 400px;height: 330px;float: right;}
+.content .login-box-main h1{font-size: 18px;font-weight: 400;color: #5e5c5d;padding-bottom: 20px;}
+.content .login-box-main dd{background: url("../images/longInputBg.png") no-repeat;width: 321px;  height: 46px;  padding-right: 11px;  padding-bottom: 30px;position: relative}
+.content .login-box-main dt{width: 321px; position: relative;padding-bottom: 30px;}
+.content .login-box-main dt .regist{float: left;font-size: 12px;  color: #ff8200;}
+.content .login-box-main dt .forget{float: right;font-size: 12px;  color: #ff8200;}
+.content .login-box-main dd:hover{background: url("../images/longInputBgFocus.png") no-repeat;}
+.content .login-box-main dd input{height: 24px;  padding: 10px 0;  padding: 11px 0 9px \9;  width: 270px;  border: none;  margin: 1px 0 1px 15px;  font-size: 14px;  float: left;}
+.content .login-box-main dd label{position: absolute;width: 20px;height: 20px;right: 5px;top:10px;}
+.content .login-box-main dd .tips{color: #ff5c2b ;font-size: 12px;float: left;line-height: 24px}
+.content .login-box-main .people{background: url("../images/icon_people.png")no-repeat left}
+.content .login-box-main .lock{background: url("../images/icon_lock.png")no-repeat left}
+.content .login-box-main .submit{background: url("../images/loginBtnConfirm.png") no-repeat;width: 332px;  height: 46px;  display: block;  float: left;}
+.content .login-box-bottom{width: 1040px;height: 10px;background: url("../images/loginMainBG.png") 0 -20px no-repeat}

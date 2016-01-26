@@ -1,0 +1,34 @@
+.g-bd{width:980px;margin:10px auto;}
+.g-bd2{ clear:both;width:980px;margin:0 auto;}
+.g-bd2 .g-sd{ border: 1px solid #c9d6d9;}
+.g-sd{float:left;width:300px;}
+.g-mn{float:right;width:640px;}
+.img-frame ul {border: 1px solid #CDCDCD;width: 300px;  height: 300px;}
+.img-frame ul li {float: left}
+.img-src{margin-top: 10px;cursor: pointer;}
+.img-src li{float: left;}
+.img-src li:last-child{float: right;}
+.img-let img{border: 3px double #CDCDCD;margin-left: 10px;}
+.title-box,.info-box{border-bottom: 1px solid #E2E6E7;  margin-bottom: 10px;  width: 100%;}
+.title-box .title{color: #42465E;  font-size: 20px;  line-height: 36px;  font-weight: normal;    width: 100%;  word-wrap: break-word;  max-height: 108px;  overflow: hidden;}
+.title-box .sub-title{ color: #42465E;  font-size: 20px;  line-height: 36px;  font-weight: normal;  padding-left: 0;    width: 100%;  max-height: 36px;  overflow: hidden;}
+.title-box .note-title{color: #D00F20;  font-size: 14px;  line-height: 36px;  font-weight: normal;  padding-left: 0;   width: 100%;  max-height: 36px;  overflow: hidden;}
+.info-box ul li {font:normal 12px/12px "Microsoft YaHei";display: block;height: 24px;line-height: 24px;color: #585858}
+.info-box ul li .price {font:normal 22px/22px "Microsoft YaHei";color: #FE7620;font-weight: bold;}
+.type-box ul li{font:normal 12px/12px "Microsoft YaHei";display: block;height: 24px;line-height: 24px;color: #585858;margin-bottom: 10px;}
+.type-box .type{display: inline-block;height: 24px;padding-left: 10px;padding-right: 10px; border: 1px solid #b8b8b8;margin-right: 10px;}
+.type-box .sel{border: 1px solid #c40701;background: url("../images/sign1.png") no-repeat right bottom}
+.type-box input[type=text]{padding-left: 10px;width: 20px;}
+.type-box .num *{float: left}
+.type-box .num .num-sel{padding-left: 3px;width: 17px;}
+.type-box .num .num-sel img{cursor: pointer;}
+.type-box .num .num-sel img:last-child{padding-top: 3px;}
+.type-box .buy {  margin-top: 25px;  padding: 0;  display: block;  width: 235px;  height: 38px;  line-height: 38px;  background: #ff7c00;  border: 1px solid #b81d01;  font-family:"Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53, sans-serif;  font-size: 24px;  color: #FFFFFF;  text-align: center;  margin-right: 10px;  float: left;  }
+.detail-tab ul li{float: left;    color: #FFFFFF;    background: #ff8200;  width: 99px;  height: 28px;  border-top: 1px solid #c9d6d9;  border-right: 1px solid #c9d6d9;  text-align: center;  line-height: 28px;  cursor: pointer;font-size: 12px;}
+.detail-desc{clear: both;}
+.detail-desc .desc{float: left;border: 1px solid #c9d6d9;width: 100%}
+.disn{display: none;}
+.footer{width:980px;height: auto;margin: 0 auto;padding: 30px 0 30px 0;clear: both}
+.footer p{text-align: center;  width: 100%;  color: #7d8b8c;  font-family:"Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53, sans-serif;  font-size: 12px;}
+.meun_down{display: none}
+.menu_01:hover .meun_down{display: block}

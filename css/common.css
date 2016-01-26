@@ -1,0 +1,9 @@
+
+li{list-style-type:none}
+.content{ width:1200px; margin:0 auto; position:relative;}
+.left{ float:left;}
+.right{ float:right;}
+a{
+text-decoration:none;
+
+}

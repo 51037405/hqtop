@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+    a{ color:#6a6868;text-decoration:none;}
+    a:hover{text-decoration:none} 
+    img ,input{border: none;text-decoration:none; padding:0;} 
+    ol, ul {list-style: none;} 
+    input, textarea, select, button {font-size: 100%;font-family: inherit; border:0px; margin:0;} 
+    select {margin: inherit;} 
+    hr {margin: 0;padding: 0;border: 0;color: #000;background-color: #000;height: 1px}
+	.clear{ clear:both;+height:1px;}
+    .clearfix:after {content: "."; display: block;  height: 0; clear: both; visibility: hidden;}
+	* html>body .clearfix { display: inline-block;  width: 100%;}
+    * html .clearfix {
+    /* Hides from IE-mac \*/
+    height: 1%;
+    /* End hide from IE-mac */
+    }
+       /* ie7 hack*/
+ *+html .clearfix { min-height: 1% ; }       
+   /*Common css End*/
