@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/center.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/common.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/ctrl.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/detail.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/fancySelect.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/footdown.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/fun.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/get.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/headtop.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/headtop2.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/login.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/reset2.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/search.css" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

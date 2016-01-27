@@ -40,7 +40,6 @@ a:focus {outline:none;-moz-outline:none;}/*链接虚线*/
 .c0 {color:#000}
 .c4b a{color:#4b4b4b}
 .ccc {color:#ccc}
-.999 {color:#999}
 .ccc_a a {color:#999}
 .ff8 {color:#ff8201}
 .cf {color:#fff}
@@ -265,3 +264,4 @@ a:focus {outline:none;-moz-outline:none;}/*链接虚线*/
 .pb-10 {*padding-bottom:10px}
 .pb30 {padding-bottom:30px}
 .pl0-7 {*padding-left:0}
+.disn{display: none;}

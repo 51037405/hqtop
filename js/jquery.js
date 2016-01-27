@@ -218,6 +218,17 @@ $(document).ready(function(){
 			}
 		 } 	   
 	});
+	$("#imgocs").rotate({
+		bind:
+		{
+			mouseover : function() {
+				$(this).rotate({animateTo:360});
+			},
+			mouseout : function() {
+				$(this).rotate({animateTo:0});
+			}
+		}
+	});
 });
 /*banner*/
 $(function(){

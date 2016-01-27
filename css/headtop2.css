@@ -1,35 +1,36 @@
+@charset "utf-8";
 /*header*/
 .content{ width:1200px; margin:0 auto; position:relative;}
 .login_ul li {float:left}
 .login_ul li:hover ul {display:block; position:absolute;height:auto; overflow:hidden}
-/*³ÇÊÐÇÐ»»µ¯³öÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .topCity:hover .indexCity {display:block; position:absolute}
 .dishi_new:hover .indexCitya {display:block; position:absolute}
 .indexCity li a {margin-left:10px;}
 .indexCitya a {margin-right:10px;}
-/*ËÑË÷ÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .input_boxs img { float: left; height: 32px; width: 32px;}
 .input_boxs input {border: 0 none !important;color: #dddddd;float: left;font-size: 12px;height: 25px;line-height: 25px;outline: 0 none;width: 420px;}
 #lx_nav #voucha_1 {padding-top:10px;}
 #lx_nav #voucha_2 {padding-top:10px;}
 .lx-con li {margin-top:5px;}
 #lx_nav { zoom: 1; }
-#lx_nav li { font-family:"Î¢ÈíÑÅºÚ"; float: left;width:80px; height: 32px; line-height: 32px; font-size: 12px; color: #fff;  cursor: pointer; text-align:center }
+#lx_nav li { font-family: "Microsoft YaHei", serif; float: left;width:80px; height: 32px; line-height: 32px; font-size: 12px; color: #fff;  cursor: pointer; text-align:center }
 #lx_nav .li01 { background-color: #ff8201; }
-#lx_nav .li02 { background-color: none;color: #777777}
+#lx_nav .li02 {color: #777777}
 .input_boxs a {	background-color: #ff8200;color: White;display: block;	float: right;font-size: 16px;height: 32px;line-height: 32px;text-align: center;width: 90px;}
 .a_link a { padding: 0 8px; color: #9b9b9b; text-decoration: none;}
 .middle .crk{ width:450px; height:32px; position:relative;}
-.middle .crk a{ cursor:pointer; float:left; display:block; font-family:"ËÎÌå"; font-size:12px; line-height:32px; text-align:center; color:#777777; width:80px; height:32px; background:#ffffff;}
+.middle .crk a{ cursor:pointer; float:left; display:block; font-family: "å®‹ä½“", serif; ; font-size:12px; line-height:32px; text-align:center; color:#777777; width:80px; height:32px; background:#ffffff;}
 .middle .crk_yes{ background:#ff8201 !important; color:#ffffff !important;}
 /*cart*/
 .head_recommend{ display:block; float:left; margin-left:35px;width: 250px;}
 .cart {position:relative;width: 140px;height: 32px;border: 1px solid #DFDFDF;text-align: center;line-height: 28px;margin-top: 32px;margin-left: 60px;background: url("../images/cart.png") 15px -50px no-repeat}
-.cart a{font-family: ËÎÌå;}
+.cart a{font-family: "å®‹ä½“", serif;}
 .cart .cart_right{right: 10px;top:9px;width: 7px;height: 13px;position: absolute;font:400 12px/12px simsun}
 .cart .cart_count{right: 25px;top:-5px;position: absolute;font:400 13px/13px simsun;background-color:#c81623;border-radius: 7px 7px 7px 0;
     font-size: 12px;color: #fff; padding: 1px 2px;}
-/*µ¼º½²Ëµ¥*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½*/
 .menu{ width:100%; background:#ff8200; height:45px; z-index:999;}
 .menu_01{ display:block; float:left; margin-right:20px;}
 .menu .toptiocs {display:block; float:left;}
@@ -39,7 +40,7 @@
 .menu .toptiocs  li .headmain_bg{ background:url(../img_head/headmain_bg.jpg) no-repeat 20px 17px; color:#fff;}
 .menu .toptiocsa{ cursor:pointer; display:block; width:190px;height:45px;}
 
-/*×ó²à²Ëµ¥*/
+/*ï¿½ï¿½ï¿½Ëµï¿½*/
 .head_top .main .main_01:hover .meun_down{ display:block }
 .meun_down {width: 190px;height: 420px;left: 0;top: 0;float: left; /*display:none;*/position: absolute;background:#fff;margin-top:45px; }
 .meun_down li {width:129px;height:59px;padding-left:60px;line-height:59px;font-size:14px;border-bottom:1px solid #e8e8e8;border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;color:#6d6d6d;}

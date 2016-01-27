@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*header*/
 .content{ width:1200px; margin:0 auto; position:relative;}
 .login_ul li {float:left}
@@ -14,9 +15,9 @@
 #lx_nav #voucha_2 {padding-top:10px;}
 .lx-con li {margin-top:5px;}
 #lx_nav { zoom: 1; }
-#lx_nav li { font-family:"微软雅黑"; float: left;width:80px; height: 32px; line-height: 32px; font-size: 12px; color: #fff;  cursor: pointer; text-align:center }
+#lx_nav li {  font-family: "微软雅黑", serif; float: left;width:80px; height: 32px; line-height: 32px; font-size: 12px; color: #fff;  cursor: pointer; text-align:center }
 #lx_nav .li01 { background-color: #ff8201; }
-#lx_nav .li02 { background-color: none;color: #777777}
+#lx_nav .li02 { color: #777777}
 .input_boxs a {	background-color: #ff8200;color: White;display: block;	float: right;font-size: 16px;height: 32px;line-height: 32px;text-align: center;width: 90px;}
 .a_link a { padding: 0 8px; color: #9b9b9b; text-decoration: none;}
 .middle .crk{ width:450px; height:32px; position:relative;}
@@ -84,4 +85,6 @@
 .f_lh {min-height:100px;height:auto !important;height:100px;overflow:visible;float:left;}
 .span_font {line-height:30px !important;float:left;margin:-100px 0 0 45px;width:606px}
 .span_font a{float:left; min-width:70px;width:auto !important;width:70px;overflow:visible;}
-
+.customer{position: fixed;bottom:10px;right:10px;width: 48px;}
+.customer img{width:48px;height: 48px; margin: 0 auto}
+.customer p{  font-family: \5FAE\8F6F\96C5\9ED1, verdana, serif;  color: #777777;font-size: 12px}
