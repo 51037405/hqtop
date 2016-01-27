@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/headtop2.css" />
     <link rel="stylesheet" href="css/ctrl.css" />
     <link rel="stylesheet" href="css/fancySelect.css" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/fancySelect.js"></script>
 </head>
 <body>
 <!--header-->
@@ -113,11 +111,10 @@
 <div class="g-bd1">
     <div class="g-sd1">
         <ul class="menu-1">
-            <li class="menu-open"><span>一级目录</span><ul class="menu-2"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
-            <li class=""><span>一级目录</span></li>
-            <li class=""><span>一级目录</span></li>
-            <li class=""><span>一级目录</span></li>
-            <li class=""><span>一级目录</span></li>
+            <li class="menu-open"><span class="menu-1-btn">一级目录</span><ul class="menu-2"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class="menu-open"><span class="menu-1-btn">一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class="menu-open"><span class="menu-1-btn">一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class="menu-open"><span class="menu-1-btn">一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
 
         </ul>
     </div>
@@ -182,26 +179,64 @@
         <div class="g-mn1c order-list">
             <div class="order-menu">
                 <ul class="">
-                    <li class=""><a href="#" class="on">所有订单（1441）</a></li>
-                    <li class="" ><a>未付款（141）</a></li>
-                    <li class=""><a>代发货（141）</a></li>
-                    <li class=""><a>已发货（141）</a></li>
-                    <li class=""><a>退换货订单（141）</a></li>
+                    <li class=""><a href="javascript:;" class="on">所有订单（1441）</a></li>
+                    <li class="" ><a href="javascript:;">未付款（141）</a></li>
+                    <li class=""><a href="javascript:;">代发货（141）</a></li>
+                    <li class=""><a href="javascript:;">已发货（141）</a></li>
+                    <li class=""><a href="javascript:;">退换货订单（141）</a></li>
                 </ul>
                 <a href="#" class="">同步Ebay线上订单</a>
             </div>
             <table>
                 <thead><tr><td width="50%">商品图片/商品名称/商品ID/SKU</td><td width="20%">下单时间</td><td width="10%">数量/金额</td><td width="10%">订单状态</td><td width="10%">订单操作</td></tr></thead>
-                <tbody><tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tbody>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
                 <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
                 <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
-                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr></tbody>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                </tbody>
+            </table>
+            <table class="disn">
+                <thead><tr><td width="50%">商品图片/商品名称/商品ID/SKU</td><td width="20%">下单时间</td><td width="10%">数量/金额</td><td width="10%">订单状态</td><td width="10%">订单操作</td></tr></thead>
+                <tbody>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                </tbody>
+            </table>
+            <table class="disn">
+                <thead><tr><td width="50%">商品图片/商品名称/商品ID/SKU</td><td width="20%">下单时间</td><td width="10%">数量/金额</td><td width="10%">订单状态</td><td width="10%">订单操作</td></tr></thead>
+                <tbody>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                </tbody>
+            </table>
+            <table class="disn">
+                <thead><tr><td width="50%">商品图片/商品名称/商品ID/SKU</td><td width="20%">下单时间</td><td width="10%">数量/金额</td><td width="10%">订单状态</td><td width="10%">订单操作</td></tr></thead>
+                <tbody>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                </tbody>
+            </table>
+            <table class="disn">
+                <thead><tr><td width="50%">商品图片/商品名称/商品ID/SKU</td><td width="20%">下单时间</td><td width="10%">数量/金额</td><td width="10%">订单状态</td><td width="10%">订单操作</td></tr></thead>
+                <tbody>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                <tr><td ><input class="sel-order" type="checkbox"><p class="order-desc">订单号:<a href="#" class="order-id">hqzq001010215874</a>订单金额:$ 3.97(含运费$ 1.00)<br>买家：felix.zhao(美国用户) 销售点：Amazon美国站</p></td><td>2015-06-13 16:31</td><td colspan="3"><a href="#">发送账单</a><br/><a href="#">立即发货</a><br/><a href="#">查看订单详情</a></td></tr>
+                <tr><td><img src="./images/temp.png"><p class="pro-desc"><a href="#">Details about New Womens Wedge Heel Sneaker Shoes Velcro Lace Up Black Cute Sneaker　Shoe Size</a><br/>商品ID：33124785486 SKU：245554854</p></td><td></td><td>单价：$ 0.99<br/>数量：12<br/>运费：$1.00</td><td colspan="2"><a class="repay" href="#">有买家咨询待回复</a></td></tr>
+                </tbody>
             </table>
         </div>
     </div>
 </div>
 <div class="footer"><p>环球掌柜网 版权所有 备案许可证： 苏ICP备15030980号-1</p></div>
 </body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/fancySelect.js"></script>
 <script type="text/javascript">
     $(function(){
         $('.basic').fancySelect();
@@ -210,6 +245,15 @@
         $('.s-src-sel').fancySelect();
         $('.s-amount-sel').fancySelect();
         $('.s-time-sel').fancySelect();
+        $(".menu-1-btn").click(function(){
+            $(this).siblings(".menu-2").toggle("slow");
+        });
+        $(".order-menu ul li").click(function(){
+            $(".order-menu ul li a").removeClass("on");
+            $(this).children("a").addClass("on");
+            $(".order-list table").addClass("disn");
+            $(".order-list table").eq($(this).index()).removeClass("disn");
+        });
     });
 </script>
 </html>

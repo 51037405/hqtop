@@ -5,6 +5,7 @@
 /*.menu-1 li {background: url("../images/arr_right.png")170px 5px  no-repeat;cursor: pointer}*/
 .menu-1 li span{display: block;background: #f3f3f3 url("../images/wddd_icon01.png") 10px center no-repeat;width: 140px;height: 40px;line-height: 40px;padding-left: 50px;font-size: 14px;}
 .menu-1 .menu-open span{display: block;background: #f3f3f3 url("../images/wddd_icon03.png") 10px center no-repeat}
+.menu-1 .menu-1-btn{cursor: pointer;}
 /*.menu-1 .menu-open{background: url("../images/arr_down.png") 170px 5px no-repeat}*/
 .menu-2{}
 .menu-2 li{background: none;  padding: 9px 0;  height: 25px;}
@@ -37,6 +38,7 @@
 .order-list .order-menu ul li  {    height: 18px;  line-height: 18px;  text-align: center;  float: left;  border-right: 1px #ccc solid;  padding-right: 10px;  }
 .order-list .order-menu ul li a{  display: block;  padding: 0 16px 15px 16px;  font-size: 14px;  color: #777;  font-weight: 600;  }
 .order-list .order-menu ul li a:hover{  background: url(../images/icon-bg.png) bottom center no-repeat;  color: #ff8202;  }
+.order-list .order-menu ul li a.on{  background: url(../images/icon-bg.png) bottom center no-repeat;  color: #ff8202;  }
 .order-list .order-menu a {float: right;    color: #ff8201;font-size: 14px;margin-right: 10px;}
 .order-list table{font-size: 14px;    background-color: transparent;  border-collapse: collapse;  border-spacing: 0;  margin-top: 10px;}
 .order-list table a{color:#ff8202}
