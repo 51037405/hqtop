@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*头部自动隐藏*/
+.meun_down{display: none}
+.menu_01:hover .meun_down{display: block}
+/*左侧 */
+.g-bg{width: 1200px;overflow: hidden;margin: 20px auto;}
+.usr_left { float: left; width: 190px; }
+.greent_nav { background-color: #fff; width: 158px; border: 1px #dbdbdb solid; padding: 30px 0 10px 30px; }
+.subNav{cursor:pointer;font-size:14px;color:#666;line-height:28px;padding-left:10px;background: url(../images/gt_add_ico.png) no-repeat 0 50%;padding-left:20px;}
+.subNav:hover{color:#666;}
+.currentDd{color:#666}
+.currentDt{background: url(../images/gt_minus_ico.png) no-repeat 0 50%;}
+.navContent{display: none;}
+.navContent li a{display:block;heighr:28px;font-size:14px;line-height:28px;color:#999;padding-left:20px;}
+.navContent li a:hover{color:#ff8202;}
+.green_tunnel { margin: 20px 0; }
+.greent_txt { height: 16px; padding: 0 10px; margin-bottom: 12px; border-left: 5px #ff8202 solid; overflow: hidden; }
+.greent_txt h3 { font: normal 16px/16px "Microsoft Yahei"; color: #666666; }
+.greent_cont ul { overflow: hidden; }
+.greent_cont li { float: left; width: 190px; height: 82px; margin-bottom: 2px; overflow: hidden; }
+.greent_cont li.x_color_1 { background-color: #ffda60; }
+.greent_cont li.x_color_2 { background-color: #ff9867; }
+.greent_cont li.x_color_3 { background-color: #8ab6ff; }
+.greent_cont li a { display: block; height: 46px; padding: 18px 24px; text-align: left; color: #ffffff; }
+.greent_cont li a:hover { background: rgba(255,255,255,.3); }
+.greent_cont li h3 { font: normal 22px/26px "Microsoft Yahei"; padding-bottom: 3px; }
+.greent_cont li p { font-size: 13px; }
+/*右侧*/
+.help_con { float: right; width: 948px; padding: 25px; border: 1px solid #dbdbdb; background-color: #fff; text-align:left;}
+.helpc_tit { background:url(../images/font_left.jpg) no-repeat left center;height: 30px; padding-left: 14px; font-weight: 400; font-size: 16px; line-height:30px; }
+.helpc_word { padding: 10px; line-height: 28px; font-size: 12px; }
+.tousu{width: 930px;height: 56px;background: #f1f1f1;}
+.tou_in{line-height: 56px;font-size: 16px;color: #777777;margin-left: 16px;}
+.btn{width: 302px;margin-top: 30px;}
+.bttn{width: 302px;float: left;}
+.left_Btn{width: 160px;float: left;}
+
+
