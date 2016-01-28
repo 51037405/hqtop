@@ -8,12 +8,12 @@
 .logo-wall{height: 240px;margin-bottom: 20px;}
 .logo-wall ul li{float: left;width:193px;height: 120px;border: solid 1px #f3f3f3 }
 .logo-wall ul li img{width:193px;height: 120px; }
-.sys-m{width: 100%;height: 240px;  background-color: #abd738;margin-bottom: 20px;padding-left: 20px;}
-.sys-m p{line-height: 35px;color: #fff;font-size: 14px;}
+.sys-m{width: 100%;height: 240px;  background-color: #abd738;margin-bottom: 20px;}
+.sys-m p{line-height: 35px;color: #fff;font-size: 14px;margin-left: 20px;}
 .sys-m img{float: right;width: 120px;height: 120px;margin-right: 20px;margin-top: 10px;}
 .sys-m .title {line-height: 60px;font-size: 26px;color: #fff;}
-.finc-m{width: 100%;height: 280px;background-color: #0BC4FB;padding-left: 20px;}
-.finc-m p{line-height: 35px;color: #fff;font-size: 14px;padding-left: 20px;}
+.finc-m{width: 100%;height: 280px;background-color: #0BC4FB;}
+.finc-m p{line-height: 35px;color: #fff;font-size: 14px;padding-left: 20px;margin-left: 20px;}
 .finc-m .title {line-height: 120px;font-size: 26px;color: #fff;}
 .finc-m img{float: right;width: 120px;height: 120px;margin-right: 20px;margin-top: 20px}
 .order-m p{line-height: 35px;color: #fff;font-size: 14px;}
