@@ -496,15 +496,16 @@
     <div class="g-sd">
         <div class="img-frame">
             <ul>
-                <li><img src="http://image1.chinatelecom-ec.com/images/2015/5/28/1/00000000BC5EF414414442C18DFE26AF7856F028.jpg"width="298" height="300"></li>
+                <li id="sli-1"><img src="http://image1.chinatelecom-ec.com/images/2015/5/28/1/00000000BC5EF414414442C18DFE26AF7856F028.jpg" width="298" height="300"></li>
+                <li class="disn" id="sli-2"><img src="http://image1.chinatelecom-ec.com/images/2015/11/13/1/000000005CD67E0E2CF24C7CA5BD1475C95A491C.jpg" width="298" height="300"></li>
             </ul>
         </div>
+        <img id="left" src="images/left_new.gif" width="9" height="51" >
         <ul class="img-src">
-            <li><img src="images/left_new.gif" width="9" height="51"></li>
-            <li class="img-let"><img src="http://image1.chinatelecom-ec.com/images/2015/5/28/1/00000000BC5EF414414442C18DFE26AF7856F028.jpg" width="38" height="38"></li>
-            <li class="img-let"><img src="http://image1.chinatelecom-ec.com/images/2015/5/28/1/00000000BC5EF414414442C18DFE26AF7856F028.jpg" width="38" height="38"></li>
-            <li><img src="images/right_new.gif" width="9" height="51"></li>
+            <li class="img-let" id="li-1"><img src="http://image1.chinatelecom-ec.com/images/2015/5/28/1/00000000BC5EF414414442C18DFE26AF7856F028.jpg" width="38" height="38"></li>
+            <li class="img-let" id="li-2"><img src="http://image1.chinatelecom-ec.com/images/2015/11/13/1/000000005CD67E0E2CF24C7CA5BD1475C95A491C.jpg" width="38" height="38"></li>
         </ul>
+        <img id="right" src="images/right_new.gif" width="9" height="51" >
     </div>
     <div class="g-mn">
         <div class="title-box">
@@ -556,7 +557,27 @@
             $(".detail-desc .desc").addClass("disn");
             $(".detail-desc .desc").eq($(this).index()).removeClass("disn");
         });
+        $("#left").click(function(){
+            $(".img-src").find("li:last").prependTo(".img-src");
+            $(".img-src li:first").addClass("index").siblings().removeClass("index");
+            var inpb3=$(".img-src li:first").attr("id");
+            $("#s"+inpb3).removeClass("disn").siblings().addClass("disn");
+        });
+        $("#right").bind("click",scro_right);
+        function scro_right(){
+            $(".img-src ").find("li:first").appendTo(".img-src");
+            $(".img-src li:first").addClass("index").siblings().removeClass("index");
+            var inpb3=$(".img-src li:first").attr("id");
+            $("#s"+inpb3).removeClass("disn").siblings().addClass("disn");
+        }
+        $(".img-src li").click(function(){
+            var inpb3=$(this).attr("id");
+            $("#s"+inpb3).removeClass("disn").siblings().addClass("disn");
+        });
     });
+
+
+
 </script>
 </body>
 </html>

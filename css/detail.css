@@ -3,11 +3,13 @@
 .g-bd2 .g-sd{ border: 1px solid #c9d6d9;}
 .g-sd{float:left;width:300px;}
 .g-mn{float:right;width:640px;}
-.img-frame ul {border: 1px solid #CDCDCD;width: 300px;  height: 300px;}
+.img-frame ul {border: 1px solid #CDCDCD;width: 300px;  height: 300px;margin-bottom: 10px;}
 .img-frame ul li {float: left}
-.img-src{margin-top: 10px;cursor: pointer;}
+.img-src{cursor: pointer;}
 .img-src li{float: left;}
-.img-src li:last-child{float: right;}
+/*.img-src li:last-child{float: right;}*/
+#right{float: right;cursor: pointer}
+#left{float: left;cursor: pointer}
 .img-let img{border: 3px double #CDCDCD;margin-left: 10px;}
 .title-box,.info-box{border-bottom: 1px solid #E2E6E7;  margin-bottom: 10px;  width: 100%;}
 .title-box .title{color: #42465E;  font-size: 20px;  line-height: 36px;  font-weight: normal;    width: 100%;  word-wrap: break-word;  max-height: 108px;  overflow: hidden;}
