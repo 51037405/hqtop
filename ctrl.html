@@ -112,11 +112,11 @@
     <div class="g-sd1">
         <ul class="menu-1">
             <li class="menu-open"><span class="menu-1-btn"><i class="ico-font">&#xe008;</i>一级目录</span><ul class="menu-2"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
-            <li class="menu-open"><span class="menu-1-btn"><i class="ico-font">&#xe029;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
-            <li class="menu-open"><span class="menu-1-btn"><i class="ico-font">v</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
-            <li class="menu-open"><span class="menu-1-btn"><i class="ico-font">&#xe0ed;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
-            <li class="menu-open"><span class="menu-1-btn"><i class="ico-font">&#xe037;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
-            <li class="menu-open"><span class="menu-1-btn"><i class="ico-font">&#x0069;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class=""><span class="menu-1-btn"><i class="ico-font">&#xe029;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class=""><span class="menu-1-btn"><i class="ico-font">v</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class=""><span class="menu-1-btn"><i class="ico-font">&#xe0ed;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class=""><span class="menu-1-btn"><i class="ico-font">&#xe037;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
+            <li class=""><span class="menu-1-btn"><i class="ico-font">&#x0069;</i>一级目录</span><ul class="menu-2 disn"><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li><li><a href="">二级目录</a></li></ul></li>
 
         </ul>
     </div>
@@ -248,13 +248,8 @@
         $('.s-amount-sel').fancySelect();
         $('.s-time-sel').fancySelect();
         $(".menu-1-btn").click(function(){
+            $(this).parent().addClass("menu-open").siblings().removeClass("menu-open");
             $(this).siblings(".menu-2").toggle("slow");
-        });
-        $(".order-menu ul li").click(function(){
-            $(".order-menu ul li a").removeClass("on");
-            $(this).children("a").addClass("on");
-            $(".order-list table").addClass("disn");
-            $(".order-list table").eq($(this).index()).removeClass("disn");
         });
     });
 </script>

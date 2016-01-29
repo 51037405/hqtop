@@ -5,9 +5,9 @@
 i{ font-style:normal}
 /*.menu-1 li {background: url("../images/arr_right.png")170px 5px  no-repeat;cursor: pointer}*/
 /*.menu-1 li span{display: block;background: #f3f3f3 url("../images/wddd_icon01.png") 10px center no-repeat;width: 140px;height: 40px;line-height: 40px;padding-left: 50px;font-size: 14px;}*/
-.menu-1 li span{display: block;background: #f3f3f3 center no-repeat;width: 140px;height: 40px;line-height: 40px;padding-left: 10px;font-size: 14px;}
+.menu-1 li span{display: block;background: #f3f3f3 center no-repeat;height: 40px;line-height: 40px;padding-left: 10px;font-size: 14px;}
 /*.menu-1 .menu-open span{display: block;background: #f3f3f3 url("../images/wddd_icon03.png") 10px center no-repeat}*/
-.menu-1 .menu-open span{display: block;background: #f3f3f3 center no-repeat}
+.menu-1 .menu-open span{display: block;color: #ff8800}
 .menu-1 .menu-1-btn{cursor: pointer;}
 .menu-1 i{color: #ff8200;margin-right: 10px;font-size: 20px;}
 /*.menu-1 .menu-open{background: url("../images/arr_down.png") 170px 5px no-repeat}*/
