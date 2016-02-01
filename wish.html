@@ -128,94 +128,85 @@
                 <form class="form-horizontal" id="form1" name="form1" action="product/add.htm" method="post">
 
                     <div class="col-xs-12 ">
-                        <div class="col-xs-12  p0">
-                            <div class="col-xs-1 pull-right minW120">
-                                <button type="button" class="btn btn-warning btn-block mTop5 mBottom5"
-                                        onclick="javascript:;">更新至Wish
-                                </button>
-                            </div>
-                            <div class="col-xs-1 pull-right minW120">
-                                <button type="button" class="btn btn-warning btn-block mTop5 mBottom5"
-                                        onclick="javascript:;">保存
-                                </button>
-                            </div>
-                            <div class="col-xs-1 pull-right minW160">
-                                <button id="import" type="button" class="btn btn-warning btn-block mTop5 mBottom5"
-                                        onclick="javascript:;">引用现有产品
-                                </button>
-                            </div>
-                        </div>
                         <!--基本信息-->
                         <div class="col-xs-12 ">
-                            <div class="jibenxinxi ">
-                                <div class="text-center divBiaoqian fColor2">
-                                    <span><b>基本信息</b></span>
-                                </div>
-                                <div class="form-group mTop20">
-                                    <label class="col-xs-2 control-label"><span class="fRed">*</span> 店铺:</label>
+                            <ul id="p-info-Tabs" class="nav nav-pills mLeft10">
+                                <li role="presentation" class="active"><a href="#p-wish">产品信息</a></li>
+                                <li role="presentation"><a href="#p-smt">速卖通</a></li>
+                                <li role="presentation"><a href="#p-ebuy">eBuy</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content col-xs-12">
+                            <div  role="tabpanel" id="p-wish" class="tab-pane active">
+                                <div class="jibenxinxi ">
+                                    <!--<div class="text-center divBiaoqian fColor2">
+                                        <span><b>基本信息</b></span>
+                                    </div>-->
+                                    <div class="form-group mTop20">
+                                        <label class="col-xs-2 control-label"><span class="fRed">*</span> 店铺:</label>
 
 
-                                    <div class="col-xs-9">
+                                        <div class="col-xs-9">
+                                         wish
 
-
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="goodsTitleIpt" class="col-xs-2 control-label">来源URL:</label>
+                                    <div class="form-group">
+                                        <label for="goodsTitleIpt" class="col-xs-2 control-label">来源URL:</label>
 
-                                    <div class="col-xs-9">
-                                        <input type="text" class="form-control skuIpt" id="sourceUrl" name="sourceUrl" value=""
-                                               placeholder="用于记录供货渠道URL，方便采购。仅在店小秘显示，不会同步到wish平台！"/>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control skuIpt" id="sourceUrl" name="sourceUrl" value=""
+                                                   placeholder="用于记录供货渠道URL，方便采购。仅在店小秘显示，不会同步到wish平台！"/>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group ztreeInputParent">
-                                    <label for="FSKUIpt" class="col-sm-2 control-label"><span class="fRed">*</span>
-                                        ParentSKU:</label>
+                                    <div class="form-group ztreeInputParent">
+                                        <label for="FSKUIpt" class="col-sm-2 control-label"><span class="fRed">*</span>
+                                            ParentSKU:</label>
 
-                                    <div class="col-xs-3">
-                                        <input type="text" class="form-control skuIpt" id="parentSku" name="parentSku"
-                                               placeholder="可接受:BG00003GG">
+                                        <div class="col-xs-3">
+                                            <input type="text" class="form-control skuIpt" id="parentSku" name="parentSku"
+                                                   placeholder="可接受:BG00003GG">
+                                        </div>
+                                        <!-- div class="col-xs-1 minW140">
+                                            <input id="fullCid" data-id="" type="button" class="w120 btn btn-warning" readonly="true" value="未分类" onclick="showMenu(); return false;">
+                                            <span class="glyphicon glyphicon-triangle-bottom falseBtn" onclick="showMenu(); return false;"></span>
+                                        </div -->
+                                        <div class="col-xs-1 minW120">
+                                            <button class="btn btn-warning treeSelectBtn" type="button" data-names="treeSelectBtn"
+                                                    id="fullCid" data-id="">
+                                                <span data-names="nodeName">选择分类</span>
+                                                <span class="caret"></span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-2 pLeft10">
+                                            <a href="#" data-toggle="modal" data-target="#goodsCategory" class="btn btn-warning">
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                                管理分类
+                                            </a>
+                                        </div>
                                     </div>
-                                    <!-- div class="col-xs-1 minW140">
-                                        <input id="fullCid" data-id="" type="button" class="w120 btn btn-warning" readonly="true" value="未分类" onclick="showMenu(); return false;">
-                                        <span class="glyphicon glyphicon-triangle-bottom falseBtn" onclick="showMenu(); return false;"></span>
-                                    </div -->
-                                    <div class="col-xs-1 minW120">
-                                        <button class="btn btn-warning treeSelectBtn" type="button" data-names="treeSelectBtn"
-                                                id="fullCid" data-id="">
-                                            <span data-names="nodeName">选择分类</span>
-                                            <span class="caret"></span>
-                                        </button>
-                                    </div>
-                                    <div class="col-xs-2 pLeft10">
-                                        <a href="#" data-toggle="modal" data-target="#goodsCategory" class="btn btn-warning">
-                                            <span class="glyphicon glyphicon-plus"></span>
-                                            管理分类
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="goodsTitleIpt" class="col-xs-2 control-label">产品标题:</label>
+                                    <div class="form-group">
+                                        <label for="goodsTitleIpt" class="col-xs-2 control-label">产品标题:</label>
 
-                                    <div class="col-xs-9 productTitleDiv">
-                                        <input type="text" class="form-control productTitle" id="name" name="name"
-                                               placeholder="可接受:Nikon D5100 DSLR Camera (Body Only) USA MODEL">
-                                        <a href="javascript:;" class="glyphicon glyphicon-text-size productTitTextSize"
-                                           data-toggle="tooltip" data-placement="top" title="把单词首字母转为大写（点击生效）"></a>
+                                        <div class="col-xs-9 productTitleDiv">
+                                            <input type="text" class="form-control productTitle" id="name" name="name"
+                                                   placeholder="可接受:Nikon D5100 DSLR Camera (Body Only) USA MODEL">
+                                            <a href="javascript:;" class="glyphicon glyphicon-text-size productTitTextSize"
+                                               data-toggle="tooltip" data-placement="top" title="把单词首字母转为大写（点击生效）"></a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="goodsDescribeIpt" class="col-xs-2 control-label">产品描述:</label>
+                                    <div class="form-group">
+                                        <label for="goodsDescribeIpt" class="col-xs-2 control-label">产品描述:</label>
 
-                                    <div class="col-xs-9">
+                                        <div class="col-xs-9">
                             <textarea class="form-control" rows="8" id="description" name="description"
                                       placeholder="可接受:Nikon D5100 DSLR Camera (Body Only) USA MODEL"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group mBottom0">
-                                    <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap">产品标签:</label>
+                                    <div class="form-group mBottom0">
+                                        <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap">产品标签:</label>
 
-                                    <div class="col-xs-9 ipt-outer">
+                                        <div class="col-xs-9 ipt-outer">
 								<span class="block input-icon input-icon-right pull-left col-xs-12 p0">
 									<input type="text" style="display:none;" name="biaoqian"
                                            class="form-control can_fanyi" data-fytype="tags"/>
@@ -231,26 +222,243 @@
                                                 class="glyphicon glyphicon-trash"></span></a>
                                     </div>
 								</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="margin-top:3px;">
+                                        <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap"></label>
+
+                                        <div class="col-xs-8 ipt-outer">
+                                            <span class="fColor2">已输入<span class="fRed" id="tags_num">0</span>个　（可接受：Women,Women Fashion，至少填写2个以上，最多支持10个）</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mBottom40">
+                                        <div class="col-xs-1 col-xs-offset-2 minW120">
+                                            <input type="button" class="btn btn-warning btn-block" onclick="javascript:keyTranslate();"
+                                                   value="一键翻译">
+                                        </div>
+                                        <div class="col-xs-1 col-xs-offset-0 minW120">
+                                            <input type="button" class="btn btn-warning btn-block" onclick="javascript:checkReplica();"
+                                                   value="仿品检测">
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="form-group" style="margin-top:3px;">
-                                    <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap"></label>
+                            </div>
+                            <div  role="tabpanel" id="p-smt" class="tab-pane" >
+                                <div class="jibenxinxi ">
+                                    <!--<div class="text-center divBiaoqian fColor2">
+                                        <span><b>基本信息</b></span>
+                                    </div>-->
+                                    <div class="form-group mTop20">
+                                        <label class="col-xs-2 control-label "><span class="fRed">*</span> 店铺:</label>
 
-                                    <div class="col-xs-8 ipt-outer">
-                                        <span class="fColor2">已输入<span class="fRed" id="tags_num">0</span>个　（可接受：Women,Women Fashion，至少填写2个以上，最多支持10个）</span>
+
+                                        <div class="col-xs-9">
+                                         smt
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="goodsTitleIpt" class="col-xs-2 control-label">来源URL:</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control skuIpt" id="sourceUrl" name="sourceUrl" value=""
+                                                   placeholder="用于记录供货渠道URL，方便采购。仅在店小秘显示，不会同步到wish平台！"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ztreeInputParent">
+                                        <label for="FSKUIpt" class="col-sm-2 control-label"><span class="fRed">*</span>
+                                            ParentSKU:</label>
+
+                                        <div class="col-xs-3">
+                                            <input type="text" class="form-control skuIpt" id="parentSku" name="parentSku"
+                                                   placeholder="可接受:BG00003GG">
+                                        </div>
+                                        <!-- div class="col-xs-1 minW140">
+                                            <input id="fullCid" data-id="" type="button" class="w120 btn btn-warning" readonly="true" value="未分类" onclick="showMenu(); return false;">
+                                            <span class="glyphicon glyphicon-triangle-bottom falseBtn" onclick="showMenu(); return false;"></span>
+                                        </div -->
+                                        <div class="col-xs-1 minW120">
+                                            <button class="btn btn-warning treeSelectBtn" type="button" data-names="treeSelectBtn"
+                                                    id="fullCid" data-id="">
+                                                <span data-names="nodeName">选择分类</span>
+                                                <span class="caret"></span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-2 pLeft10">
+                                            <a href="#" data-toggle="modal" data-target="#goodsCategory" class="btn btn-warning">
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                                管理分类
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="goodsTitleIpt" class="col-xs-2 control-label">产品标题:</label>
+
+                                        <div class="col-xs-9 productTitleDiv">
+                                            <input type="text" class="form-control productTitle" id="name" name="name"
+                                                   placeholder="可接受:Nikon D5100 DSLR Camera (Body Only) USA MODEL">
+                                            <a href="javascript:;" class="glyphicon glyphicon-text-size productTitTextSize"
+                                               data-toggle="tooltip" data-placement="top" title="把单词首字母转为大写（点击生效）"></a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="goodsDescribeIpt" class="col-xs-2 control-label">产品描述:</label>
+
+                                        <div class="col-xs-9">
+                            <textarea class="form-control" rows="8" id="description" name="description"
+                                      placeholder="可接受:Nikon D5100 DSLR Camera (Body Only) USA MODEL"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mBottom0">
+                                        <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap">产品标签:</label>
+
+                                        <div class="col-xs-9 ipt-outer">
+								<span class="block input-icon input-icon-right pull-left col-xs-12 p0">
+									<input type="text" style="display:none;" name="biaoqian"
+                                           class="form-control can_fanyi" data-fytype="tags"/>
+									<div class="goodsLabel col-xs-12" id="detail_tags">
+                                        <input type="text" class="labelIpt pull-left" id="labelIpt"
+                                               placeholder="输入标签名，输入 回车 或 逗号 完成添加"/>
+                                        <!--maxlength 设定输入长度  onkeyup设定匹配输入的只能是字母及&,.　onbeforepaste监测粘贴板-->
+                                        <a href="javascript:;" cid="recover" class="recover"><span
+                                                class="glyphicon glyphicon-share-alt" data-toggle="tooltip"
+                                                data-placement="top" title=""></span> <span cid="recoverNum"></span></a>
+                                        <a href="javascript:;" onclick="clearTag()" class="clearAllTag"
+                                           cid="clearAllTag" data-toggle="tooltip" data-placement="top" title="清空"><span
+                                                class="glyphicon glyphicon-trash"></span></a>
+                                    </div>
+								</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="margin-top:3px;">
+                                        <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap"></label>
+
+                                        <div class="col-xs-8 ipt-outer">
+                                            <span class="fColor2">已输入<span class="fRed" id="tags_num">0</span>个　（可接受：Women,Women Fashion，至少填写2个以上，最多支持10个）</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mBottom40">
+                                        <div class="col-xs-1 col-xs-offset-2 minW120">
+                                            <input type="button" class="btn btn-warning btn-block" onclick="javascript:keyTranslate();"
+                                                   value="一键翻译">
+                                        </div>
+                                        <div class="col-xs-1 col-xs-offset-0 minW120">
+                                            <input type="button" class="btn btn-warning btn-block" onclick="javascript:checkReplica();"
+                                                   value="仿品检测">
+                                        </div>
+
                                     </div>
                                 </div>
+                            </div>
+                            <div  role="tabpanel" id="p-ebuy" class="tab-pane ">
+                                <div class="jibenxinxi ">
+                                    <!--<div class="text-center divBiaoqian fColor2">
+                                        <span><b>基本信息</b></span>
+                                    </div>-->
+                                    <div class="form-group mTop20">
+                                        <label class="col-xs-2 control-label"><span class="fRed">*</span> 店铺:</label>
 
-                                <div class="form-group mBottom40">
-                                    <div class="col-xs-1 col-xs-offset-2 minW120">
-                                        <input type="button" class="btn btn-warning btn-block" onclick="javascript:keyTranslate();"
-                                               value="一键翻译">
+
+                                        <div class="col-xs-9">
+                                         ebuy
+
+                                        </div>
                                     </div>
-                                    <div class="col-xs-1 col-xs-offset-0 minW120">
-                                        <input type="button" class="btn btn-warning btn-block" onclick="javascript:checkReplica();"
-                                               value="仿品检测">
+                                    <div class="form-group">
+                                        <label for="goodsTitleIpt" class="col-xs-2 control-label">来源URL:</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control skuIpt" id="sourceUrl" name="sourceUrl" value=""
+                                                   placeholder="用于记录供货渠道URL，方便采购。仅在店小秘显示，不会同步到wish平台！"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ztreeInputParent">
+                                        <label for="FSKUIpt" class="col-sm-2 control-label"><span class="fRed">*</span>
+                                            ParentSKU:</label>
+
+                                        <div class="col-xs-3">
+                                            <input type="text" class="form-control skuIpt" id="parentSku" name="parentSku"
+                                                   placeholder="可接受:BG00003GG">
+                                        </div>
+                                        <!-- div class="col-xs-1 minW140">
+                                            <input id="fullCid" data-id="" type="button" class="w120 btn btn-warning" readonly="true" value="未分类" onclick="showMenu(); return false;">
+                                            <span class="glyphicon glyphicon-triangle-bottom falseBtn" onclick="showMenu(); return false;"></span>
+                                        </div -->
+                                        <div class="col-xs-1 minW120">
+                                            <button class="btn btn-warning treeSelectBtn" type="button" data-names="treeSelectBtn"
+                                                    id="fullCid" data-id="">
+                                                <span data-names="nodeName">选择分类</span>
+                                                <span class="caret"></span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-2 pLeft10">
+                                            <a href="#" data-toggle="modal" data-target="#goodsCategory" class="btn btn-warning">
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                                管理分类
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="goodsTitleIpt" class="col-xs-2 control-label">产品标题:</label>
+
+                                        <div class="col-xs-9 productTitleDiv">
+                                            <input type="text" class="form-control productTitle" id="name" name="name"
+                                                   placeholder="可接受:Nikon D5100 DSLR Camera (Body Only) USA MODEL">
+                                            <a href="javascript:;" class="glyphicon glyphicon-text-size productTitTextSize"
+                                               data-toggle="tooltip" data-placement="top" title="把单词首字母转为大写（点击生效）"></a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="goodsDescribeIpt" class="col-xs-2 control-label">产品描述:</label>
+
+                                        <div class="col-xs-9">
+                            <textarea class="form-control" rows="8" id="description" name="description"
+                                      placeholder="可接受:Nikon D5100 DSLR Camera (Body Only) USA MODEL"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mBottom0">
+                                        <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap">产品标签:</label>
+
+                                        <div class="col-xs-9 ipt-outer">
+								<span class="block input-icon input-icon-right pull-left col-xs-12 p0">
+									<input type="text" style="display:none;" name="biaoqian"
+                                           class="form-control can_fanyi" data-fytype="tags"/>
+									<div class="goodsLabel col-xs-12" id="detail_tags">
+                                        <input type="text" class="labelIpt pull-left" id="labelIpt"
+                                               placeholder="输入标签名，输入 回车 或 逗号 完成添加"/>
+                                        <!--maxlength 设定输入长度  onkeyup设定匹配输入的只能是字母及&,.　onbeforepaste监测粘贴板-->
+                                        <a href="javascript:;" cid="recover" class="recover"><span
+                                                class="glyphicon glyphicon-share-alt" data-toggle="tooltip"
+                                                data-placement="top" title=""></span> <span cid="recoverNum"></span></a>
+                                        <a href="javascript:;" onclick="clearTag()" class="clearAllTag"
+                                           cid="clearAllTag" data-toggle="tooltip" data-placement="top" title="清空"><span
+                                                class="glyphicon glyphicon-trash"></span></a>
+                                    </div>
+								</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="margin-top:3px;">
+                                        <label for="goodsLabelIpt" class="col-xs-2 control-label text-nowrap"></label>
+
+                                        <div class="col-xs-8 ipt-outer">
+                                            <span class="fColor2">已输入<span class="fRed" id="tags_num">0</span>个　（可接受：Women,Women Fashion，至少填写2个以上，最多支持10个）</span>
+                                        </div>
                                     </div>
 
+                                    <div class="form-group mBottom40">
+                                        <div class="col-xs-1 col-xs-offset-2 minW120">
+                                            <input type="button" class="btn btn-warning btn-block" onclick="javascript:keyTranslate();"
+                                                   value="一键翻译">
+                                        </div>
+                                        <div class="col-xs-1 col-xs-offset-0 minW120">
+                                            <input type="button" class="btn btn-warning btn-block" onclick="javascript:checkReplica();"
+                                                   value="仿品检测">
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -862,6 +1070,10 @@
             //return;
         });
         $("[data-toggle='tooltip']").tooltip();
+        $('#p-info-Tabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
     });
 </script>
 </body>
