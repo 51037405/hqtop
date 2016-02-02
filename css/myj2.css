@@ -4082,7 +4082,7 @@ a.aBtn:hover {
 
 /*img*/
 .img-kong {
-    background: url(../img/kong.png) repeat-x;
+    background: url(../images/kong.png) repeat-x;
     display: block;
 }
 
@@ -4512,7 +4512,7 @@ a.aBtn:hover {
 }
 
 .img-kong {
-    background: url(../img/kong.png) repeat-x;
+    background: url(../images/kong.png) repeat-x;
     display: block;
 }
 
@@ -5892,25 +5892,25 @@ span.epopover {
     border-radius: 4px;
 }
 
-.myj-content-content table {
+.jibenxinxi table {
     width: 95%;
     font-size: 13px;
 }
 
-.myj-content-content table.myj-table {
+.jibenxinxi table.myj-table {
     margin-bottom: 0;
 }
 
-.myj-content-content table tr td {
+.jibenxinxi table tr td {
     padding: 5px;
 }
 
-.myj-content-content table tr td:nth-child(1) {
-    width: 11%;
+.jibenxinxi table tr td:nth-child(1) {
+    width: 15%;
     font-weight: 600;
 }
 
-.myj-content-content table tr td:nth-child(2) {
+.jibenxinxi table tr td:nth-child(2) {
     width: 90%;
 }
 
@@ -5918,7 +5918,7 @@ span.epopover {
     color: #933;
 }
 
-.myj-content-content table tr td.productAttribute {
+.jibenxinxi table tr td.productAttribute {
     background-color: #F6F6F5;
     padding: 10px 15px;
     text-align: left;
@@ -5929,7 +5929,7 @@ span.epopover {
     padding-right: 0;
 }
 
-.myj-content-content table tr td input[type="text"] {
+.jibenxinxi table tr td input[type="text"] {
     border-radius: 4px;
     border: 1px solid #ccc;
     padding: 6px 12px;
@@ -5937,38 +5937,38 @@ span.epopover {
     height: 34px;
 }
 
-.myj-content-content table tr td .productTitleDiv .productTitle {
+.jibenxinxi table tr td .productTitleDiv .productTitle {
     padding-right: 50px;
 }
 
-.myj-content-content table tr td .productTitleDiv .glyphicon-text-size {
+.jibenxinxi table tr td .productTitleDiv .glyphicon-text-size {
     position: absolute;
     top: 11px;
     right: 10px;
 }
 
-.myj-content-content table tr td input[type="text"]:focus {
+.jibenxinxi table tr td input[type="text"]:focus {
     border-color: #73b8ee;
     outline: 0;
     -webkit-box-shadow: 0 0 8px #73B8EE;
     box-shadow: 0 0 8px #73B8EE;
 }
 
-.myj-content-content table tr td select:focus {
+.jibenxinxi table tr td select:focus {
     border-color: #73b8ee;
     outline: 0;
     -webkit-box-shadow: 0 0 8px #73B8EE;
     box-shadow: 0 0 8px #73B8EE;
 }
 
-.myj-content-content table tr td.iptAndSpan input {
-    width: 87%;
+.jibenxinxi table tr td.iptAndSpan input {
+    width: 80%;
     float: left;
     border-radius: 4px 0 0 4px;
 }
 
-.myj-content-content table tr td.iptAndSpan span {
-    width: 13%;
+.jibenxinxi table tr td.iptAndSpan span {
+    width: 20%;
     float: left;
     text-align: center;
     padding: 6px;
@@ -5980,20 +5980,20 @@ span.epopover {
     border-left: none;
 }
 
-.myj-content-content table tr td input.smInput {
+.jibenxinxi table tr td input.smInput {
     width: 95px;
 }
 
-.myj-content-content table tr td input.smsmInput {
+.jibenxinxi table tr td input.smsmInput {
     width: 72px;
 }
 
-.myj-content-content table tr td input[type="checkbox"], .myj-content-content table tr td input[type="radio"] {
+.jibenxinxi table tr td input[type="checkbox"], .myj-content-content table tr td input[type="radio"] {
     position: relative;
     top: 2px;
 }
 
-.myj-content-content table tr td select {
+.jibenxinxi table tr td select {
     width: 180px;
     border-radius: 4px;
     padding: 6px;
@@ -6025,62 +6025,62 @@ span.epopover {
     height: 40px;
 }
 
-.myj-content-content #productAttribute table {
+.jibenxinxi #productAttribute table {
     width: 100%
 }
 
-.myj-content-content #productAttribute table tr td {
+.jibenxinxi #productAttribute table tr td {
     vertical-align: top;
 }
 
-.myj-content-content #productAttribute table tr td input[type="text"] {
+.jibenxinxi #productAttribute table tr td input[type="text"] {
     width: 179px;
     padding: 0 6px;
     height: 24px;
 }
 
-.myj-content-content #productAttribute table tr td select {
+.jibenxinxi #productAttribute table tr td select {
     padding: 0 6px;
     height: 24px;
 }
 
-.myj-content-content #productAttribute table tr td:nth-child(1) {
+.jibenxinxi #productAttribute table tr td:nth-child(1) {
     width: 15%;
     text-align: right;
     padding-top: 8px;
 }
 
-.myj-content-content #productAttribute table tr td:nth-child(2) {
+.jibenxinxi #productAttribute table tr td:nth-child(2) {
     width: 85%;
 }
 
-.myj-content-content #skuAttribute table {
+.jibenxinxi #skuAttribute table {
     width: 100%
 }
 
-.myj-content-content #skuAttribute table tr td {
+.jibenxinxi #skuAttribute table tr td {
     vertical-align: top;
 }
 
-.myj-content-content #skuAttribute table tr td input[type="text"] {
+.jibenxinxi #skuAttribute table tr td input[type="text"] {
     width: 179px;
     padding: 0 6px;
     height: 24px;
 }
 
-.myj-content-content #skuAttribute table tr td select {
+.jibenxinxi #skuAttribute table tr td select {
     padding: 0 6px;
     height: 24px;
 }
 
-.myj-content-content #skuAttribute table tr td:nth-child(1) {
+.jibenxinxi #skuAttribute table tr td:nth-child(1) {
     width: 10%;
     padding-top: 8px;
     text-align: right;
     padding-right: 20px;
 }
 
-.myj-content-content #skuAttribute table tr td:nth-child(2) {
+.jibenxinxi #skuAttribute table tr td:nth-child(2) {
     width: 90%;
 }
 
@@ -6092,72 +6092,72 @@ span.epopover {
     width: auto;
 }
 
-.myj-content-content #skuAttribute .colorsImg table {
+.jibenxinxi #skuAttribute .colorsImg table {
     width: 90%
 }
 
-.myj-content-content #skuAttribute .colorsImg table.otherColorImgList {
+.jibenxinxi #skuAttribute .colorsImg table.otherColorImgList {
     width: 30%;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td {
+.jibenxinxi #skuAttribute .colorsImg table tr td {
     vertical-align: middle;
     padding: 5px;
     height: 64px;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td:nth-child(1) {
+.jibenxinxi #skuAttribute .colorsImg table tr td:nth-child(1) {
     width: 15%;
     text-align: center;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td:nth-child(2) {
+.jibenxinxi #skuAttribute .colorsImg table tr td:nth-child(2) {
     width: 15%;
     text-align: center;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td:nth-child(2) input {
+.jibenxinxi #skuAttribute .colorsImg table tr td:nth-child(2) input {
     padding: 6px 12px;;
     line-height: 1.42857143;
     height: 34px;
     width: 118px;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td.imgTd {
+.jibenxinxi #skuAttribute .colorsImg table tr td.imgTd {
     width: auto;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td.imgTd div:nth-child(1) {
+.jibenxinxi #skuAttribute .colorsImg table tr td.imgTd div:nth-child(1) {
     height: 80px;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td.imgTd div:nth-child(1) div.imgDivOut {
+.jibenxinxi #skuAttribute .colorsImg table tr td.imgTd div:nth-child(1) div.imgDivOut {
     width: 60px;
     height: 80px;
     text-align: center;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td.imgTd div:nth-child(1) div.imgDivIn {
+.jibenxinxi #skuAttribute .colorsImg table tr td.imgTd div:nth-child(1) div.imgDivIn {
     width: 60px;
     height: 60px;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td.imgTd div:nth-child(2) {
+.jibenxinxi #skuAttribute .colorsImg table tr td.imgTd div:nth-child(2) {
     padding-top: 15px;
 }
 
-.myj-content-content #skuAttribute .colorsImg table tr td.imgTd .glyphicon {
+.jibenxinxi #skuAttribute .colorsImg table tr td.imgTd .glyphicon {
     left: 33px;
     top: -6px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.myj-content-content #skuVariantList tr td:nth-child(1) {
+.jibenxinxi #skuVariantList tr td:nth-child(1) {
     font-weight: 400;
 }
 
-.myj-content-content #skuVariantList tr:nth-child(1) td {
+.jibenxinxi #skuVariantList tr:nth-child(1) td {
     background-color: #eee;
     font-weight: 600;
 }

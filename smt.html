@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="css/headtop2.css" />
     <link rel="stylesheet" href="css/ctrl.css" />
     <link rel="stylesheet" href="css/fancySelect.css" />
+    <!--kindeditor-->
+    <link rel="stylesheet" href="kindeditor-4.1.10/themes/default/default.css" />
+    <link rel="stylesheet" href="kindeditor-4.1.10/themes/simple/simple.css" />
+    <link rel="stylesheet" href="kindeditor-4.1.10/kindeditorEdit.css" />
+    <script charset="utf-8" src="kindeditor-4.1.10/kindeditor-min.js"></script>
+    <script charset="utf-8" src="kindeditor-4.1.10/lang/zh_CN.js"></script>
+    <script charset="utf-8" src="kindeditor-4.1.10/kindeditorEdit.js"></script>
+
 </head>
 <body>
 <!--body-->
@@ -124,7 +132,1046 @@
     </div>
     <div class="g-mn1">
         <div class="g-mn1c container-fluid">
+            <!--body-->
+            <div class="col-xs-12">
+                <!--产品基本信息-->
+                <div class="col-xs-12">
+                    <!--基本信息-->
+                    <div class="col-xs-12 ">
+                        <ul id="p-info-Tabs" class="nav nav-pills mLeft10">
+                            <li role="presentation" class="active"><a href="#p-wish">产品信息</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content col-xs-12">
+                        <div  role="tabpanel" id="p-wish" class="tab-pane active">
+                            <div class="col-xs-12 jibenxinxi">
+                                <div class="col-xs-12 mTop20">
+                                    <table>
+                                        <tr>
+                                            <td class="text-right"><span class="fRed">*</span> 店铺：</td>
+                                            <td>
+                                                <select id="shopId" name="shopId" onchange="selectShop();">
 
+                                                    <option value="">---- 请选择店铺 ----</option>
+
+
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-right">来源URL：</td>
+                                            <td class="iptAndSpan">
+                                                <input type="text" class="form-control" id="sourceUrl" name="sourceUrl" value="" placeholder="可接受，供货源、供货渠道URL等。该字段由店小秘系统提供，不会在速卖通平台生效！"/>
+                                                <div style="font-size:13px;"><a href="javascript:;" onclick="goSourceUrl();"><span>访问来源URL</span></a></div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="text-right"><span class="fRed">*</span> 产品分类：</td>
+                                            <td>
+                                                <select id="categoryHistoryId" name="categoryHistoryId" class="mRight10" onchange="selectHistoryCategory(this);">
+                                                    <option value="">---- 请选择分类 ----</option>
+                                                </select>
+                                                <button type="button" class="w120 btn btn-warning categoryModalShow">选择分类</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <span class="category">未选择分类</span>
+                                                <input type="hidden" name="categoryId" id="categoryId"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="myj-hide">
+                                            <td></td>
+                                            <td class="category"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right" style="vertical-align:top;padding-top:10px;">产品属性：</td>
+                                            <td class="productAttribute">
+                                                <div id="productAttribute"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right" style="vertical-align:top;padding-top:10px;">自定义属性：</td>
+                                            <td id="otherAttr" style="background-color:#F6F6F5;padding-left:10px;padding-bottom:10px;">
+                                                <button type="button" class="btn btn-warning" onclick="userSetAttr(this);">添加自定义属性</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><span class="fRed">*</span> 产品标题：</td>
+                                            <td>
+                                                <div class="productTitleDiv" style="position:relative;">
+                                                    <input type="text" class="form-control productTitle" id="subject" name="subject" value="" placeholder=""/>
+                                                    <a href="javascript:;" class="glyphicon glyphicon-text-size productTitTextSize" data-toggle="tooltip" data-placement="top" title="把单词首字母转为大写（点击生效）"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"></td>
+                                            <td  data-names="subjectNum">
+                                                <span class="fColor2">您还可以输入<span class="fBlue" data-names="subjectNum">128</span>个字符</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right">产品分组：</td>
+                                            <td>
+                                                <span id="groupIdSpan" style="position:relative;top:1px;">未选择分组</span>
+                                                <input type="hidden" id="groupId" value="" name="groupId"/>
+                                                <input type="hidden" id="groupIds" value="" name="groupIds"/>
+                                                <input id="fullCid" data-id="" type="button" class="w120 btn btn-warning mLeft10" readonly="true" value="选择分组" onclick="chooseProductGroup(); return false;"><!--id已改,样式问题待改-->
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"></td>
+                                            <td class="fRed" id="keywordError">
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><span class="fRed">*</span> 产品图片：</td>
+                                            <td>
+                                                <div id="upload" class="pull-left w180"></div>
+                                                <div id="upload2" class="pull-left w180 myj-hide"></div>
+                                                <div class="mLeft10 pull-left w180">
+                                                    <button type="button" class="btn btn-warning btn-block "  data-toggle="modal" data-target="#imgModal">从网络地址(URL)选择图片</button></div>
+                                                <div class="mLeft10 pull-left w180">
+                                                    <button type="button" class="col-xs-4 btn btn-warning btn-block " onclick="showImgSpaceFrame();">从图片空间选择图片</button></div>
+                                                <button type="button" class="btn btn-warning mLeft10" onclick="showPhotoBankFrame();">图片银行（速卖通）</button>
+                                                <!--button type="button" class="btn btn-warning pull-right">水印设置</button-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+
+                                                <div class="" id="img_num">
+                                                    <div class="col-xs-12 p0">
+                                                        <div class="col-xs-12 p0 mTop5">
+                                                            <span class="fWhite bgColorJ pLeft10 pRight5">说明！</span>
+                                                            <span class="fColor2">点击图片拖动，即可调整图片顺序！</span>
+                                                            <span class="fColor2 mLeft10">「主图最多选用<span id="maxImgNum" class="fRed">6</span>张，已经选用了<span id="curImgNum" class="fGreen">0</span>张」</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="" id="img_show">
+                                                    <ul class="myj-drop pull-left" id="myj-drop" style="margin-left:-5px;">
+                                                    </ul>
+                                                    <div class="kongImgDivOut" id="img-kong" style="margin-left:0;">
+                                                        <div style="height:10px;"></div>
+                                                        <div class="kongImgDivIn img-kong"></div>
+                                                        <div class="h20"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><span class="fRed">*</span> 计件单位：</td>
+                                            <td>
+                                                <div>
+                                                    <select class="mRight10" id="productUnit" name="productUnit" onchange="selectCurUnit(this.value)">
+
+                                                        <option  value="100000000" ch="袋 ">袋 (bag/bags)</option>
+
+                                                        <option  value="100000001" ch="桶 ">桶 (barrel/barrels)</option>
+
+                                                        <option  value="100000002" ch="蒲式耳 ">蒲式耳 (bushel/bushels)</option>
+
+                                                        <option  value="100078580" ch="箱 ">箱 (carton)</option>
+
+                                                        <option  value="100078581" ch="厘米 ">厘米 (centimeter)</option>
+
+                                                        <option  value="100000003" ch="立方米 ">立方米 (cubic meter)</option>
+
+                                                        <option  value="100000004" ch="打 ">打 (dozen)</option>
+
+                                                        <option  value="100078584" ch="英尺 ">英尺 (feet)</option>
+
+                                                        <option  value="100000005" ch="加仑 ">加仑 (gallon)</option>
+
+                                                        <option  value="100000006" ch="克 ">克 (gram)</option>
+
+                                                        <option  value="100078587" ch="英寸 ">英寸 (inch)</option>
+
+                                                        <option  value="100000007" ch="千克 ">千克 (kilogram)</option>
+
+                                                        <option  value="100078589" ch="千升 ">千升 (kiloliter)</option>
+
+                                                        <option  value="100000008" ch="千米 ">千米 (kilometer)</option>
+
+                                                        <option  value="100078559" ch="升 ">升 (liter/liters)</option>
+
+                                                        <option  value="100000009" ch="英吨 ">英吨 (long ton)</option>
+
+                                                        <option  value="100000010" ch="米 ">米 (meter)</option>
+
+                                                        <option  value="100000011" ch="公吨 ">公吨 (metric ton)</option>
+
+                                                        <option  value="100078560" ch="毫克 ">毫克 (milligram)</option>
+
+                                                        <option  value="100078596" ch="毫升 ">毫升 (milliliter)</option>
+
+                                                        <option  value="100078597" ch="毫米 ">毫米 (millimeter)</option>
+
+                                                        <option  value="100000012" ch="盎司 ">盎司 (ounce)</option>
+
+                                                        <option  value="100000014" ch="包 ">包 (pack/packs)</option>
+
+                                                        <option  value="100000013" ch="双 ">双 (pair)</option>
+
+                                                        <option selected value="100000015" ch="件/个 ">件/个 (piece/pieces)</option>
+
+                                                        <option  value="100000016" ch="磅 ">磅 (pound)</option>
+
+                                                        <option  value="100078603" ch="夸脱 ">夸脱 (quart)</option>
+
+                                                        <option  value="100000017" ch="套 ">套 (set/sets)</option>
+
+                                                        <option  value="100000018" ch="美吨 ">美吨 (short ton)</option>
+
+                                                        <option  value="100078606" ch="平方英尺 ">平方英尺 (square feet)</option>
+
+                                                        <option  value="100078607" ch="平方英寸 ">平方英寸 (square inch)</option>
+
+                                                        <option  value="100000019" ch="平方米 ">平方米 (square meter)</option>
+
+                                                        <option  value="100078609" ch="平方码 ">平方码 (square yard)</option>
+
+                                                        <option  value="100000020" ch="吨 ">吨 (ton)</option>
+
+                                                        <option  value="100078558" ch="码 ">码 (yard/yards)</option>
+
+                                                    </select> 销售方式：
+                                                    <label>
+                                                        <input type="checkbox" id="packageType" name="packageType" value="0" onclick="checkPackageType();"/>（打包出售）
+                                                    </label>
+                                                    <span class="packageTypeHide myj-hide">每包</span>
+                                                    <input class="packageTypeHide myj-hide" type="text" name="lotNum" id="lotNum" value="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                                    <span class="packageTypeHide myj-hide chUnit packageTypeUnit">件/个</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <input type="hidden" id="skuImgId" value=""/>
+                                                <div id="skuAttribute">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div id="priceAndStockA">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="text-right"><span class="fRed">*</span> 零售价：</td>
+                                                            <td>
+                                                                <input type="text"  value="" name="skuPrice" id="skuPrice" placeholder="按美元计算" onkeyup="value=value.replace(/[^0-9.]/g,'');"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-right"><span class="fRed">*</span> 库存：</td>
+                                                            <td>
+                                                                <input type="text"  value="" name="ipmSkuStock" id="ipmSkuStock" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-right">商品编码：</td>
+                                                            <td>
+                                                                <input type="text" name="skuCode" id="skuCode" onkeyup="replaceSkuCode(this);" maxlength="20"/>
+                                                                <span class="fRed"></span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div id="priceAndStockB" style="display:none;">
+                                                    批量设置零售价：
+                                                    <input type="text" class="smInput mRight10" value="" name="" id="batchSkuPrice" placeholder="按美元计算" onkeyup="value=value.replace(/[^0-9.]/g,'');"/>
+                                                    <button class="btn btn-warning" onclick="setSkuPrice()">确定</button>
+                                                    批量设置库存：
+                                                    <input type="text" class="smInput mRight10" value="" name="" id="batchSkuStock" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                                    <button class="btn btn-warning mRight10" onclick="setSkuStock()">确定</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div id="skuVariantList">
+                                                    <table class="myj-table">
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id="sizeChartTr">
+                                            <td class="text-right"> 尺码表：</td>
+                                            <td>
+                                                <div>
+                                                    <select id="sizechartId" name="sizechartId" class="mRight10">
+                                                        <option value="">---- 请选择尺码模板 ----</option>
+                                                    </select>
+                                                    <a href="javascript:;" onclick="syncSizeChart()">同步</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="height:40px;font-weight:600;text-align:right;padding-right:17px;padding-top:0;">
+                                                <label><input type="checkbox" name="wholeSale" id="wholeSale" value="0" onclick="checkWholeSale();"> <span style="font-weight:600;">批发</span></label>
+                                            </td>
+                                            <td style="padding-top:0;">
+							<span class="wholeSaleHide myj-hide">
+							购买
+							<input type="text" class="smsmInput" value=""
+                                   name="bulkOrder" id="bulkOrder" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+							<span class="chUnit">件/个</span>以上时减免
+							<input type="text" class="smsmInput" value=""
+                                   name="bulkDiscount" id="bulkDiscount" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+							%，即<span data-names="bulkDiscount">--</span>折
+							</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right">库存扣减方式：</td>
+                                            <td>
+                                                <div>
+                                                    <label>
+                                                        <input type="radio" name="reduceStrategy" value="payment_success_deduct" checked/>付款减库存
+                                                    </label>
+                                                    <label class="mRight10">
+                                                        <input type="radio" name="reduceStrategy" value="place_order_withhold"/>下单减库存
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><span class="fRed">*</span> 发货期：</td>
+                                            <td>
+                                                <div>
+                                                    <input class="mRight20 smInput" type="text"
+                                                           id="deliveryTime" name="deliveryTime" value="7" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                                    <a style="margin-right: 30px;" target="_blank" href="http://seller.aliexpress.com/notices/article-1983.html?tracelog=sellernotice07">平台卖家发货期调整通知</a>
+                                                    有效期：
+                                                    <label class="mRight10">
+                                                        <input type="radio" name="wsValidNum" value="14"/>14天
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="wsValidNum" value="30" checked/>30天
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><span class="fRed">*</span> 产品描述：<!-- <input type="button" onclick="batchChoicePic();" name="picBtn" value="批量传图"/> --> </td>
+                                            <td class="fColor2">详细描述一般包含产品功能属性、产品细节图片、支付物流、售后服务、公司实力等内容。</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div>
+								<textarea id="myj-editor" name="content" style="width:100%;height:100%;">
+								</textarea>
+                                                </div>
+                                                <div id="cacheDiv" style="display:none;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div id="detailError" class="fRed">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--产品基本信息end-->
+
+                <!--包装信息-->
+                <div class="col-xs-12 mTop50" module-type="package">
+                    <div class="col-xs-12 ">
+                        <div class="jibenxinxi">
+                            <div class="text-center divBiaoqian fColor2">
+                                <span><b>包装信息</b></span>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td class="text-right"><span class="fRed">*</span> 包装后重量：</td>
+                                    <td>
+                                        <div>
+                                            <input class="mRight20 smsmInput" type="text"
+                                                   id="grossWeight" name="grossWeight" value="" placeholder="" onkeyup="value=value.replace(/[^0-9.]/g,'');"/>
+                                            （公斤/<span class="chUnit">件/个</span>）
+                                            <label class="mRight10">
+                                                <input type="checkbox" id="isPackSell" name="isPackSell" value="0" onclick="checkIsPackSell();"/>自定义计重
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="isPackSellHide myj-hide">
+                                    <td class="text-right"></td>
+                                    <td>
+                                        <div>
+                                            买家购买
+                                            <input class="smsmInput" type="text"
+                                                   id="baseUnit" name="baseUnit" value="" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                            <span class="chUnit">件/个</span>以内，不增加运费
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="isPackSellHide myj-hide">
+                                    <td class="text-right"></td>
+                                    <td>
+                                        <div>
+                                            每多购买
+                                            <input class="smsmInput" type="text"
+                                                   id="addUnit" name="addUnit" value="" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                            <span class="chUnit">件/个</span>，增加
+                                            <input class="smsmInput" type="text"
+                                                   id="addWeight" name="addWeight" value="" placeholder="" onkeyup="value=value.replace(/[^0-9.]/g,'');"/>
+                                            kg
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right"><span class="fRed">*</span> 包装后尺寸：</td>
+                                    <td>
+                                        <div data-names="volume">
+                                            <input class="smsmInput mRight10" type="text"
+                                                   id="packageLength" name="packageLength" value="" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                            X
+                                            <input class="smsmInput mLeft10 mRight10" type="text"
+                                                   id="packageWidth" name="packageWidth" value="" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                            X
+                                            <input class="smsmInput mLeft10" type="text"
+                                                   id="packageHeight" name="packageHeight" value="" placeholder="" onkeyup="value=value.replace(/[^0-9]/g,'');"/>
+                                            （单位：厘米，每<span class="chUnit">件/个</span> <span class="fRed" data-names="volume">0</span> cm<sup>3</sup>）
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--包装信息end-->
+
+                <!--模板信息-->
+                <div class="col-xs-12 mTop50" module-type="template">
+                    <div class="col-xs-12 ">
+                        <div class="jibenxinxi">
+                            <div class="text-center divBiaoqian fColor2">
+                                <span><b>模板信息</b></span>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td class="text-right"><span class="fRed">*</span> 运费模板：</td>
+                                    <td>
+                                        <div>
+                                            <select id="freightTemplateId" name="freightTemplateId" class="mRight10">
+                                                <option value="">---- 请选择运费模板 ----</option>
+                                            </select>
+                                            <a href="javascript:;" onclick="downloadFreightTemplate()">同步</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right"><span class="fRed">*</span> 服务模板：</td>
+                                    <td>
+                                        <div>
+                                            <select id="promiseTemplateId" name="promiseTemplateId" class="mRight10">
+                                                <option value="">---- 请选择服务模板 ----</option>
+                                            </select>
+                                            <a href="javascript:;" onclick="downloadPromiseTemplate()">同步</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="detailHtml" class="myj-hide"></div>
+                <div id="uploadImgInputDiv" class="myj-hide"></div>
+                <!--模板信息end-->
+
+                <!--底部btn组-->
+                <div class="mTop10 col-xs-12 ">
+                    <div class="col-xs-12">
+                        <div class="col-xs-12 p0 mTop10 myj-content-tabDiv">
+                            <input type="hidden" id="productId" value=""/>
+                            <button type="button" class="btn btn-warning pull-right mBottom10" onclick="save(2);">保存并发布</button>
+
+
+                            <button type="button" class="btn btn-warning pull-right mRight10 mBottom10" onclick="save(1);">保存</button>
+
+
+                            <div class="pull-right p0 mRight10 dropdown">
+                                <button class="btn btn-warning btn-block" type="button" id="dropdownMenuImport" data-toggle="dropdown">
+                                    引用产品<span class="caret"></span>
+                                </button>
+                                <ul id='batchUl' class='dropdown-menu' role='menu' aria-labelledby='dropdownMenuImport'>
+                                    <li role='presentation' ><a role='menuitem' tabindex='-1' href='javascript:void(0);' sxz='batchPublish' onclick='used();'>引用现有产品</a></li>
+                                    <li role="separator" class="divider" style="margin:5px 0;"></li>
+                                    <li role='presentation' ><a role='menuitem' tabindex='-1' href='javascript:void(0);' sxz='batchPublish' onclick='showProductModule();'>引用产品模板</a></li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-warning pull-right mRight10 mBottom10" onclick="keyTranslate();">一键翻译</button>
+                        </div>
+                    </div>
+                </div>
+                <!--底部btn组end-->
+
+            </div>
+            <!-- 选择分类模态层 -->
+            <div class="modal" id="categoryChoose" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+
+                <!-- 选择分类 -->
+                <div class="modal-dialog" style="width:1100px;margin-top:60px;">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">选择分类</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content" style="padding-left:20px;padding-right:20px;">
+                            <div style="height:34px;">
+                                <span class="categoryChooseCrumbs"><span data-level="1">未选择分类</span><span data-level="2"></span><span data-level="3"></span><span data-level="4"></span></span>
+                                <!--button type="button" class="btn btn-primary pull-right">同步</button-->
+                            </div>
+                            <div class="categoryChooseOutDiv">
+                                <div class="pull-left categoryChooseInDiv" data-level="1" style="display: block;"><div class="categoryDiv bgColor5"><span class="categoryNames" categoryid="3" title="服装/服饰配件(Apparel &amp; Accessories)">服装/服饰配件</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="34" title="汽车、摩托车(Automobiles &amp; Motorcycles)">汽车、摩托车</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="66" title="美容健康(Beauty &amp; Health)">美容健康</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="7" title="电脑和办公(Computer &amp; Office)">电脑和办公</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="13" title="建筑(Construction &amp; Real Estate)">建筑</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="44" title="消费电子(Consumer Electronics)">消费电子</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="100008578" title="定制化产品(Customized Products)">定制化产品</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="5" title="电气设备和产品(Electrical Equipment &amp; Supplies)">电气设备和产品</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="502" title="电子元器件(Electronic Components &amp; Supplies)">电子元器件</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="2" title="食品(Food)">食品</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="1503" title="家具和室内装饰品(Furniture)">家具和室内装饰品</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200003655" title="假发及周边(Hair &amp; Accessories)">假发及周边</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="42" title="五金(Hardware)">五金</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="15" title="家居用品(Home &amp; Garden)">家居用品</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="6" title="家用电器(Home Appliances)">家用电器</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200001996" title="工业/原材料/商业用品(Industry &amp; Business)">工业/原材料/商业用品</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="36" title="珠宝手表(Jewelry &amp; Watch)">珠宝手表</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="1501" title="孕婴童(Mother &amp; Kids)">孕婴童</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="39" title="照明灯饰(Lights &amp; Lighting)">照明灯饰</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="1524" title="箱包(Luggage &amp; Bags)">箱包</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="21" title="办公文教用品(Office &amp; School Supplies)">办公文教用品</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="509" title="电话和通讯(Phones &amp; Telecommunications)">电话和通讯</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="30" title="安全防护(Security &amp; Protection)">安全防护</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="322" title="鞋子(Shoes)">鞋子</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200001075" title="其他特殊类(Special Category)">其他特殊类</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="18" title="运动及娱乐(Sports &amp; Entertainment)">运动及娱乐</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="1420" title="工具(Tools)">工具</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="26" title="玩具(Toys &amp; Hobbies)">玩具</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200003498" title="旅游及度假(Travel and Vacations)">旅游及度假</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="320" title="婚礼及重要场合(Weddings &amp; Events)">婚礼及重要场合</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200004360" title="俄罗斯当地图书销售(Books for Local Russian)">俄罗斯当地图书销售</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div></div>
+                                <div class="pull-left categoryChooseInDiv" data-level="2" style="display: block;"><div class="categoryDiv bgColor5"><span class="categoryNames" categoryid="200000297" title="服饰配饰（男/女/儿童配件，婴儿配饰发到婴儿服装）(Apparel Accessories)">服饰配饰（男/女/儿童配件，婴儿配饰发到婴儿服装）</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000663" title="扮演服及配件（不要发布情趣制服）(Costumes &amp; Accessories)">扮演服及配件（不要发布情趣制服）</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000343" title="男装(Men's Clothing)">男装</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000532" title="新奇特及特殊用途服装(Novelty &amp; Special Use)">新奇特及特殊用途服装</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="335" title="其它服装(Other Apparel)">其它服装</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000345" title="女装(Women's Clothing)">女装</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000666" title="世界民族服装(World Apparel)">世界民族服装</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div></div>
+                                <div class="pull-left categoryChooseInDiv" data-level="3" style="display: block;"><div class="categoryDiv"><span class="categoryNames" categoryid="200000392" title="手臂套(Arm Warmers)">手臂套</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000298" title="腰带/皮带(Belts)">腰带/皮带</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000306" title="腰封(Cummerbunds)">腰封</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000393" title="耳罩(Earmuffs)">耳罩</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv bgColor5 selectCategoryId"><span class="categoryNames" categoryid="200000440" title="眼镜及配件(Eyewear &amp; Accessories)">眼镜及配件</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000394" title="手套(Gloves &amp; Mittens)">手套</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000400" title="手帕(Handkerchiefs)">手帕</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000402" title="帽子(Hats &amp; Caps)">帽子</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="0"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000395" title="头饰（非首饰类头发饰品）(Headwear)">头饰（非首饰类头发饰品）</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="33906" title="多件套（围巾帽子手套）(Scarf, Hat &amp; Glove Sets)">多件套（围巾帽子手套）</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000399" title="围巾/披肩(Scarves &amp; Wraps)">围巾/披肩</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="3280111" title="吊裤带(Suspenders)">吊裤带</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200000305" title="领带(Ties)">领带</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div></div>
+                                <div class="pull-left categoryChooseInDiv" data-level="4" style="display: block;"><div class="categoryDiv"><span class="categoryNames" categoryid="200000442" title="眼镜链(Chains &amp; Lanyards)">眼镜链</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="361250" title="眼镜架(Eyeglasses Frames)">眼镜架</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="361260" title="眼镜片(Eyeglasses Lenses)">眼镜片</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="36127040" title="眼镜盒/眼镜袋(Eyewear Cases &amp; Bags)">眼镜盒/眼镜袋</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200002243" title="擦镜布(Lens Clothes)">擦镜布</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="361220" title="阅读镜(Reading Glasses)">阅读镜</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="33902" title="太阳镜(Sunglasses)">太阳镜</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200004016" title="眼镜防滑套(Ear Hook)">眼镜防滑套</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div><div class="categoryDiv"><span class="categoryNames" categoryid="200004015" title="（眼镜）鼻托(Nose Pads)">（眼镜）鼻托</span><span class="glyphicon glyphicon-chevron-right" data-isleaf="1" style="display:none;"></span></div></div>
+                            </div>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning selectCategory">选择</button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+                <!--选择分类end-->
+            </div>
+
+            <!-- 选择分类模态层 -->
+            <div class="modal" id="productGroupChoose" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+
+                <!-- 选择分类 -->
+                <div class="modal-dialog" style="width:400px;">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">选择分组</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content" style="padding-left:20px;padding-right:20px;padding-top:5px;">
+                            <div style="border:1px solid #ddd;border-radius:4px;width:100%;max-height:240px;overflow-y:auto;" id="treeB">
+                                <ul class="chooseTree">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" onclick="syncProductGroup();">同步分组</button>
+                            <button type="button" class="btn btn-warning" onclick="chooseGroupCheck();">选择</button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+                <!--选择分类end-->
+            </div>
+
+            <!-- 选择模板 -->
+            <div style="z-index:999999;" class="modal" id="categoryModules" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+
+                <div class="modal-dialog" style="width:600px;margin-top:100px;">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">选择产品信息模块</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content">
+                            <ul id="myTab" class="nav nav-tabs modalTitle" role="tablist">
+                                <li class="active text-center mLeft10">
+                                    <a href="#smt" role="tab" data-toggle="tab" onclick="checkSmtModule('smt-module-btn','dxm-module-btn');"><b>关联营销(速卖通)</b></a>
+                                </li>
+                                <li class="text-center">
+                                    <a href="#dxm" role="tab" data-toggle="tab" onclick="checkSmtModule('dxm-module-btn','smt-module-btn');"><b>关联营销(店小秘)</b></a>
+                                </li>
+                                <li class="text-center">
+                                    <a href="#sizeTemplate" role="tab" data-toggle="tab" onclick="showSizeTemplateModule('dxm-module-btn','smt-module-btn');"><b>尺码模板</b></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content"  id="myTabContent">
+                                <div class="tab-pane active" id="smt">
+                                    <div>
+                                        <span class="pull-left mTop8 fW600">模块名称：</span>
+                                        <form class="doNotSubmit">
+                                            <div class="input-group pull-left mBottom10" style="width:350px;">
+                                                <input type="text" class="form-control" id="moduleName" name="moduleName" placeholder="">
+									<span class="input-group-btn">
+										<button class="btn btn-warning" type="submit" style="padding:7px 12px;" onclick="selectModuleName();">搜索</button>
+									</span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div style="clear:both;">
+                                        <table class="table table-striped productModuleTable" style="border-bottom:1px solid #ddd;">
+                                            <tr>
+                                                <th>模块名称</th>
+                                                <th class="text-center">模块类型</th>
+                                                <th class="text-center">最后更新时间</th>
+                                                <th class="text-center">操作</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="dxm">
+                                    <div>
+                                        <span class="pull-left mTop8 fW600">模块名称：</span>
+                                        <form class="doNotSubmit">
+                                            <div class="input-group pull-left mBottom10" style="width:350px;">
+                                                <input type="text" class="form-control" id="dxmModuleName" name="dxmModuleName" placeholder="">
+									<span class="input-group-btn">
+										<button class="btn btn-warning" type="submit" style="padding:7px 12px;" onclick="selectDxmModuleName();">搜索</button>
+									</span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div style="clear:both;">
+                                        <table class="table table-striped dxmProductModuleTable" style="border-bottom:1px solid #ddd;">
+                                            <tr>
+                                                <th>模块名称</th>
+                                                <th class="text-center">模块类型</th>
+                                                <th class="text-center">最后更新时间</th>
+                                                <th class="text-center">操作</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="sizeTemplate">
+                                    <div>
+                                        <span class="pull-left mTop8 fW600">模板名称：</span>
+                                        <form class="doNotSubmit">
+                                            <input type="hidden" id="sizeTemplateModuleSearchType" name="sizeTemplateModuleSearchType" value="1"/>
+
+                                            <div class="input-group pull-left mBottom10" style="width:350px;">
+                                                <input id="sizeTemplateModuleSearchValue" type="text" class="form-control">
+									<span class="input-group-btn">
+										<button id="sizeTemplateModuleBtnSearch" style="padding:7px 12px;" onclick="sizeTemplateModuleSearch();" class="btn btn-warning">搜索</button>
+									</span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--content-->
+                                    <div style="clear:both;">
+                                        <div id="sizeTemplateModulePageList" style="overflow-y: auto; max-height: 400px;">数据载中...</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning smt-module-btn" onclick="syncProductModual();">同步产品信息模块</button>
+                            <button type="button" class="btn btn-warning smt-module-btn" onclick="insertInfoModule();">选择</button>
+                            <button type="button" class="btn btn-warning dxm-module-btn myj-hide" onclick="insertInfoDxmModule();">选择</button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+                <!--选择模板end-->
+            </div>
+            <!-- 选择模板模态层end -->
+
+            <!-- SMT商品编码模态层 -->
+            <div class="modal" id="smtProductCodeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog" style="width:314px;">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header" style="padding:7px 15px;">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabelCode">商品编码</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content p10" style="height:100px;padding-top:20px;">
+                            <input type="text" id="smtProductCode" name="smtProductCode" onkeyup="replaceSkuCode(this);" placeholder="编码前缀" style="height:31px;padding:6px 15px;border-radius:4px;border:1px solid #ddd;"/>
+                            <button type="button" class="btn btn-warning" onclick="setSkuCode()">设置</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SMT商品编码模态层end -->
+
+            <!-- 返回消息提醒模态层 -->
+            <div class="modal" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">消息提示</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content">
+                            <div class="mTop10">
+                                <p id="msgText"></p>
+                                <!--
+                                    <p><a target="_blank" href="product/index.htm">立即查看</a></p>
+                                 -->
+                            </div>
+                        </div>
+                        <!--modalFoot-->
+                        <div id="msgButton" class="modal-footer">
+                            <button id="msgBtnDel" type="button" class="btn btn-warning" data-dismiss="modal">关闭</button>
+                            <button id="msgBtnAdd" type="button" class="btn btn-warning" onclick="window.location.href='smtProduct/add.htm'">添加其他产品</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--分类menu-->
+            <div id="menuContent" class="menuContent" style="display:none; position: absolute;top:0px;left:0px">
+                <ul id="treeCategory" class="ztree" style="margin-top:0; width:160px;"></ul>
+            </div>
+            <!--分类menu-->
+
+            <!-- 选择图片模态层 -->
+            <div class="modal" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <!-- URL -->
+                <div class="modal-dialog">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">从网络地址(URL)选择图片</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content">
+                            <div class="mTop10">
+                                <textarea id="netImgUrl" class="form-control" rows="9" placeholder="请填写图片URL地址，多个地址用回车换行"></textarea>
+                            </div>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" onclick="downImgFromUrl();">添加</button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+                <!--URLend-->
+            </div>
+            <!-- 选择图片模态层end -->
+
+            <!-- 选择图片模态层 sku图片-->
+            <div class="modal" id="imgModal2" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <!-- URL -->
+                <div class="modal-dialog">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel2">从网络地址(URL)选择图片</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content">
+                            <div class="mTop10">
+                                <textarea id="netImgUrl2" class="form-control" rows="9" placeholder="请填写图片URL地址"></textarea>
+                            </div>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer">
+                            <input type="hidden" id="skuPropertyCid" name="skuPropertyCid"/>
+                            <button type="button" class="btn btn-warning" onclick="downImgFromUrl2();">添加</button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+                <!--URLend-->
+            </div>
+            <!-- 选择图片模态层end -->
+
+            <!-- 管理分类 -->
+            <div class="modal" id="goodsCategory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-sm goodsModalTop">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h3 class="modal-title">管理分类</h3>
+                        </div>
+                        <div class="modal-body">
+                            <ul id="categoryTreeB" class="ztree"></ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="cateBtn" type="button" class="btn btn-warning" data-dismiss="modal">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 管理分类end -->
+
+            <!-- 从图片空间选择模态层 -->
+            <div class="modal" id="selectImgFromSpace" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+
+                <!-- URL -->
+                <div class="modal-dialog modal-lg" style="min-width:1100px;margin-top:10px;">
+                    <div class="modal-content bs-example bs-example-tabs  col-xs-12 p0">
+                        <!--modalHead-->
+                        <div class="modal-header col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">从图片空间选择</h4>
+                        </div>
+                        <!--conter-->
+                        <div id="selectImgContent" class="modal-body tab-content col-xs-12 pTop0" style="width:1165px;">
+                            <iframe id="myFrame" src="" style="width:95%;height:70%;" scrolling="auto" frameborder="0"></iframe>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer col-xs-12">
+                            <button type="button" class="btn btn-warning" onclick="showSelectImgFromSpace();">确定</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+                <!--URLend-->
+            </div>
+            <!-- 从图片空间选择模态层end -->
+
+            <!-- 从图片空间选择模态层 -->
+            <div style="z-index:999999;" class="modal" id="selectImgFromSpace2" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+
+                <!-- URL -->
+                <div class="modal-dialog modal-lg" style="min-width:1100px;margin-top:10px;">
+                    <div class="modal-content bs-example bs-example-tabs  col-xs-12 p0">
+                        <!--modalHead-->
+                        <div class="modal-header col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel2">从图片空间选择</h4>
+                        </div>
+                        <!--conter-->
+                        <div id="selectImgContent2" class="modal-body tab-content col-xs-12 pTop0" style="width:1165px;">
+                            <iframe id="myFrame2" src="" style="width:95%;height:70%;" scrolling="auto" frameborder="0"></iframe>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer col-xs-12">
+                            <button type="button" class="btn btn-warning" onclick="showSelectImgFromSpace2();">确定</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+                <!--URLend-->
+            </div>
+            <!-- 从图片空间选择模态层end -->
+
+            <!-- 从图片银行选择模态层 -->
+            <div class="modal" id="selectImgFromPhotoBank" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+
+                <!-- URL -->
+                <div class="modal-dialog modal-lg" style="min-width:1100px;margin-top:10px;">
+                    <div class="modal-content bs-example bs-example-tabs  col-xs-12 p0">
+                        <!--modalHead-->
+                        <div class="modal-header col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel3">从图片银行选择</h4>
+                        </div>
+                        <!--conter-->
+                        <div id="selectImgContent3" class="modal-body tab-content col-xs-12 pTop0" style="width:1165px;">
+                            <iframe id="photoBankFrame" src="" style="width:95%;height:70%;" scrolling="auto" frameborder="0"></iframe>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer col-xs-12">
+                            <button type="button" class="btn btn-warning" onclick="showSelectImgFromPhotoBank();">确定</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+                <!--URLend-->
+            </div>
+            <!-- 从图片银行选择模态层end -->
+
+            <!-- 从图片银行选择模态层 -->
+            <div style="z-index:999999;" class="modal" id="selectImgFromPhotoBank2" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+
+                <!-- URL -->
+                <div class="modal-dialog modal-lg" style="min-width:1100px;margin-top:10px;">
+                    <div class="modal-content bs-example bs-example-tabs  col-xs-12 p0">
+                        <!--modalHead-->
+                        <div class="modal-header col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel4">从图片银行选择</h4>
+                        </div>
+                        <!--conter-->
+                        <div id="selectImgContent4" class="modal-body tab-content col-xs-12 pTop0" style="width:1165px;">
+                            <iframe id="photoBankFrame2" src="" style="width:95%;height:70%;" scrolling="auto" frameborder="0"></iframe>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer col-xs-12">
+                            <button type="button" class="btn btn-warning" onclick="showSelectImgFromPhotoBank2();">确定</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+                <!--URLend-->
+            </div>
+            <!-- 从图片银行选择模态层end -->
+
+
+            <!-- 引用产品模态层 -->
+            <div style="z-index:999999;" class="modal " id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog quote-modal-dialog" style="width:720px;">
+                    <div class="modal-content bs-example bs-example-tabs  col-xs-12 p0">
+                        <!--modalHead-->
+                        <div class="modal-header  col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title">引用现有产品</h4>
+                        </div>
+                        <div class="col-xs-12 p0">
+                            <div class="col-xs-12 border3 p10">
+                                <div class="col-xs-1 p0 minW140">
+                                    <select class="form-control" id="searchShop" onchange="quoteSelectShop();">
+                                        <option value="">-- 全部店铺 --</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-xs-1 minW120">
+                                    <select class="form-control" id="searchType">
+                                        <option value="0" >标题</option>
+                                        <option value="1" >商品编码</option>
+                                        <option value="2" >产品id</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-3 minW300">
+                                    <input id="searchValue" type="text" class="w250 h34">
+                                </div>
+                                <div class="col-xs-1 p0">
+                                    <button id="btnSearch" onclick="btnSearchIt();" class="btn btn-warning btn-block minW120">搜　索</button>
+                                </div>
+                                <!--
+                                <div class="col-xs-1 text-center p0 pTop6 pBottom6">
+                                    <a href="#">高级搜索</a>
+                                </div>
+                                 -->
+                            </div>
+                        </div>
+                        <!--content-->
+                        <div class="modal-body tab-content col-xs-12">
+                            <div id="pageList" style="overflow-y: auto; max-height: 400px;">
+
+                            </div>
+                            <div class="text-right pRigth10px col-xs-12 p0">
+                                <ul id="downPage" class="pageDiv" style="margin:5px 10px;"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 引用产品层end -->
+
+            <!-- 引用模板模态层 -->
+            <div style="z-index:999999;" class="modal " id="productModuleQuoteModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog quote-modal-dialog" style="width:720px;">
+                    <div class="modal-content bs-example bs-example-tabs  col-xs-12 p0">
+                        <!--modalHead-->
+                        <div class="modal-header  col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title">引用模板</h4>
+                        </div>
+                        <div class="col-xs-12 p0">
+                            <div class="col-xs-12 border3 p10">
+                                <form class="doNotSubmit">
+                                    <div class="col-xs-1 minW100" style="line-height:34px;">
+                                        <input type="hidden" id="productModuleSearchType" name="productModuleSearchType" value="1"/>
+                                        模板名称：
+                                    </div>
+                                    <div class="col-xs-3 minW300 p0">
+                                        <input id="productModuleSearchValue" type="text" class="form-control">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button id="productModuleBtnSearch" onclick="productModuleSearch();" class="btn btn-warning">搜　索</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--content-->
+                        <div class="modal-body tab-content col-xs-12">
+                            <div id="productModulePageList" style="overflow-y: auto; max-height: 400px;">
+
+                            </div>
+                            <div class="text-right pRigth10px col-xs-12 p0">
+                                <ul id="productModuleDownPage" class="pageDiv" style="margin:5px 10px;"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 引用模板层end -->
+
+
+            <!-- 确认继续发布模态层 -->
+            <div class="modal" id="confirmDelivery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content bs-example bs-example-tabs">
+                        <!--modalHead-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">保存并发布</h4>
+                        </div>
+                        <!--conter-->
+                        <div class="modal-body tab-content">
+                            <div class="col-xs-12 mTop10 mBottom20 pLeft10s f14" id="saveErrorMsg">是否继续保存并发布？</div>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer" style="border-top:none;">
+                            <button type="button" class="btn btn-warning" onclick="save(2,true);">继续保存并发布</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 确认继续发布end -->
+
+            <!-- 多图上传模态层  start-->
+            <div class="modal" id="batchChoicePicSpace" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false" style="z-index:999999;" >
+                <!-- URL -->
+                <div class="modal-dialog modal-lg" style="width:730px;margin-top:10px;">
+                    <div class="modal-content bs-example bs-example-tabs  col-xs-12 p0">
+                        <!--modalHead-->
+                        <div class="modal-header col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabelPic">多图上传</h4>
+                        </div>
+                        <!--conter-->
+                        <div id="selectImgContent5" class="modal-body tab-content col-xs-12">
+                            <iframe id="batchChoicePicFrame" src="" style="width:100%;height:70%;" scrolling="auto" frameborder="0"></iframe>
+                        </div>
+                        <!--modalFoot-->
+                        <div class="modal-footer col-xs-12">
+                            <button type="button" class="btn btn-warning" onclick="showBatchChoicePicSpace();">确定</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+                <!--URLend-->
+            </div>
+            <!-- 多图上传模态层 end -->
+
+            <!--bodyEnd-->
         </div>
     </div>
 </div>
@@ -143,6 +1190,18 @@
         $(".menu-1-btn").click(function(){
             $(this).parent().addClass("menu-open").siblings().removeClass("menu-open");
             $(this).siblings(".menu-2").toggle("slow");
+        });
+        //加载富文本编辑器
+        KindEditor.ready(function(K) {
+            window.editor = K.create('#myj-editor',options);
+            //设置编辑器
+            var detail = $("#detailHtml").html();
+            //设置详情
+            setKindeDetail(detail);
+
+        });
+        $(document).on('click','.categoryModalShow',function(){
+            $('#categoryChoose').modal('show');
         });
 
     });
