@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容页面</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/headtop.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/footdown.css" />
+</head>
+<body>
+<!--header-->
+<div class="header w h z333">
+    <!--头部通栏-->
+    <div class="w h30 bb1 bcfa lh30 z333">
+        <div class="w1200 h ov m">
+            <!--topleft-->
+            <span class="w320 h30 fl ff_a">
+                <span class="fl w85 f12 h30"><div class="fl mt2"><img src="img_head/login01.png"></div>&nbsp;<a href="#" rel="nofollow">收藏</a></span>
+                <span class="fr w100 f12 h30"><a href="#" rel="nofollow">登录</a>&nbsp;|&nbsp;<a href="#" rel="nofollow">免费注册</a></span>
+                <span class="fl f12 h30 dpl">欢迎来到环球掌柜网</span>
+            </span>
+            <!--topright-->
+            <span class="fr f12 login_ul ff_a">
+                <ul>
+                    <li class="w90 h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login02.png"></div>
+                            <div class="fr mt-2 mr10"><img src="img_head/selll.png"></div>
+                            <a href="#" rel="nofollow">掌柜中心</a>
+                        </div>
+                        <ul class="mt-30 none bl1 br1 bb1 bcfff w90 h ov ff_a z333 btx0">
+                            <li class="w unl_a">
+                                <div class="fl mt2 mr4 ml4"><img src="img_head/login02.png"></div>
+                                <div class="fr mt-2 mr10"><img src="img_head/selll_a.png"></div>
+                                <a href="#">掌柜中心</a>
+                            </li>
+                            <li class="w unl_a"><a href="#" class="ml18">我的订单</a></li>
+                            <li class="w unl_a"><a href="#" class="ml18">我的优惠券</a></li>
+                            <li class="w unl_a"><a href="#" class="ml18">在线退换货</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="ccc">|</span></li>
+                    <li class="w97 h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login03.png"></div>
+                            <a href="#" rel="nofollow">官方商户微信</a>
+                        </div>
+                        <ul class="dpl_ul none bl1 br1 bb1 bcfff w209 h94 ov ff_a pb10 pl10 pr10">
+                            <li class="w w209 h94 pt10"><img src="img_head/app189.jpg"></li>
+                        </ul>
+                    </li>
+                    <li><span class="ccc ml8 mr4">|</span></li>
+                    <li class="h">
+                        <div class="fl mt2 mr4 ml4"><img src="img_head/login04.png"></div>
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li><span class="ccc ml8 mr4">|</span></li>
+                    <li class="h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login06.png"></div>
+                            <a href="#" rel="nofollow">客服中心：400-609-9900</a>
+                        </div>
+                        <ul class="mt-30  none bl1 br1 bb1 bcfff w115 h ov ff_a z333 btx0 pb-10">
+                            <li class="w unl_a">
+                                <div class="fl mt2 mr4 ml4"><img src="img_head/login06.png"></div>
+                                <a href="#">客服中心</a>
+                            </li>
+                            <li class="w unl_a"><a href="#" class="ml15"><img src="img_head/zx.jpg"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <!--logo通栏-->
+    <div class="logo w1200  h120 ov m  z333">
+        <!--logoleft-->
+		<span class="fl mt10">
+			<!--logo-->
+			<div class="fl logo_img"><a href="#"><img src="img_head/logo.gif"></a></div>
+
+		</span>
+        <!--logoright-->
+		<span class="fr mt15">
+        <!--搜索-->
+            <div class="middle fl w550">
+                <div class="crk">
+                    <ul id="lx_nav">
+                        <li class="li01" onclick="secBoard('lx_nav','vouch','li',1);">搜产品</li>
+                        <li class="li02" onclick="secBoard('lx_nav','vouch','li',2);">搜店铺</li>
+                    </ul>
+                </div>
+                <div class="input_boxs bd2 h32 w545 mb5 mt0"> <img src="img_head/ioc_01.gif" />
+                    <a href="#" style="float:left;background:none;height:25px!important;line-height:25px!important;">
+                        <div class="lx-con" id="vouch_1" style="display: block;">
+                            <ul>
+                                <li><input id="Text1" type="text" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='请输入产品关键字';" onfocus="if(this.value=='请输入产品关键字')value='';" value="请输入产品关键字" maxlength="30"/></li>
+                            </ul>
+                        </div>
+                        <div class="lx-con" id="vouch_2" style="display: none;">
+                            <ul>
+                                <li><input id="Text1" type="text" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='请输入店铺关键字';" onfocus="if(this.value=='请输入店铺关键字')value='';" value="请输入店铺关键字" maxlength="30"/></li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#">搜索</a>
+                </div>
+                <div class="a_link f12 vt pt2"> <a href="#">机柜<img src="img_head/hot.png" /></a> <a href="#">智能手机<img src="img_head/hot.png" /></a> <a href="#">耳机</a> <a href="#">香水</a> <a href="#">游戏机</a> <a href="#">天花板</a> </div>
+            </div>
+            <!--购物车-->
+            <div class="head_recommend">
+                <div class="cart">
+                    <a href="#" class="f12">我的选品篮</a>
+                    <i class="cart_right">&gt;</i>
+                    <i class="cart_count">10</i>
+                </div>
+            </div>
+            <!--<a href="http://www.189.cn/bj/zthd/2016sjyx/?intid=bj-sy-jdt01-sjyx&amp;intaid=bj-sy-ytggw-" target="_blank" class="head_recommend"><img src="img_head/head_recommend.jpg" width="253" height="76"></a>-->
+		</span>
+    </div>
+    <!--menu-->
+    <div class="menu z222">
+        <div class="content z222">
+            <div class="menu_01 z222">
+                <a class="toptiocsa"><img src="img_head/head_main_02.jpg" /></a>
+                <!--下拉分类导航-->
+                <div class="meun_down z222">
+                    <ul>
+                        <li class="down_00"><a href="#">母婴/玩具</a>
+                            <div class="down_00_ul">
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">号码</span>
+                                    <span class="span_font_a">
+                                            <a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">类型</span>
+                                    <span class="span_font_a">
+                                            <a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb0 pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh ">套餐</span>
+                                    <span class="span_font">
+                                            <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a> <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="w h ov ml20 mr20 pt10">
+                                    <span class="fl w270 h181"><a href="#"><img src="img_head/img/iom01.jpg"></a></span>
+                                    <span class="fl w270 h181 ml10"><a href="#"><img src="img_head/img/iom02.jpg"></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down_01"><a href="#">男装/女装</a>
+                            <div class="down_01_ul">
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">号码</span>
+                                    <span class="span_font_a">
+                                            <a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">类型</span>
+                                    <span class="span_font_a">
+                                            <a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb0 pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh ">套餐</span>
+                                    <span class="span_font">
+                                            <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="w h ov ml20 mr20 pt10">
+                                    <span class="fl w270 h181"><a href="#"><img src="img_head/img/iom01.jpg"></a></span>
+                                    <span class="fl w270 h181 ml10"><a href="#"><img src="img_head/img/iom02.jpg"></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down_02"><a href="#">眼镜</a><a href="#" class="indexmianleft04_a fr mt-20" ><img src="img_head/indexmian08.png" /></a>
+                            <div class="down_02_ul">
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">号码</span>
+                                    <span class="span_font_a">
+                                            <a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">类型</span>
+                                    <span class="span_font_a">
+                                            <a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb0 pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh ">套餐</span>
+                                    <span class="span_font">
+                                            <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="w h ov ml20 mr20 pt10">
+                                    <span class="fl w270 h181"><a href="#"><img src="img_head/img/iom01.jpg"></a></span>
+                                    <span class="fl w270 h181 ml10"><a href="#"><img src="img_head/img/iom02.jpg"></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down_03"><a href="#">手机/数码</a>
+                            <div class="down_03_ul">
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">号码</span>
+                                    <span class="span_font_a">
+                                            <a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">类型</span>
+                                    <span class="span_font_a">
+                                            <a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb0 pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh ">套餐</span>
+                                    <span class="span_font">
+                                            <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="w h ov ml20 mr20 pt10">
+                                    <span class="fl w270 h181"><a href="#"><img src="img_head/img/iom01.jpg"></a></span>
+                                    <span class="fl w270 h181 ml10"><a href="#"><img src="img_head/img/iom02.jpg"></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down_04"><a href="#">厨具/收纳</a>
+                            <div class="down_04_ul">
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">号码</span>
+                                    <span class="span_font_a">
+                                            <a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">类型</span>
+                                    <span class="span_font_a">
+                                            <a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb0 pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh ">套餐</span>
+                                    <span class="span_font">
+                                            <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="w h ov ml20 mr20 pt10">
+                                    <span class="fl w270 h181"><a href="#"><img src="img_head/img/iom01.jpg"></a></span>
+                                    <span class="fl w270 h181 ml10"><a href="#"><img src="img_head/img/iom02.jpg"></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down_05"><a href="#">汽车/配件/车饰</a>
+                            <div class="down_05_ul">
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">号码</span>
+                                    <span class="span_font_a">
+                                            <a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">类型</span>
+                                    <span class="span_font_a">
+                                            <a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb0 pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh ">套餐</span>
+                                    <span class="span_font">
+                                            <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="w h ov ml20 mr20 pt10">
+                                    <span class="fl w270 h181"><a href="#"><img src="img_head/img/iom01.jpg"></a></span>
+                                    <span class="fl w270 h181 ml10"><a href="#"><img src="img_head/img/iom02.jpg"></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down_06"><a href="#">化妆品</a><a href="#" class="indexmianleft04_a fr mt-16 mt4" ><img src="img_head/indexmian09.png" /></a>
+                            <div class="down_06_ul">
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">号码</span>
+                                    <span class="span_font_a">
+                                            <a href="#">189<span class="span_s ">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">133<span class="span_s">|</span></a>
+                                            <a href="#">18119<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb1_a pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh_a ">类型</span>
+                                    <span class="span_font_a">
+                                            <a href="#">事业靓号<span class="span_s ">|</span></a>
+                                            <a href="#">生日靓号<span class="span_s">|</span></a>
+                                            <a href="#">情侣靓号<span class="span_s">|</span></a>
+                                            <a href="#">亲情靓号<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="down_ul_a f12 bb0 pt10 h ov">
+                                    <span class="fl fb600 w46 f_lh ">套餐</span>
+                                    <span class="span_font">
+                                            <a href="#">乐享4G套餐<span class="span_s ">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+                                            <a href="#">乐享4G套餐<span class="span_s">|</span></a>
+                                            <a href="#">乐享3G上网版<span class="span_s">|</span></a>
+											<span class="fr w43"><a href="#">更多>></a></span>
+                                      </span>
+                                </div>
+                                <div class="w h ov ml20 mr20 pt10">
+                                    <span class="fl w270 h181"><a href="#"><img src="img_head/img/iom01.jpg"></a></span>
+                                    <span class="fl w270 h181 ml10"><a href="#"><img src="img_head/img/iom02.jpg"></a></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--导航-->
+            <ul class="toptiocs">
+                <li><a class="headmain_bg">首页</a></li>
+                <li><a>跨境学院</a></li>
+                <li><a>爆款推荐</a></li>
+                <li><a>分销须知</a></li>
+                <li><a>掌柜学堂</a></li>
+                <li><a>物流服务</a></li>
+                <li><a>联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容区域-->
+<div class="g-bg">
+    <!--左侧导航-->
+    <div class="g-sd usr_left">
+
+            <div class="greent_nav">
+                <div class="subNavBox" style="text-align:left;">
+                    <div class="subNav currentDd currentDt">购物指南</div>
+                    <ul class="navContent " style="display: block;">
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">订单查询</a></li>
+                        <li><a href="#">网络制式</a></li>
+                    </ul>
+                    <div class="subNav">物流配送</div>
+                    <ul class="navContent" style="display: none;">
+                        <li><a href="#">配送说明</a></li>
+                        <li><a href="#">收货须知</a></li>
+                    </ul>
+                    <div class="subNav">支付方式</div>
+                    <ul class="navContent" style="display: none;">
+                        <li><a href="#">在线支付</a></li>
+                        <li><a href="#">赠费缴费说明</a></li>
+                        <li><a href="#">关于发票</a></li>
+                    </ul>
+                    <div class="subNav">售后服务</div>
+                    <ul class="navContent" style="display: none;">
+                        <li><a href="#">退换流程</a></li>
+                        <li><a href="#">退款说明</a></li>
+                        <li><a href="#">服务承诺</a></li>
+                        <li><a href="#">投诉与建议</a></li>
+                        <li><a href="#">手机维修网点</a></li>
+                        <li><a href="#">服务监督</a></li>
+                    </ul>
+                    <div class="subNav">投诉/监督</div>
+                    <ul class="navContent" style="">
+                        <li><a href="#">投诉/监督</a></li>
+                    </ul>
+                    <div class="subNav">商城公告</div>
+                    <ul class="navContent" style="">
+                        <li><a href="#">商城公告</a></li>
+                    </ul>
+                    <div class="subNav">便民服务</div>
+                    <ul class="navContent" style="">
+                        <li><a href="#">10000知道</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">投诉建议</a></li>
+                        <li><a href="#">渠道介绍</a></li>
+                        <li><a href="#">常用下载</a></li>
+                        <li><a href="#">资费专区</a></li>
+                        <li><a href="#">国际漫游</a></li>
+                        <li><a href="#">便民服务</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <!--右侧内容-->
+    <div class="g-mn help_con">
+        <div class="h60">
+            <h2 class="helpc_tit f16 left">购物指南</h2>
+        </div>
+        <!-- 内容编辑区 -->
+        <div class="wznr">
+            <ul class="cont-list">
+                <li><a href="#">这个标题<span>2016-2-3</span></a></li>
+                <li><a href="#">这个标题<span>2016-2-3</span></a></li>
+                <li><a href="#">这个标题<span>2016-2-3</span></a></li>
+                <li><a href="#">这个标题<span>2016-2-3</span></a></li>
+                <li><a href="#">这个标题<span>2016-2-3</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer w1200 h ov m pt40">
+    <!--售后-->
+    <div class="w h ov mt30 bcfoot pt30 pb30">
+        <!--logo-->
+        <!--<span class="fl "><a href="#" rel="nofollow"><img src="img_foot/foot_down_12.png"></a></span>-->
+        <span class="fl "><a href="#" rel="nofollow"><img src="img_head/logo.gif"></a></span>
+        <!--售后窗口-->
+        <span class="fl aftermarket ff_a">
+        	<ul>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">购物指南</a></p>
+                    <p><a href="#" rel="nofollow">卖场须知</a></p>
+                    <p><a href="#" rel="nofollow">订单查询</a></p>
+                    <p><a href="#" rel="nofollow">网络制式</a></p>
+                    <p><a href="#" rel="nofollow">登录帮助</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">物流配送</a></p>
+                    <p><a href="#" rel="nofollow">配送说明</a></p>
+                    <p><a href="#" rel="nofollow">收货须知</a></p>
+                    <p><a href="#" rel="nofollow">配送费用标准</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">支付方式</a></p>
+                    <p><a href="#" rel="nofollow">在线支付</a></p>
+                    <p><a href="#" rel="nofollow">货到付款</a></p>
+                    <p><a href="#" rel="nofollow">分期付款</a></p>
+                    <p><a href="#" rel="nofollow">发票服务</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">售后服务</a></p>
+                    <p><a href="#" rel="nofollow">售后政策</a></p>
+                    <p><a href="#" rel="nofollow">退换货政策</a></p>
+                    <p><a href="#" rel="nofollow">取消订单</a></p>
+                    <p><a href="#" rel="nofollow">退款说明</a></p>
+                </li>
+                <!--<li>
+                	<p class="fb600 f14_a"><a href="#" rel="nofollow">便民服务</a></p>
+                    <p><a href="#" rel="nofollow">10000知道</a></p>
+                    <p><a href="#" rel="nofollow">常见问题</a></p>
+                    <p><a href="#" rel="nofollow">投诉建议</a></p>
+                    <p><a href="#" rel="nofollow">渠道介绍</a></p>
+                    <p><a href="#" rel="nofollow">常用下载</a></p>
+                </li>-->
+            </ul>
+        </span>
+        <!--客服-->
+        <span class="fr">
+        	<span class="fl mr50"><img src="img_foot/foot_down_11.jpg"></span>
+            <span class="fl advisory w140">
+            	<ul>
+                    <li>
+                        <a href="#" rel="nofollow">
+                            <p><img src="img_foot/advisory_01.png" id="img13"></p>
+                            <p>在线客服</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" rel="nofollow">
+                            <p><img src="img_foot/advisory_02.png" id="img14"></p>
+                            <p>客服微博</p>
+                        </a>
+                    </li>
+                    <li class="mt9" rel="nofollow">
+                        <a href="#">
+                            <p><img src="img_foot/advisory_03.png" id="img15"></p>
+                            <p>10000知道</p>
+                        </a>
+                    </li>
+                    <li class="mt9" rel="nofollow">
+                        <a href="#">
+                            <p><img src="img_foot/advisory_04.png" id="img16"></p>
+                            <p>资费专区</p>
+                        </a>
+                    </li>
+                </ul>
+              </span>
+         </span>
+    </div>
+    <!--链接-->
+    <div class="bellows single w1200 h ov bcfoot pt10">
+        <div class="bellows__header">
+            <ul id="lx_nav2">
+                <li class="li01" onclick="secBoard('lx_nav2','vouchb','li',1);">合作伙伴<span class=" ml20 ccc f12 fb0">|</span></li>
+                <li class="li02" onclick="secBoard('lx_nav2','vouchb','li',2);">合作伙伴</li>
+            </ul>
+        </div>
+        <div class="lx-con w h ov" id="vouchb_1" style="display: block;">
+            <div class="w h ov">
+                <div id="aio" class="bellows__contenta fl" style=" overflow:hidden; height:70px; width:1180px;">
+                    <ul>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                    </ul>
+                </div>
+                <div class="fl p0 mt47 ov">
+                    <a  class="footall_a" href="javascript:void(0)" id="show"  onclick="document.getElementById('aio').style.height='auto';document.getElementById('hidden').style.display='';document.getElementById('show').style.display='none';"><img src="img_foot/x.png"></a>
+                    <a  class="footall_a" href="javascript:void(0)" id="hidden" style="display:none;" onclick="document.getElementById('aio').style.height='70px';document.getElementById('hidden').style.display='none';document.getElementById('show').style.display='';"><img src="img_foot/s.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="lx-con w h ov" id="vouchb_2" style="display: none;">
+            <div class="w h ov">
+                <div id="aia" class="bellows__content fl" style=" overflow:hidden; height:70px; width:1180px;">
+                    <ul>
+                        <li><a href="#">中国电信</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                    </ul>
+                </div>
+                <div class="fl p0 mt47 ov">
+                    <a  class="footall_a" href="javascript:void(0)" id="showa"  onclick="document.getElementById('aia').style.height='auto';document.getElementById('hiddena').style.display='';document.getElementById('showa').style.display='none';"><img src="img_foot/x.png"></a>
+                    <a  class="footall_a" href="javascript:void(0)" id="hiddena" style="display:none;" onclick="document.getElementById('aia').style.height='70px';document.getElementById('hiddena').style.display='none';document.getElementById('showa').style.display='';"><img src="img_foot/s.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--版权-->
+    <div class="footTwo pt30 w1200 m">
+        <div class="clearfix cl_style tc w1200 f12">
+            <a href="#">关于我们</a>
+            <span class="f12 999">|</span>
+            <a href="#">欢go网公告</a>
+            <span class="f12 999">|</span>
+            <a href="#">网站导航</a>
+            <span class="f12 999">|</span>
+            <a href="#">代理商专区</a>
+        </div>
+        <div class="clearfix">
+            <p class="foot_style f12 tc mt10" >版权所有©2012 中国电信集团公司 [ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP 备 09031924号</p>
+        </div>
+        <div class="foot_img"><img src="img_foot/footerPic7.jpg"/> </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".subNav").click(function(){
+            $(this).toggleClass("currentDd").siblings(".subNav").removeClass("currentDd");
+            $(this).toggleClass("currentDt").siblings(".subNav").removeClass("currentDt");
+
+            // 修改数字控制速度， slideUp(500)控制卷起速度
+            $(this).next(".navContent").slideToggle(500).siblings(".navContent").slideUp(500);
+        })
+    })
+</script>
+
+</html>
