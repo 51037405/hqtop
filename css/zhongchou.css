@@ -1,7 +1,4 @@
 @charset "utf-8";
-/*头部自动隐藏*/
-.meun_down{display: none}
-.menu_01:hover .meun_down{display: block}
 /*font*/
 @font-face {
     font-family: "HQIcons";

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>众筹详情页</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/headtop.css"/>
+    <link rel="stylesheet" href="css/zcdetail.css"/>
+    <link rel="stylesheet" href="css/zcheader.css"/>
+    <link rel="stylesheet" href="css/footdown.css"/>
+</head>
+<body>
+<div class="header w h z333">
+    <!--头部通栏-->
+    <div class="w h30 bb1 bcfa lh30 z333">
+        <div class="w1200 h ov m">
+            <!--topleft-->
+            <span class="w320 h30 fl ff_a">
+                <span class="fl w85 f12 h30"><div class="fl mt2"><img src="img_head/login01.png"></div>&nbsp;<a href="#"
+                                                                                                                rel="nofollow">收藏</a></span>
+                <span class="fr w100 f12 h30"><a href="#" rel="nofollow">登录</a>&nbsp;|&nbsp;<a href="#" rel="nofollow">免费注册</a></span>
+                <span class="fl f12 h30 dpl">欢迎来到环球掌柜网</span>
+            </span>
+            <!--topright-->
+            <span class="fr f12 login_ul ff_a">
+                <ul>
+                    <li class="w90 h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login02.png"></div>
+                            <div class="fr mt-2 mr10"><img src="img_head/selll.png"></div>
+                            <a href="#" rel="nofollow">掌柜中心</a>
+                        </div>
+                        <ul class="mt-30 none bl1 br1 bb1 bcfff w90 h ov ff_a z333 btx0">
+                            <li class="w unl_a">
+                                <div class="fl mt2 mr4 ml4"><img src="img_head/login02.png"></div>
+                                <div class="fr mt-2 mr10"><img src="img_head/selll_a.png"></div>
+                                <a href="#">掌柜中心</a>
+                            </li>
+                            <li class="w unl_a"><a href="#" class="ml18">我的订单</a></li>
+                            <li class="w unl_a"><a href="#" class="ml18">我的优惠券</a></li>
+                            <li class="w unl_a"><a href="#" class="ml18">在线退换货</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="ccc">|</span></li>
+                    <li class="w97 h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login03.png"></div>
+                            <a href="#" rel="nofollow">官方商户微信</a>
+                        </div>
+                        <ul class="dpl_ul none bl1 br1 bb1 bcfff w209 h94 ov ff_a pb10 pl10 pr10">
+                            <li class="w w209 h94 pt10"><img src="img_head/app189.jpg"></li>
+                        </ul>
+                    </li>
+                    <li><span class="ccc ml8 mr4">|</span></li>
+                    <li class="h">
+                        <div class="fl mt2 mr4 ml4"><img src="img_head/login04.png"></div>
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li><span class="ccc ml8 mr4">|</span></li>
+                    <li class="h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login06.png"></div>
+                            <a href="#" rel="nofollow">客服中心：400-609-9900</a>
+                        </div>
+                        <ul class="mt-30  none bl1 br1 bb1 bcfff w115 h ov ff_a z333 btx0 pb-10">
+                            <li class="w unl_a">
+                                <div class="fl mt2 mr4 ml4"><img src="img_head/login06.png"></div>
+                                <a href="#">客服中心</a>
+                            </li>
+                            <li class="w unl_a"><a href="#" class="ml15"><img src="img_head/zx.jpg"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <!--logo通栏-->
+    <div class="logo w1200  h120 ov m  z333">
+        <!--logoleft-->
+		<span class="fl mt10">
+			<!--logo-->
+			<div class="fl logo_img"><a href="#"><img src="img_head/logo.gif"></a></div>
+
+		</span>
+        <!--logoright-->
+		<span class="fr mt15">
+        <!--搜索-->
+            <div class="middle fl w550">
+                <div class="crk">
+                    <ul id="lx_nav">
+                        <li class="li01" onclick="secBoard('lx_nav','vouch','li',1);">搜产品</li>
+                        <li class="li02" onclick="secBoard('lx_nav','vouch','li',2);">搜店铺</li>
+                    </ul>
+                </div>
+                <div class="input_boxs bd2 h32 w545 mb5 mt0"><img src="img_head/ioc_01.gif"/>
+                    <a href="#" style="float:left;background:none;height:25px!important;line-height:25px!important;">
+                        <div class="lx-con" id="vouch_1" style="display: block;">
+                            <ul>
+                                <li><input id="Text1" type="text" onkeydown="if (event.keyCode==13) {}"
+                                           onblur="if(this.value=='')value='请输入产品关键字';"
+                                           onfocus="if(this.value=='请输入产品关键字')value='';" value="请输入产品关键字"
+                                           maxlength="30"/></li>
+                            </ul>
+                        </div>
+                        <div class="lx-con" id="vouch_2" style="display: none;">
+                            <ul>
+                                <li><input id="Text1" type="text" onkeydown="if (event.keyCode==13) {}"
+                                           onblur="if(this.value=='')value='请输入店铺关键字';"
+                                           onfocus="if(this.value=='请输入店铺关键字')value='';" value="请输入店铺关键字"
+                                           maxlength="30"/></li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#">搜索</a>
+                </div>
+                <div class="a_link f12 vt pt2"><a href="#">机柜<img src="img_head/hot.png"/></a> <a href="#">智能手机<img
+                        src="img_head/hot.png"/></a> <a href="#">耳机</a> <a href="#">香水</a> <a href="#">游戏机</a> <a
+                        href="#">天花板</a></div>
+            </div>
+            <!--购物车-->
+            <div class="head_recommend">
+                <div class="cart">
+                    <a href="#" class="f12">我的选品篮</a>
+                    <i class="cart_right">&gt;</i>
+                    <i class="cart_count">10</i>
+                </div>
+            </div>
+            <!--<a href="http://www.189.cn/bj/zthd/2016sjyx/?intid=bj-sy-jdt01-sjyx&amp;intaid=bj-sy-ytggw-" target="_blank" class="head_recommend"><img src="img_head/head_recommend.jpg" width="253" height="76"></a>-->
+		</span>
+    </div>
+    <!--menu-->
+    <div class="nav">
+
+        <!--导航-->
+        <ul class="nav-left">
+            <li class="main home current"><a href="#">首页</a></li>
+            <li class="main list"><a href="#">浏览项目<b class="ico-font">3</b></a>
+
+                <div class="nav-son">
+                    <ul class="J_navallType category-drop-down">
+                        <li class="first"><a href="#" target="_blank"><b class="ico-font">&#xe000;</b>影音</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font">&#xe030;</b>科技</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font">&#xe040;</b>设计</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font">&#xe050;</b>动漫</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font">&#xe060;</b>游戏</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font">&#xe070;</b>农业</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font">&#xe080;</b>其他</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="main help"><a href="#">新手帮助</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li class="main publish"><a class="headmain_bg"><b class="ico-font">l</b>发布项目</a></li>
+            <li class="main myyzy"><a href="#">我的众筹<b class="ico-font">3</b></a>
+
+                <div class="nav-son">
+                    <ul class="vice-myyzy category-drop-down">
+                        <li><a class="link" href="#" target="_blank"><b>j</b>我支持的项目</a></li>
+                        <li><a class="link" href="#" target="_blank"><b>&#xe0ed;</b>我喜欢的项目</a></li>
+                        <li><a class="link" href="#" target="_blank"><b>&#xe030;</b>我发起的项目</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="project">
+    <div class="layout">
+        <div id="J_Detail">
+            <div class="project-title">
+                <h1>美国Karim歪脖角角杯 寻找合适你的角度</h1>
+                <a class="interest" href=""><i class="int-status"></i><span
+                        class="J_LikeNum">2515</span><span>人喜欢</span></a>
+            </div>
+            <div class="project-tabs">
+                <ul class="tabs-wrap">
+                    <li><span class="tab current-tab J_TabMain">项目主页</span></li>
+                    <li><span class="tab J_TabReport tabs-report">项目动态<span></span></span></li>
+                    <!--<li><a href="javascript:void(0);">支持者(100)</a></li>-->
+                </ul>
+                <div class="share-area">
+                    <a href="javascript:void(0);" class="J_DetailShare" style="display:  none "><b>分享</b></a>
+                    <!--分享到: <a href="#">&#xe601;</a><a href="#">&#xe602;</a><a href="#">&#xe603;</a><a href="#">&#xe600;</a>-->
+                </div>
+            </div>
+            <div class="project-content">
+                <div class="col-left J_ProjectContent">
+                    <div class="cover">
+                        <img src="//img.alicdn.com/tfscom/TB1ffxrLFXXXXXBXVXXSutbFXXX_760x760.jpg" class="cover-img">
+
+                        <div id="J_Video" class="video">
+                        </div>
+                    </div>
+                    <div class="content-detail">
+                        <h2 class="title">项目介绍</h2>
+
+                        <div class="box">
+                            <div>年轻人的喝水方式 - 喝水不仰头 歪脖才好看。</div>
+                            <div id="J_Desc"><h2 style="text-align: center;">
+                                <img src="//img.alicdn.com/tfscom/TB1QZ7dLpXXXXXQXpXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB19b7bLpXXXXaSXpXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB1nuj9LpXXXXcYXpXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB1CfvWLpXXXXc6XFXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB1idgbLpXXXXaLXpXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB15WvOLpXXXXbjaXXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB1BhjSLpXXXXc9XVXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB1ZVTnKVXXXXXOaFXXSutbFXXX">
+                                <img src="//img.alicdn.com/tfscom/TB1xak0LpXXXXafXVXXSutbFXXX">
+                            </h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-left J_ProjectReport" style="display: none">
+                    <div class="feeds-list">
+                        <ul class="feeds-wrap">
+                        </ul>
+                        <div class="feeds-operation">
+                            <a href="javascript:void(0);" class="show-more">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="box schedule-box">
+                        <div class="money-box">
+                            <h2>目前累计资金:</h2>
+
+                            <p class="current-money"><span class="yen">¥</span>62352.00</p>
+
+                            <p class="target-money">此项目须在&nbsp;2016/02/28&nbsp;前，获得<em><span class="yen">¥</span>50000.00</em>的支持才可成功!
+                            </p>
+                        </div>
+                        <div class="reserve">
+                            <div class="project-status-detail">
+                                <div class="project-status-bar">
+                                <span class="schedule-bar">
+                                    <i class="schedule-current progress-bar progress-bar-striped active"
+                                       style="width:100%;"></i>
+                                </span>
+                                    <span class="percentage">124%</span>
+                                </div>
+                                <div class="projects-schedule-data">
+                                    <span class="support-number">支持人数:</span><span class="data-number">379人</span>
+                                    <span class="time-left">剩余时间:</span><span class="data-number">13天</span>
+                                </div>
+                            </div>
+                            <a class="reserve-btn J_ReserveBtn" href="">我要支持</a>
+                        </div>
+                        <div class="sponsor">
+                            <div class="avatar">
+                                <a class="shop-link" href="//shop63197587.taobao.com" target="_blank">
+                                    <img class="sponsor-pic" src="//img.alicdn.com/tfscom/TB1YiHWLpXXXXacXVXXSutbFXXX">
+                                </a>
+                            </div>
+                            <div class="sponsor-info">
+                                <span class="ww-light ww-large" data-display="inline" data-nick="陛下的礼物"><a
+                                        href="https://amos.alicdn.com/getcid.aw?v=3&amp;site=cntaobao&amp;groupid=0&amp;s=1&amp;fromid=cntaobaoxudongdong1234&amp;uid=陛下的礼物"
+                                        target="_blank" class="ww-inline ww-offline"><span>旺旺离线</span></a></span>
+                                <span class="sponsor-name">Karim Rashid</span>
+
+                                <p class="sponsor-intro">用设计改变生活，使得一切都变的美好。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="repays" data-spm="1997711789">
+                        <div class="repay-box">
+                            <div class="repay-con">
+                                <div class="repay repay-unable" id="repay-526491430040">
+                                    <div class="content-con">
+                                        <div class="repay-title">
+                                            <span class="repay-money"><span class="yen">¥</span>68.00</span>
+                                            <a class="repay-buy repay-cannotbuy" href="javascript:void(0);">限额已满</a>
+                                        </div>
+                                        <!--<div class="repay-expand J_repayExpand"></div>-->
+                                        <div class="repay-content J_repayContent">
+                                            <h2>Karim角角杯1只</h2>
+                                            <p class="repay-intro">支持68元回报Karim角角杯1只，颜色可备注，如不备注随机发。仅限200名。</p>
+                                            <p class="buy-num">限额<span>200</span>位
+                                                <em>，剩余<span>0</span>位</em></p>
+                                            <ul class="repay-img">
+                                                <li>
+                                                    <img src="//img.alicdn.com/tfscom/TB1u3ZlLpXXXXXgXXXXSutbFXXX_100x100xz.jpg"
+                                                         data-index="0">
+                                                </li>
+                                            </ul>
+                                            <p class="grant">预计回报发放时间:项目筹款成功后的30天内</p>
+                                            <p class="wuliu">全国包邮（港澳台用户不可购买）</p>
+                                        </div>
+                                        <!--<div class="repay-expandOff J_repayExpandOff"></div>-->
+                                    </div>
+                                </div>
+                                <div class="tip">
+                                    <div class="tip-area">
+                                        <b class="icon-arrow"></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="repay-con">
+                                <div class="repay repay-unable" id="repay-526491430046">
+                                    <div class="content-con">
+                                        <div class="repay-title">
+                                            <span class="repay-money"><span class="yen">¥</span>68.00</span>
+                                            <a class="repay-buy repay-cannotbuy" href="javascript:void(0);">限额已满</a>
+                                        </div>
+                                        <!--<div class="repay-expand J_repayExpand"></div>-->
+                                        <div class="repay-content J_repayContent">
+                                            <h2>Karim角角杯1只</h2>
+                                            <p class="repay-intro">支持68元回报Karim角角杯1只，颜色可备注，如不备注随机发。仅限200名。</p>
+                                            <p class="buy-num">限额<span>200</span>位
+                                                <em>，剩余<span>0</span>位</em></p>
+                                            <ul class="repay-img">
+                                                <li>
+                                                    <img src="//img.alicdn.com/tfscom/TB1u3ZlLpXXXXXgXXXXSutbFXXX_100x100xz.jpg"
+                                                         data-index="0">
+                                                </li>
+                                            </ul>
+                                            <p class="grant">预计回报发放时间:项目筹款成功后的30天内</p>
+                                            <p class="wuliu">全国包邮（港澳台用户不可购买）</p>
+                                        </div>
+                                        <!--<div class="repay-expandOff J_repayExpandOff"></div>-->
+                                    </div>
+                                </div>
+                                <div class="tip">
+                                    <div class="tip-area">
+                                        <b class="icon-arrow"></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="repay" id="repay-526490942766">
+                                <div class="content-con">
+                                    <div class="repay-title">
+                                        <span class="repay-money"><span class="yen">¥</span>68.00</span>
+                                        <a class="repay-buy"
+                                           href="//izhongchou.taobao.com/order/confirm_order.htm?itemId=526490942766">支持</a>
+                                    </div>
+                                    <!--<div class="repay-expand J_repayExpand"></div>-->
+                                    <div class="repay-content J_repayContent">
+                                        <h2>Karim咖啡杯1只</h2>
+
+                                        <p class="repay-intro">支持68元回报Karim咖啡杯1只 颜色可备注 如不备注随机发，仅限200名。</p>
+
+                                        <p class="buy-num">限额<span>200</span>位
+
+                                            <em>，剩余<span>84</span>位</em></p>
+
+
+                                        <ul class="repay-img">
+
+                                            <li>
+                                                <img src="//img.alicdn.com/tfscom/TB19CEiKFXXXXXpaXXXSutbFXXX_100x100xz.jpg"
+                                                     data-index="0">
+                                            </li>
+
+                                        </ul>
+
+                                        <p class="grant">预计回报发放时间:项目筹款成功后的30天内</p>
+
+                                        <p class="wuliu">全国包邮（港澳台用户不可购买）</p>
+                                    </div>
+                                    <!--<div class="repay-expandOff J_repayExpandOff"></div>-->
+                                </div>
+                            </div>
+                            <div class="repay" id="repay-526513268323">
+                                <div class="content-con">
+                                    <div class="repay-title">
+                                        <span class="repay-money"><span class="yen">¥</span>88.00</span>
+                                        <a class="repay-buy"
+                                           href="//izhongchou.taobao.com/order/confirm_order.htm?itemId=526513268323">支持</a>
+                                    </div>
+                                    <!--<div class="repay-expand J_repayExpand"></div>-->
+                                    <div class="repay-content J_repayContent">
+                                        <h2>Karim角角杯1只+台湾卡包1个</h2>
+
+                                        <p class="repay-intro">支持88元回报Karim角角杯1只+台湾卡包1个，杯子颜色可备注，卡包颜色随机发，如不备注随机发。</p>
+
+                                        <p class="buy-num">限额<span>1000</span>位
+                                            <em>，剩余<span>966</span>位</em></p>
+                                        <ul class="repay-img">
+                                            <li>
+                                                <img src="//img.alicdn.com/tfscom/TB1f3UdLpXXXXcoXVXXSutbFXXX_100x100xz.jpg"
+                                                     data-index="0">
+                                            </li>
+                                        </ul>
+                                        <p class="grant">预计回报发放时间:项目筹款成功后的30天内</p>
+
+                                        <p class="wuliu">全国包邮（港澳台用户不可购买）</p>
+                                    </div>
+                                    <!--<div class="repay-expandOff J_repayExpandOff"></div>-->
+                                </div>
+                            </div>
+                            <div class="repay" id="repay-526513280293">
+                                <div class="content-con">
+                                    <div class="repay-title">
+                                        <span class="repay-money"><span class="yen">¥</span>88.00</span>
+                                        <a class="repay-buy"
+                                           href="//izhongchou.taobao.com/order/confirm_order.htm?itemId=526513280293">支持</a>
+                                    </div>
+                                    <!--<div class="repay-expand J_repayExpand"></div>-->
+                                    <div class="repay-content J_repayContent">
+                                        <h2>Kaim咖啡杯1只+台湾卡包1个</h2>
+
+                                        <p class="repay-intro">支持88元回报Karim咖啡杯1只+台湾卡包1个，杯子颜色可备注，卡包颜色随机发，如不备注随机发。</p>
+
+                                        <p class="buy-num">限额<span>1000</span>位
+                                            <em>，剩余<span>998</span>位</em></p>
+                                        <ul class="repay-img">
+                                            <li>
+                                                <img src="//img.alicdn.com/tfscom/TB1YSsgLpXXXXcdXFXXSutbFXXX_100x100xz.jpg"
+                                                     data-index="0">
+                                            </li>
+                                        </ul>
+                                        <p class="grant">预计回报发放时间:项目筹款成功后的30天内</p>
+
+                                        <p class="wuliu">全国包邮（港澳台用户不可购买）</p>
+                                    </div>
+                                    <!--<div class="repay-expandOff J_repayExpandOff"></div>-->
+                                </div>
+                            </div>
+                            <div class="repay" id="repay-526455559682">
+                                <div class="content-con">
+                                    <div class="repay-title">
+                                        <span class="repay-money"><span class="yen">¥</span>168.00</span>
+                                        <a class="repay-buy"
+                                           href="//izhongchou.taobao.com/order/confirm_order.htm?itemId=526455559682">支持</a>
+                                    </div>
+                                    <!--<div class="repay-expand J_repayExpand"></div>-->
+                                    <div class="repay-content J_repayContent">
+                                        <h2>Karim 随心搭杯子2只装</h2>
+
+                                        <p class="repay-intro">情侣闺蜜基友组合 ，支持168元回报Karim咖啡杯或角角杯2只装，款式颜色可备注，如不备注随机发。</p>
+
+                                        <p class="buy-num">限额<span>500</span>位
+                                            <em>，剩余<span>478</span>位</em></p>
+                                        <ul class="repay-img">
+                                            <li>
+                                                <img src="//img.alicdn.com/tfscom/TB1HB3dLpXXXXXOXpXXXXXXXXXX_100x100xz.jpg"
+                                                     data-index="0">
+                                            </li>
+                                            <li>
+                                                <img src="//img.alicdn.com/tfscom/TB1IhAfLpXXXXbvXXXXSutbFXXX_100x100xz.jpg"
+                                                     data-index="1">
+                                            </li>
+                                        </ul>
+                                        <p class="grant">预计回报发放时间:项目筹款成功后的30天内</p>
+
+                                        <p class="wuliu">全国包邮（港澳台用户不可购买）</p>
+                                    </div>
+                                    <!--<div class="repay-expandOff J_repayExpandOff"></div>-->
+                                </div>
+                            </div>
+                            <div class="repay" id="repay-526500105072">
+                                <div class="content-con">
+                                    <div class="repay-title">
+                                        <span class="repay-money"><span class="yen">¥</span>6800.00</span>
+                                        <a class="repay-buy"
+                                           href="//izhongchou.taobao.com/order/confirm_order.htm?itemId=526500105072">支持</a>
+                                    </div>
+                                    <!--<div class="repay-expand J_repayExpand"></div>-->
+                                    <div class="repay-content J_repayContent">
+                                        <h2>批发专享 Karim杯子100只</h2>
+
+                                        <p class="repay-intro">支持6800元回报Karim杯子100只，款式颜色需备注，如不备注随机发。</p>
+
+                                        <p class="buy-num">限额<span>50</span>位
+                                            <em>，剩余<span>45</span>位</em></p>
+                                        <ul class="repay-img">
+                                            <li>
+                                                <img src="//img.alicdn.com/tfscom/TB1NPAiLpXXXXaBXXXXSutbFXXX_100x100xz.jpg"
+                                                     data-index="0">
+                                            </li>
+                                            <li>
+                                                <img src="//img.alicdn.com/tfscom/TB1t1QeLpXXXXXrXpXXSutbFXXX_100x100xz.jpg"
+                                                     data-index="1">
+                                            </li>
+                                        </ul>
+                                        <p class="grant">预计回报发放时间:项目筹款成功后的45天内</p>
+
+                                        <p class="wuliu">全国包邮（港澳台用户不可购买）</p>
+                                    </div>
+                                    <!--<div class="repay-expandOff J_repayExpandOff"></div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explain">
+                        <h2>风险提示</h2>
+                        <p class="explain-p">1.&nbsp;众筹并非商品交易，项目存在一定风险，如项目筹款成功但发放回报出现问题，您可申请退款退回支持金额（一次性支付，按项目组织者约定比例以首笔款+尾款方式付至项目组织者账户）中的尾款部分，而首笔款部分由于已被项目组织者使用，退还首笔款事宜需要您和项目组织者自行协商，淘宝没有帮您追讨首笔款的义务。</p>
+                        <p class="explain-p">2.&nbsp;请在支持项目后15分钟内付款哦，否则您的支持请求会被自动关闭。</p>
+                        <p class="explain-p">3.&nbsp;本页面统计的项目总支持人数和总支持金额存在一定的延迟，以单个回报详情为准。 </p>
+                        <b></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer w1200 h ov m pt40">
+        <!--售后-->
+        <div class="w h ov mt30 bcfoot pt30 pb30">
+            <!--logo-->
+            <!--<span class="fl "><a href="#" rel="nofollow"><img src="img_foot/foot_down_12.png"></a></span>-->
+            <span class="fl "><a href="#" rel="nofollow"><img src="img_head/logo.gif"></a></span>
+            <!--售后窗口-->
+        <span class="fl aftermarket ff_a">
+        	<ul>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">购物指南</a></p>
+
+                    <p><a href="#" rel="nofollow">卖场须知</a></p>
+
+                    <p><a href="#" rel="nofollow">订单查询</a></p>
+
+                    <p><a href="#" rel="nofollow">网络制式</a></p>
+
+                    <p><a href="#" rel="nofollow">登录帮助</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">物流配送</a></p>
+
+                    <p><a href="#" rel="nofollow">配送说明</a></p>
+
+                    <p><a href="#" rel="nofollow">收货须知</a></p>
+
+                    <p><a href="#" rel="nofollow">配送费用标准</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">支付方式</a></p>
+
+                    <p><a href="#" rel="nofollow">在线支付</a></p>
+
+                    <p><a href="#" rel="nofollow">货到付款</a></p>
+
+                    <p><a href="#" rel="nofollow">分期付款</a></p>
+
+                    <p><a href="#" rel="nofollow">发票服务</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">售后服务</a></p>
+
+                    <p><a href="#" rel="nofollow">售后政策</a></p>
+
+                    <p><a href="#" rel="nofollow">退换货政策</a></p>
+
+                    <p><a href="#" rel="nofollow">取消订单</a></p>
+
+                    <p><a href="#" rel="nofollow">退款说明</a></p>
+                </li>
+                <!--<li>
+                	<p class="fb600 f14_a"><a href="#" rel="nofollow">便民服务</a></p>
+                    <p><a href="#" rel="nofollow">10000知道</a></p>
+                    <p><a href="#" rel="nofollow">常见问题</a></p>
+                    <p><a href="#" rel="nofollow">投诉建议</a></p>
+                    <p><a href="#" rel="nofollow">渠道介绍</a></p>
+                    <p><a href="#" rel="nofollow">常用下载</a></p>
+                </li>-->
+            </ul>
+        </span>
+            <!--客服-->
+        <span class="fr">
+        	<span class="fl mr50"><img src="img_foot/foot_down_11.jpg"></span>
+            <span class="fl advisory w140">
+            	<ul>
+                    <li>
+                        <a href="#" rel="nofollow">
+                            <p><img src="img_foot/advisory_01.png" id="img13"></p>
+
+                            <p>在线客服</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" rel="nofollow">
+                            <p><img src="img_foot/advisory_02.png" id="img14"></p>
+
+                            <p>客服微博</p>
+                        </a>
+                    </li>
+                    <li class="mt9" rel="nofollow">
+                        <a href="#">
+                            <p><img src="img_foot/advisory_03.png" id="img15"></p>
+
+                            <p>10000知道</p>
+                        </a>
+                    </li>
+                    <li class="mt9" rel="nofollow">
+                        <a href="#">
+                            <p><img src="img_foot/advisory_04.png" id="img16"></p>
+
+                            <p>资费专区</p>
+                        </a>
+                    </li>
+                </ul>
+              </span>
+         </span>
+        </div>
+        <!--链接-->
+        <div class="bellows single w1200 h ov bcfoot pt10">
+            <div class="bellows__header">
+                <ul id="lx_nav2">
+                    <li class="li01" onclick="secBoard('lx_nav2','vouchb','li',1);">合作伙伴<span class=" ml20 ccc f12 fb0">|</span>
+                    </li>
+                    <li class="li02" onclick="secBoard('lx_nav2','vouchb','li',2);">合作伙伴</li>
+                </ul>
+            </div>
+            <div class="lx-con w h ov" id="vouchb_1" style="display: block;">
+                <div class="w h ov">
+                    <div id="aio" class="bellows__contenta fl" style=" overflow:hidden; height:70px; width:1180px;">
+                        <ul>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                            <li><a href="#">北京欢go网</a><span>|</span></li>
+                            <li><a href="#">安徽欢go网</a><span>|</span></li>
+                            <li><a href="#">上海欢go网</a><span>|</span></li>
+                            <li><a href="#">天津欢go网</a><span>|</span></li>
+                            <li><a href="#">河北欢go网</a><span>|</span></li>
+                            <li><a href="#">山东欢go网</a><span>|</span></li>
+                            <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                            <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        </ul>
+                    </div>
+                    <div class="fl p0 mt47 ov">
+                        <a class="footall_a" href="javascript:void(0)" id="show"
+                           onclick="document.getElementById('aio').style.height='auto';document.getElementById('hidden').style.display='';document.getElementById('show').style.display='none';"><img
+                                src="img_foot/x.png"></a>
+                        <a class="footall_a" href="javascript:void(0)" id="hidden" style="display:none;"
+                           onclick="document.getElementById('aio').style.height='70px';document.getElementById('hidden').style.display='none';document.getElementById('show').style.display='';"><img
+                                src="img_foot/s.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lx-con w h ov" id="vouchb_2" style="display: none;">
+                <div class="w h ov">
+                    <div id="aia" class="bellows__content fl" style=" overflow:hidden; height:70px; width:1180px;">
+                        <ul>
+                            <li><a href="#">中国电信</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                            <li><a href="#">中国通信学会</a><span>|</span></li>
+                            <li><a href="#">中国互联网协会</a><span>|</span></li>
+                            <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                            <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        </ul>
+                    </div>
+                    <div class="fl p0 mt47 ov">
+                        <a class="footall_a" href="javascript:void(0)" id="showa"
+                           onclick="document.getElementById('aia').style.height='auto';document.getElementById('hiddena').style.display='';document.getElementById('showa').style.display='none';"><img
+                                src="img_foot/x.png"></a>
+                        <a class="footall_a" href="javascript:void(0)" id="hiddena" style="display:none;"
+                           onclick="document.getElementById('aia').style.height='70px';document.getElementById('hiddena').style.display='none';document.getElementById('showa').style.display='';"><img
+                                src="img_foot/s.png"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--版权-->
+        <div class="footTwo pt30 w1200 m">
+            <div class="clearfix cl_style tc w1200 f12">
+                <a href="#">关于我们</a>
+                <span class="f12 999">|</span>
+                <a href="#">欢go网公告</a>
+                <span class="f12 999">|</span>
+                <a href="#">网站导航</a>
+                <span class="f12 999">|</span>
+                <a href="#">代理商专区</a>
+            </div>
+            <div class="clearfix">
+                <p class="foot_style f12 tc mt10">版权所有©2012 中国电信集团公司 [ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP 备
+                    09031924号</p>
+            </div>
+            <div class="foot_img"><img src="img_foot/footerPic7.jpg"/></div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".J_TabMain").click(function () {
+                $(this).addClass("current-tab");
+                $(".J_TabReport").removeClass("current-tab");
+                $(".J_ProjectReport").hide();
+                $(".J_ProjectContent").show();
+            });
+            $(".J_TabReport").click(function () {
+                $(this).addClass("current-tab");
+                $(".J_TabMain").removeClass("current-tab");
+                $(".J_ProjectReport").show();
+                $(".J_ProjectContent").hide();
+            });
+            $(".repay-con").click(function () {
+                $(this).toggleClass("open");
+                var h = $(this).find(".content-con").height();
+                $(this).hasClass("open") ? $(this).find(".repay-unable").css("height", h) : $(this).find(".repay-unable").css("height", 65);
+            });
+
+        });
+    </script>
+</body>
+</html>

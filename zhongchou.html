@@ -7,9 +7,154 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/headtop.css" />
     <link rel="stylesheet" href="css/zhongchou.css" />
+    <link rel="stylesheet" href="css/zcheader.css" />
     <link rel="stylesheet" href="css/footdown.css" />
 </head>
 <body>
+<div class="header w h z333">
+    <!--头部通栏-->
+    <div class="w h30 bb1 bcfa lh30 z333">
+        <div class="w1200 h ov m">
+            <!--topleft-->
+            <span class="w320 h30 fl ff_a">
+                <span class="fl w85 f12 h30"><div class="fl mt2"><img src="img_head/login01.png"></div>&nbsp;<a href="#" rel="nofollow">收藏</a></span>
+                <span class="fr w100 f12 h30"><a href="#" rel="nofollow">登录</a>&nbsp;|&nbsp;<a href="#" rel="nofollow">免费注册</a></span>
+                <span class="fl f12 h30 dpl">欢迎来到环球掌柜网</span>
+            </span>
+            <!--topright-->
+            <span class="fr f12 login_ul ff_a">
+                <ul>
+                    <li class="w90 h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login02.png"></div>
+                            <div class="fr mt-2 mr10"><img src="img_head/selll.png"></div>
+                            <a href="#" rel="nofollow">掌柜中心</a>
+                        </div>
+                        <ul class="mt-30 none bl1 br1 bb1 bcfff w90 h ov ff_a z333 btx0">
+                            <li class="w unl_a">
+                                <div class="fl mt2 mr4 ml4"><img src="img_head/login02.png"></div>
+                                <div class="fr mt-2 mr10"><img src="img_head/selll_a.png"></div>
+                                <a href="#">掌柜中心</a>
+                            </li>
+                            <li class="w unl_a"><a href="#" class="ml18">我的订单</a></li>
+                            <li class="w unl_a"><a href="#" class="ml18">我的优惠券</a></li>
+                            <li class="w unl_a"><a href="#" class="ml18">在线退换货</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="ccc">|</span></li>
+                    <li class="w97 h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login03.png"></div>
+                            <a href="#" rel="nofollow">官方商户微信</a>
+                        </div>
+                        <ul class="dpl_ul none bl1 br1 bb1 bcfff w209 h94 ov ff_a pb10 pl10 pr10">
+                            <li class="w w209 h94 pt10"><img src="img_head/app189.jpg"></li>
+                        </ul>
+                    </li>
+                    <li><span class="ccc ml8 mr4">|</span></li>
+                    <li class="h">
+                        <div class="fl mt2 mr4 ml4"><img src="img_head/login04.png"></div>
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li><span class="ccc ml8 mr4">|</span></li>
+                    <li class="h">
+                        <div>
+                            <div class="fl mt2 mr4 ml4"><img src="img_head/login06.png"></div>
+                            <a href="#" rel="nofollow">客服中心：400-609-9900</a>
+                        </div>
+                        <ul class="mt-30  none bl1 br1 bb1 bcfff w115 h ov ff_a z333 btx0 pb-10">
+                            <li class="w unl_a">
+                                <div class="fl mt2 mr4 ml4"><img src="img_head/login06.png"></div>
+                                <a href="#">客服中心</a>
+                            </li>
+                            <li class="w unl_a"><a href="#" class="ml15"><img src="img_head/zx.jpg"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <!--logo通栏-->
+    <div class="logo w1200  h120 ov m  z333">
+        <!--logoleft-->
+		<span class="fl mt10">
+			<!--logo-->
+			<div class="fl logo_img"><a href="#"><img src="img_head/logo.gif"></a></div>
+
+		</span>
+        <!--logoright-->
+		<span class="fr mt15">
+        <!--搜索-->
+            <div class="middle fl w550">
+                <div class="crk">
+                    <ul id="lx_nav">
+                        <li class="li01" onclick="secBoard('lx_nav','vouch','li',1);">搜产品</li>
+                        <li class="li02" onclick="secBoard('lx_nav','vouch','li',2);">搜店铺</li>
+                    </ul>
+                </div>
+                <div class="input_boxs bd2 h32 w545 mb5 mt0"> <img src="img_head/ioc_01.gif" />
+                    <a href="#" style="float:left;background:none;height:25px!important;line-height:25px!important;">
+                        <div class="lx-con" id="vouch_1" style="display: block;">
+                            <ul>
+                                <li><input id="Text1" type="text" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='请输入产品关键字';" onfocus="if(this.value=='请输入产品关键字')value='';" value="请输入产品关键字" maxlength="30"/></li>
+                            </ul>
+                        </div>
+                        <div class="lx-con" id="vouch_2" style="display: none;">
+                            <ul>
+                                <li><input id="Text2" type="text" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='请输入店铺关键字';" onfocus="if(this.value=='请输入店铺关键字')value='';" value="请输入店铺关键字" maxlength="30"/></li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#">搜索</a>
+                </div>
+                <div class="a_link f12 vt pt2"> <a href="#">机柜<img src="img_head/hot.png" /></a> <a href="#">智能手机<img src="img_head/hot.png" /></a> <a href="#">耳机</a> <a href="#">香水</a> <a href="#">游戏机</a> <a href="#">天花板</a> </div>
+            </div>
+            <!--购物车-->
+            <div class="head_recommend">
+                <div class="cart">
+                    <a href="#" class="f12">我的选品篮</a>
+                    <i class="cart_right">&gt;</i>
+                    <i class="cart_count">10</i>
+                </div>
+            </div>
+            <!--<a href="http://www.189.cn/bj/zthd/2016sjyx/?intid=bj-sy-jdt01-sjyx&amp;intaid=bj-sy-ytggw-" target="_blank" class="head_recommend"><img src="img_head/head_recommend.jpg" width="253" height="76"></a>-->
+		</span>
+    </div>
+    <!--menu-->
+    <div class="nav">
+
+            <!--导航-->
+            <ul class="nav-left">
+                <li class="main home current"><a href="#">首页</a></li>
+                <li class="main list"><a href="#">浏览项目<b class="ico-font">3</b></a>
+                    <div class="nav-son">
+                        <ul class="J_navallType category-drop-down">
+                            <li class="first"><a href="#" target="_blank"><b class="ico-font">&#xe000;</b>影音</a></li>
+                            <li><a href="#" target="_blank"><b class="ico-font">&#xe030;</b>科技</a></li>
+                            <li><a href="#" target="_blank"><b class="ico-font">&#xe040;</b>设计</a></li>
+                            <li><a href="#" target="_blank"><b class="ico-font">&#xe050;</b>动漫</a></li>
+                            <li><a href="#" target="_blank"><b class="ico-font">&#xe060;</b>游戏</a></li>
+                            <li><a href="#" target="_blank"><b class="ico-font">&#xe070;</b>农业</a></li>
+                            <li><a href="#" target="_blank"><b class="ico-font">&#xe080;</b>其他</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="main help"><a href="#">新手帮助</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="main publish"><a class="headmain_bg"><b class="ico-font">l</b>发布项目</a></li>
+                <li class="main myyzy"><a href="#">我的众筹<b class="ico-font">3</b></a>
+                    <div class="nav-son">
+                        <ul class="vice-myyzy category-drop-down">
+                            <li><a class="link" href="#" target="_blank"><b>j</b>我支持的项目</a></li>
+                            <li><a class="link" href="#" target="_blank"><b>&#xe0ed;</b>我喜欢的项目</a></li>
+                            <li><a class="link" href="#" target="_blank"><b>&#xe030;</b>我发起的项目</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+    </div>
+</div>
 <div class="s-focus">
     <div class="main-con">
         <div class="main">
@@ -940,17 +1085,10 @@
     <div class="weekly-top-content">
         <div class="content-wrap J_WeeklyContent"><div class="item-detail">
             <b class="indicate J_WeeklyHot" style="top: 16px;"></b>
-
-
-            <a class="J_itemDetailBox" href="//izhongchou.taobao.com/dreamdetail.htm?id=10062155" target="_blank">
-
+            <a class="J_itemDetailBox" href="" target="_blank">
                     <span class="item-detail-box item-detail-box-1 item-detail-show">
                         <span class="item-image">
-
                                  <img src="images/zc-temp-10.png" alt="">
-
-
-
                         </span>
                         <span class="item-info">
                             <span class="title">电影《三生三世十里桃花》九天神仙品鸡腿贺新年</span>
@@ -978,7 +1116,7 @@
             </a>
 
 
-            <a class="J_itemDetailBox" href="//hi.taobao.com/market/hi/deramdetail.php?id=10060396" target="_blank">
+            <a class="J_itemDetailBox" href="" target="_blank">
 
                     <span class="item-detail-box item-detail-box-2">
                         <span class="item-image">
@@ -1014,7 +1152,7 @@
             </a>
 
 
-            <a class="J_itemDetailBox" href="//izhongchou.taobao.com/dreamdetail.htm?id=10061671" target="_blank">
+            <a class="J_itemDetailBox" href="" target="_blank">
 
                     <span class="item-detail-box item-detail-box-3">
                         <span class="item-image">
@@ -1050,7 +1188,7 @@
             </a>
 
 
-            <a class="J_itemDetailBox" href="//izhongchou.taobao.com/dreamdetail.htm?id=10061351" target="_blank">
+            <a class="J_itemDetailBox" href="" target="_blank">
 
                     <span class="item-detail-box item-detail-box-4">
                         <span class="item-image">
@@ -1086,7 +1224,7 @@
             </a>
 
 
-            <a class="J_itemDetailBox" href="//izhongchou.taobao.com/dreamdetail.htm?id=10059781" target="_blank">
+            <a class="J_itemDetailBox" href="" target="_blank">
 
                     <span class="item-detail-box item-detail-box-5">
                         <span class="item-image">
@@ -1331,19 +1469,13 @@
                     <div class="funder-name">赵薇梦陇酒庄</div>
                     <div class="funder-info">国际知名中国影视明星赵薇小姐名下的法国梦陇酒庄</div>
                 </div>
-
                 <div class="money-raise"><span class="text">获得筹款</span><span class="colon">:</span><em class="number J_money">7,243,842.00</em><i class="yen">元</i> </div>
                 <div class="support-number"><span class="text">支持人数</span><span class="colon">:</span><em class="number J_support">61973</em><i class="yen">人</i></div>
-
                 <div class="desc-content">众筹来自梦陇酒庄的佳酿，赵薇与您约会，一起领略波尔多风情。</div>
-
-                <a class="link" href="//izhongchou.taobao.com/dreamdetail.htm?id=10046802" target="_blank">
-
+                <a class="link" href="" target="_blank">
                     查看项目
                 </a>
             </li>
-
-
             <li class="item10050396">
         <span class="pic-wrap">
             <img class="DataLazyload" alt="" src="images/zc-temp-11.png">
@@ -1351,24 +1483,17 @@
         <span class="avatar">
             <img src="images/zc-temp-12.png" alt="">
         </span>
-
                 <div class="funder-intro">
                     <div class="funder-name">小米官方旗舰店</div>
                     <div class="funder-info">小米官方旗舰店</div>
                 </div>
-
                 <div class="money-raise"><span class="text">获得筹款</span><span class="colon">:</span><em class="number J_money">35,595,000.00</em><i class="yen">元</i> </div>
                 <div class="support-number"><span class="text">支持人数</span><span class="colon">:</span><em class="number J_support">35595</em><i class="yen">人</i></div>
-
                 <div class="desc-content">这是小米双11的新玩法，参与众筹即可成为下一款手机新品首批使用者。</div>
-
-                <a class="link" href="//izhongchou.taobao.com/dreamdetail.htm?id=10050396" target="_blank">
-
+                <a class="link" href="" target="_blank">
                     查看项目
                 </a>
             </li>
-
-
             <li class="item10044292">
         <span class="pic-wrap">
             <img class="DataLazyload" alt="" src="images/zc-temp-11.png">
@@ -1376,24 +1501,17 @@
         <span class="avatar">
             <img src="images/zc-temp-12.png" alt="">
         </span>
-
                 <div class="funder-intro">
                     <div class="funder-name">曼申</div>
                     <div class="funder-info">慧晶智能科技是一家专注于物联网智能安防系列产品的研发</div>
                 </div>
-
                 <div class="money-raise"><span class="text">获得筹款</span><span class="colon">:</span><em class="number J_money">15,102,800.00</em><i class="yen">元</i> </div>
                 <div class="support-number"><span class="text">支持人数</span><span class="colon">:</span><em class="number J_support">23941</em><i class="yen">人</i></div>
-
                 <div class="desc-content">能和手机通讯的指纹锁 曼申云智能锁iLock A</div>
-
-                <a class="link" href="//izhongchou.taobao.com/dreamdetail.htm?id=10044292" target="_blank">
-
+                <a class="link" href="" target="_blank">
                     查看项目
                 </a>
             </li>
-
-
             <li class="item10043955">
         <span class="pic-wrap">
             <img class="DataLazyload" alt="" src="images/zc-temp-11.png">
@@ -1401,26 +1519,326 @@
         <span class="avatar">
             <img src="images/zc-temp-12.png" alt="">
         </span>
-
                 <div class="funder-intro">
                     <div class="funder-name">Fii</div>
                     <div class="funder-info">FiiSmart，智能穿戴领域经验丰富的老兵，追求极致，匠心雕琢。</div>
                 </div>
-
                 <div class="money-raise"><span class="text">获得筹款</span><span class="colon">:</span><em class="number J_money">14,684,019.00</em><i class="yen">元</i> </div>
                 <div class="support-number"><span class="text">支持人数</span><span class="colon">:</span><em class="number J_support">44054</em><i class="yen">人</i></div>
-
                 <div class="desc-content">一款可支付的智能手表，丰富的功能App，精湛工艺</div>
-
-                <a class="link" href="//izhongchou.taobao.com/dreamdetail.htm?id=10043955" target="_blank">
-
+                <a class="link" href="" target="_blank">
                     查看项目
                 </a>
             </li>
-
-
-
         </ul></div>
+</div>
+<!--footer-->
+<div class="footer w1200 h ov m pt40">
+    <!--售后-->
+    <div class="w h ov mt30 bcfoot pt30 pb30">
+        <!--logo-->
+        <!--<span class="fl "><a href="#" rel="nofollow"><img src="img_foot/foot_down_12.png"></a></span>-->
+        <span class="fl "><a href="#" rel="nofollow"><img src="img_head/logo.gif"></a></span>
+        <!--售后窗口-->
+        <span class="fl aftermarket ff_a">
+        	<ul>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">购物指南</a></p>
+                    <p><a href="#" rel="nofollow">卖场须知</a></p>
+                    <p><a href="#" rel="nofollow">订单查询</a></p>
+                    <p><a href="#" rel="nofollow">网络制式</a></p>
+                    <p><a href="#" rel="nofollow">登录帮助</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">物流配送</a></p>
+                    <p><a href="#" rel="nofollow">配送说明</a></p>
+                    <p><a href="#" rel="nofollow">收货须知</a></p>
+                    <p><a href="#" rel="nofollow">配送费用标准</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">支付方式</a></p>
+                    <p><a href="#" rel="nofollow">在线支付</a></p>
+                    <p><a href="#" rel="nofollow">货到付款</a></p>
+                    <p><a href="#" rel="nofollow">分期付款</a></p>
+                    <p><a href="#" rel="nofollow">发票服务</a></p>
+                </li>
+                <li>
+                    <p class="fb600 f14_a"><a href="#" rel="nofollow">售后服务</a></p>
+                    <p><a href="#" rel="nofollow">售后政策</a></p>
+                    <p><a href="#" rel="nofollow">退换货政策</a></p>
+                    <p><a href="#" rel="nofollow">取消订单</a></p>
+                    <p><a href="#" rel="nofollow">退款说明</a></p>
+                </li>
+                <!--<li>
+                	<p class="fb600 f14_a"><a href="#" rel="nofollow">便民服务</a></p>
+                    <p><a href="#" rel="nofollow">10000知道</a></p>
+                    <p><a href="#" rel="nofollow">常见问题</a></p>
+                    <p><a href="#" rel="nofollow">投诉建议</a></p>
+                    <p><a href="#" rel="nofollow">渠道介绍</a></p>
+                    <p><a href="#" rel="nofollow">常用下载</a></p>
+                </li>-->
+            </ul>
+        </span>
+        <!--客服-->
+        <span class="fr">
+        	<span class="fl mr50"><img src="img_foot/foot_down_11.jpg"></span>
+            <span class="fl advisory w140">
+            	<ul>
+                    <li>
+                        <a href="#" rel="nofollow">
+                            <p><img src="img_foot/advisory_01.png" id="img13"></p>
+                            <p>在线客服</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" rel="nofollow">
+                            <p><img src="img_foot/advisory_02.png" id="img14"></p>
+                            <p>客服微博</p>
+                        </a>
+                    </li>
+                    <li class="mt9" rel="nofollow">
+                        <a href="#">
+                            <p><img src="img_foot/advisory_03.png" id="img15"></p>
+                            <p>10000知道</p>
+                        </a>
+                    </li>
+                    <li class="mt9" rel="nofollow">
+                        <a href="#">
+                            <p><img src="img_foot/advisory_04.png" id="img16"></p>
+                            <p>资费专区</p>
+                        </a>
+                    </li>
+                </ul>
+              </span>
+         </span>
+    </div>
+    <!--链接-->
+    <div class="bellows single w1200 h ov bcfoot pt10">
+        <div class="bellows__header">
+            <ul id="lx_nav2">
+                <li class="li01" onclick="secBoard('lx_nav2','vouchb','li',1);">合作伙伴<span class=" ml20 ccc f12 fb0">|</span></li>
+                <li class="li02" onclick="secBoard('lx_nav2','vouchb','li',2);">合作伙伴</li>
+            </ul>
+        </div>
+        <div class="lx-con w h ov" id="vouchb_1" style="display: block;">
+            <div class="w h ov">
+                <div id="aio" class="bellows__contenta fl" style=" overflow:hidden; height:70px; width:1180px;">
+                    <ul>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                    </ul>
+                </div>
+                <div class="fl p0 mt47 ov">
+                    <a  class="footall_a" href="javascript:void(0)" id="show"  onclick="document.getElementById('aio').style.height='auto';document.getElementById('hidden').style.display='';document.getElementById('show').style.display='none';"><img src="img_foot/x.png"></a>
+                    <a  class="footall_a" href="javascript:void(0)" id="hidden" style="display:none;" onclick="document.getElementById('aio').style.height='70px';document.getElementById('hidden').style.display='none';document.getElementById('show').style.display='';"><img src="img_foot/s.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="lx-con w h ov" id="vouchb_2" style="display: none;">
+            <div class="w h ov">
+                <div id="aia" class="bellows__content fl" style=" overflow:hidden; height:70px; width:1180px;">
+                    <ul>
+                        <li><a href="#">中国电信</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                    </ul>
+                </div>
+                <div class="fl p0 mt47 ov">
+                    <a  class="footall_a" href="javascript:void(0)" id="showa"  onclick="document.getElementById('aia').style.height='auto';document.getElementById('hiddena').style.display='';document.getElementById('showa').style.display='none';"><img src="img_foot/x.png"></a>
+                    <a  class="footall_a" href="javascript:void(0)" id="hiddena" style="display:none;" onclick="document.getElementById('aia').style.height='70px';document.getElementById('hiddena').style.display='none';document.getElementById('showa').style.display='';"><img src="img_foot/s.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--版权-->
+    <div class="footTwo pt30 w1200 m">
+        <div class="clearfix cl_style tc w1200 f12">
+            <a href="#">关于我们</a>
+            <span class="f12 999">|</span>
+            <a href="#">欢go网公告</a>
+            <span class="f12 999">|</span>
+            <a href="#">网站导航</a>
+            <span class="f12 999">|</span>
+            <a href="#">代理商专区</a>
+        </div>
+        <div class="clearfix">
+            <p class="foot_style f12 tc mt10" >版权所有©2012 中国电信集团公司 [ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP 备 09031924号</p>
+        </div>
+        <div class="foot_img"><img src="img_foot/footerPic7.jpg"/> </div>
+    </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript">

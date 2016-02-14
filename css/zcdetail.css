@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@font-face{font-family: shareIcon; src: url(fonts/font_1405579717_3646846.eot); src: url(fonts/font_1405579717_3646846.eot?#iefix) format("embedded-opentype"), url(fonts/font_1405579717_3646846.woff) format("woff"), url(fonts/font_1405579717_3646846.ttf) format("truetype"), url(fonts/font_1405579717_3646846.svg#iconfont) format("svg")}
+@font-face{font-family: iconfont; src: url(fonts/font_1438658104_971841.eot); src: url(fonts/font_1438658104_971841.eot?#iefix) format("embedded-opentype"), url(fonts/font_1438658104_971841.woff) format("woff"), url(fonts/font_1438658104_971841.ttf) format("truetype"), url(fonts/font_1438658104_971841.svg#iconfont) format("svg")}
+.layout{width: 1180px; margin: 0 auto; font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', microsoft yahei, \5b8b\4f53, sans-serif}
+.schedule-bar{height: 3px; width: 100%; display: block; margin-bottom: 10px; background-color: #e1e1e1}
+.schedule-current{display: block; height: 3px; vertical-align: top; background-color: #00cccd}
+.project-success{background: #ff6458}
+.project-fail{background: #747474}
+.other-info{display: inline-block; font-size: 0}
+.every-info{display: inline-block; width: 40px; padding: 1px 0}
+.every-info em{display: inline-block; width: 100%; font-style: normal; line-height: 18px; color: #333; font-size: 12px; font-family: "microsoft yahei"; font-weight: 700; text-align: center}
+.every-info .info-name{line-height: 18px; color: #999; font-size: 12px; font-family: "宋体"; font-weight: 400}
+.info-dollar{width: 90px; text-align: center}
+.info-left{width: 50px; text-align: right}
+.feeds-list{padding-top: 30px}
+.feeds-list .feed-item{position: relative; width: 708px; padding-left: 90px}
+.feeds-list .feed-item .date{position: absolute; top: 5px; left: 0; width: 60px; padding: 5px; padding-left: 7px; height: 60px; background: #eff7f9; text-align: center; -webkit-border-bottom-right-radius: 30px; -webkit-border-top-right-radius: 30px; -moz-border-bottom-right-radius: 30px; -moz-border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-top-right-radius: 30px; color: #333}
+.feeds-list .feed-item .date .day{width: 60px; height: 34px; line-height: 34px; font-size: 18px; display: block}
+.feeds-list .feed-item .date .month{height: 16px; line-height: 16px; font-size: 14px; display: block}
+.feeds-list .feed-item .content{width: 670px; font-size: 14px; color: #666}
+.feeds-list .feed-item .pics{cursor: url(../images/big.cur), auto; margin: 20px 0 10px}
+.feeds-list .feed-item .pics img{width: 65px; height: 65px}
+.feeds-list .feed-item .pics.pics-zoom-in{cursor: url(../images/small.cur), auto}
+.feeds-list .feed-item .pics.pics-zoom-in img{display: block; max-width: 670px; width: auto; height: auto}
+.feeds-list .feed-item .operation{margin-right: 37px; line-height: 18px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 2px solid #f1f1f1}
+.feeds-list .feed-item .operation .wrap{position: relative; top: 1px; text-align: right; height: 39px; background: url("") no-repeat 629px bottom}
+.feeds-list .feed-item .operation a{font-size: 14px; color: #999; padding-left: 5px}
+.feeds-operation{width: 670px; margin-left: 90px; padding-bottom: 10px}
+.feeds-operation .show-more{width: 110px; margin: 0 auto; display: block; font-size: 17px; line-height: 31px; text-align: center; height: 31px; background-color: #fe645a; border-bottom: 3px solid #ee514c; color: #fff; text-decoration: none; vertical-align: top; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
+.feeds-operation .show-more:hover{background-color: #f05a50; border-bottom: 3px solid #e13c3c}
+@font-face{font-family: iconfont; src: url(fonts/font_1429185683_8182344.eot); src: url(fonts/font_1429185683_8182344.eot?#iefix) format("embedded-opentype"), url(fonts/font_1429185683_8182344.woff) format("woff"), url(fonts/font_1429185683_8182344.ttf) format("truetype"), url(fonts/font_1429185683_8182344.svg#iconfont) format("svg")}
+.detail{position: relative}
+.project.error{height: 200px}
+.project.error .icon{font-family: iconfont; text-align: center; font-size: 35px; color: #cecece; margin-top: 120px}
+.project.error .tip{font-size: 15px; color: #666; text-align: center}
+.project-title{padding: 30px 0 20px; *padding-bottom: 0}
+.project-title .ylb-logo{float: left; top: 0; left: 5px; position: relative}
+.project-title h1{float: left; font-size: 25px; color: #333; margin-bottom: 2px}
+.project-title .interest, .project-title .uninterest{float: left; margin-left: 20px; padding-top: 4px; height: 30px; line-height: 30px; color: #999; text-align: center; font-size: 12px; text-decoration: none; vertical-align: top}
+.project-title .interest i, .project-title .uninterest i{font-style: normal; font-family: shareIcon; font-size: 20px; color: #999}
+.project-title .interest i:hover, .project-title .uninterest i:hover{color: #ff645a}
+.project-title .interest .YLB-int-status, .project-title .uninterest .YLB-int-status{vertical-align: top}
+.project-title .uninterest i{color: #ff645a}
+.project-tabs{clear: both; padding-top: 20px; height: 42px; position: relative; top: 1px}
+.project-tabs li{float: left; margin-right: 10px}
+.project-tabs li .tab{cursor: pointer; font-size: 14px; padding: 10px 20px; display: block; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom: 1px solid #e0e0e0; background: #eee; color: #333; -webkit-transition: background .3s; -moz-transition: background .3s; -ms-transition: background .3s; -o-transition: background .3s; transition: background .3s}
+.project-tabs li .tab:hover{background: #dcdcdc; text-decoration: none}
+.project-tabs li .tab.current-tab{background: #fff; color: #fd645c; border: 1px solid #e0e0e0; border-bottom: 0}
+.project-tabs li .tabs-report{position: relative}
+.project-tabs li .tabs-report span{position: absolute; top: -4px; right: -4px; width: 29px; height: 13px; background: url(../images/zc-tip-new.jpg) no-repeat left top}
+.project-tabs .share-area{float: right; color: #9a9a9a; padding-top: 5px}
+.project-tabs .share-area a{padding: 0 5px 0 0; font-family: shareIcon; font-size: 18px; text-decoration: none; color: #9a9a9a; -webkit-transition: color .5s; -moz-transition: color .5s; -ms-transition: color .5s; -o-transition: color .5s; transition: color .5s}
+.project-tabs .share-area a b{font-size: 16px; font-weight: 100; font-family: "微软雅黑"}
+.project-tabs .share-area a:hover{color: #00cccf}
+.project-content{clear: both}
+.project-content .col-left{width: 798px; border: 1px solid #e0e0e0; float: left}
+.project-content .col-right{width: 380px; float: right}
+.project-content .col-right .box{background-color: #eff7f9; border-top: 1px solid #e0e0e0}
+.schedule-box h2{font-weight: 400; font-size: 16px; color: #666}
+.schedule-box .money-box{padding: 28px 15px 8px 35px}
+.schedule-box .yen{font-family: arial}
+.schedule-box .target-money{color: #999; font-size: 14px; margin-top: 10px}
+.schedule-box .target-money.prepub-target{font-size: 12px}
+.schedule-box .target-money.prepub-target b em{color: #fe645a}
+.schedule-box .target-money em{padding: 0 5px; color: #fe645a}
+.schedule-box .current-money{font-size: 25px; color: #00cccf; font-weight: 700}
+.schedule-box .project-status-detail{width: 320px; height: 40px; padding: 15px 0 15px 15px; margin-top: 23px; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px}
+.schedule-box .project-status-detail .schedule-bar{float: left; display: block; width: 245px; height: 10px; margin-bottom: 15px; background: #e5e5e5; box-shadow: 0 1px 0 rgba(200, 200, 200, .8) inset}
+.schedule-box .project-status-detail .schedule-current{height: 10px; background: url(../images/TB1d_hTFVXXXXbsXXXXD7xMFXXX-17-9.gif) repeat-x 0 1px}
+.schedule-box .project-status-detail .percentage{margin-top: -6px; font-size: 14px; float: left; display: block; padding-left: 10px; color: #666}
+.schedule-box .project-status-detail .projects-schedule-data{width: 100%; *margin-top: -15px; clear: both}
+.schedule-box .project-status-detail .projects-schedule-data span{float: left; display: block}
+.schedule-box .project-status-detail .projects-schedule-data .time-left, .schedule-box .project-status-detail .projects-schedule-data .support-number{overflow: hidden; padding-left: 24px; background: url(../images/TB1nMdvFVXXXXXdXXXXK8mKFpXX-21-49.png) no-repeat 0 0}
+.schedule-box .project-status-detail .projects-schedule-data .time-left{background-position: left bottom}
+.schedule-box .project-status-detail .projects-schedule-data .data-number{padding-left: 5px; padding-right: 15px; font-size: 12px; color: #00cccf}
+.schedule-box .reserve{position: relative; padding: 5px 15px}
+.schedule-box .thanks-wrap{position: absolute; top: 157px; left: 33px; width: 302px; height: 112px; overflow: hidden}
+.schedule-box .reserve-btn{margin-top: 25px; margin-left: 30px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; width: 278px; height: 40px; line-height: 38px; font-weight: 700; color: #fff; font-size: 17px; text-align: center; display: inline-block; background-color: #fe645a; text-decoration: none; margin-bottom: 30px; border-bottom: 3px solid #ee514c}
+.schedule-box .reserve-btn:hover{background-color: #f05a50; border-bottom: 3px solid #e13c3c}
+.schedule-box .reserve-btn-disabled, .schedule-box .reserve-btn-disabled:hover, .schedule-box .cannotbuy, .schedule-box .cannotbuy:hover{cursor: not-allowed; background-color: #cfcfcf; border-bottom: 3px solid #aaa}
+.schedule-box .sponsor{position: relative; z-index: 1; padding: 0 15px 0 45px; color: #333; height: 100px}
+.schedule-box .sponsor .sponsor-tmall{float: left; position: relative; top: 5px; margin-right: 4px}
+.schedule-box .sponsor-hd{font-weight: 700; padding: 19px 0 16px}
+.schedule-box .shop-link{display: inline-block; width: 66px; height: 66px; float: left; margin-right: 13px}
+.schedule-box .sponsor-pic{float: left; margin-right: 13px; width: 66px; -webkit-border-radius: 33px; -moz-border-radius: 33px; border-radius: 33px}
+.schedule-box .ww-light{margin-top: 2px; margin-right: 10px; display: block; float: left}
+.schedule-box .sponsor-name{display: block; float: left; height: 30px; line-height: 30px; width: 135px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; word-wrap: break-word; font-size: 15px; font-weight: 700}
+.schedule-box .sponsor-intro{float: left; width: 200px; display: block; height: 36px; word-break: break-all; word-wrap: break-word; overflow: hidden}
+.repays{padding-top: 15px}
+.repays h2{color: #333; font-size: 19px; padding: 19px 0 11px}
+.repay-con{position: relative; cursor: pointer}
+.repay-con .repay.repay-unable{height: 65px}
+.repay-con .icon-arrow{position: absolute; display: block; color: #bebebe; top: 2px; right: 14px; transition: transform .1s; font-family: iconfont; display: none \9}
+.repay-con .tip{overflow: hidden; position: absolute; width: 40px; height: 20px; bottom: 1px; left: 47%}
+.repay-con .tip .tip-area{width: 40px; height: 40px; background: #efefef; border-radius: 20px; transition: background .4s; -webkit-transition: background .3s; background: url(../images/TB1RdvWHpXXXXXWXXXXx2wwGpXX-40-20.png) no-repeat \9}
+.repay-con.open .icon-arrow{transform: rotate(-180deg); -webkit-transform: rotate(-180deg)}
+.repay-con.open .tip .tip-area{background: url(../images/TB1kikXHpXXXXc1XFXXx2wwGpXX-40-20.png) no-repeat \9}
+.repay-con.open:hover .tip .tip-area{background: url(../images/TB1v7Y_HpXXXXXYXVXXx2wwGpXX-40-20.png) no-repeat \9}
+.repay-con:hover .tip-area{background: #d7d7d7; background: url(../images/TB1l2vNHpXXXXXTXVXXx2wwGpXX-40-20.png) no-repeat \9}
+.repay-con:hover .icon-arrow{color: #9b9b9b}
+.repay-con:hover .repay-unable{border: 10px solid #d7d7d7}
+.repay{position: relative; margin-left: 10px; width: 350px; border: 10px solid #eff8f7; margin-bottom: 8px}
+.repay:hover{border: 10px solid #ccecec}
+.repay.repay-unable{overflow: hidden; -webkit-transition: all .3s ease; border: 10px solid #efefef; transition: all .3s ease}
+.repay.repay-unable:hover{border: 10px solid #d7d7d7}
+.repay .repay-title{padding: 15px; padding-bottom: 10px; height: 40px; line-height: 40px}
+.repay .repay-money{font-size: 23px; color: #00cece; font-weight: 700}
+.repay .repay-money .yen{font-family: arial; font-size: 18px}
+.repay.repay-unable .repay-money{color: #aaa}
+.repay .repay-buy{display: inline-block; font-size: 17px; line-height: 31px; height: 31px; background-color: #00ccce; border-bottom: 3px solid #22babb; color: #fff; text-decoration: none; float: right; *margin-top: -40px; padding: 0 16px; vertical-align: top; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
+.repay .repay-buy:hover{background-color: #05b9be; border-bottom: 3px solid #0fa5a5}
+.repay .repay-cannotbuy{cursor: not-allowed; background-color: #cfcfcf; border-bottom: 3px solid #aaa}
+.repay .repay-cannotbuy:hover{background-color: #cfcfcf; border-bottom: 3px solid #aaa}
+.repay .repay-expand, .repay .repay-expandOff{margin-left: auto; margin-right: auto; height: 0; width: 0; border: 7px solid transparent; border-top: 7px solid #aaa; cursor: pointer}
+.repay .repay-expandOff{margin-bottom: 5px; border: 7px solid transparent; border-bottom: 7px solid #aaa; display: none}
+.repay .repay-content{padding: 0 15px 15px}
+.repay .repay-content h2{padding-top: 0; font-size: 18px; font-weight: 400; word-break: break-all; word-wrap: break-word}
+.repay .repay-intro{color: #2a2a2a; font-size: 13px; padding: 4px 0 15px; word-break: break-all; word-wrap: break-word}
+.repay .buy-num{color: #999; line-height: 20px}
+.repay .buy-num span{color: #fd6359}
+.repay .grant{padding-top: 10px; color: #999; padding-bottom: 10px}
+.repay .wuliu{color: #999}
+.repay .repay-img{overflow: hidden; padding-top: 4px}
+.repay .repay-img li{width: 60px; height: 60px; border: 1px solid #e3e3e3; float: left; margin-right: 3px; cursor: pointer}
+.repay .repay-img img{width: 60px}
+.ks-overlay-body .repay{width: 880px}
+.explain{position: relative; background: #fff9c9; width: 310px; padding: 20px 30px; margin-left: 10px}
+.explain h2{color: #8d8b8e; font-size: 19px; padding: 11px 0}
+.explain h3{font-size: 13px; color: #8d8b8e; padding: 10px 0}
+.explain .explain-p{color: #747474; line-height: 20px; margin-bottom: 20px}
+.explain b{position: absolute; bottom: 0; right: 0; font-size: 0; width: 0; height: 0; display: block; border-color: #fff1a6 #fff #fff #fff1a6; border-style: solid; border-width: 20px}
+.cover{position: relative; height: 502px; overflow: hidden; text-align: center; padding: 20px 20px 0}
+.cover-img{margin: 0 auto; display: block}
+.content-detail .title{color: #2a2a2a; font-size: 19px; padding: 19px 0 11px 20px; line-height: 28px; margin-bottom: 0}
+.content-detail .box{padding: 45px 20px; min-height: 500px}
+.content-detail h1, .content-detail h2, .content-detail h3, .content-detail h4, .content-detail h5, .content-detail h5, .content-detail p, .content-detail div{color: #2a2a2a; line-height: 22px; font-size: 18px; margin-bottom: 20px; word-break: break-all}
+.content-detail p, .content-detail div{font-size: 14px}
+.content-detail img{max-width: 760px}
+.recommend{margin-top: 40px; background: #eee; padding: 10px 0 30px; clear: both}
+.recommend h3{color: #2a2a2a; font-size: 19px; padding: 10px 0; margin-bottom: 15px; font-weight: 400}
+.recommend .projects{*position: relative; width: 1190px}
+.overlay-box{position: relative}
+.rapay-big{width: 580px; height: 580px; position: relative; text-align: center}
+.img-box{text-align: center; vertical-align: middle; display: table-cell; width: 580px; height: 580px; background-color: #000}
+.tab-pannel{display: none}
+.current{display: block}
+.all-repays{background-color: #fff; overflow: auto; float: left; width: 923px; height: 500px; padding: 15px}
+.all-repays .box{background-color: #fff; border: 1px solid #d3d3d3; border: 1px solid rgba(0, 0, 0, .15); width: 298px; float: left; height: 300px; margin-right: 2px}
+.order-container .all-repays{float: none}
+.order-container .all-repays .box{vertical-align: top; display: inline-block; *display: inline; *zoom: 1; float: none; margin-right: 0}
+.feeds-list .feed-item:last-child .operation{border-bottom: 0}

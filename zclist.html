@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>众筹列表页</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/headtop.css" />
+    <link rel="stylesheet" href="css/zclist.css" />
+    <link rel="stylesheet" href="css/zcheader.css" />
+    <link rel="stylesheet" href="css/footdown.css" />
+</head>
+<body>
+<div class="header w h z333">
+    <!--头部通栏-->
+    <div class="w h30 bb1 bcfa lh30 z333">
+        <div class="w1200 h ov m">
+            <!--topleft-->
+     <span class="w320 h30 fl ff_a"> <span class="fl w85 f12 h30">
+       <div class="fl mt2">
+           <img src="img_head/login01.png" />
+       </div>&nbsp;<a href="#" rel="nofollow">收藏</a></span> <span class="fr w100 f12 h30"><a href="#" rel="nofollow">登录</a>&nbsp;|&nbsp;<a href="#" rel="nofollow">免费注册</a></span> <span class="fl f12 h30 dpl">欢迎来到环球掌柜网</span> </span>
+            <!--topright-->
+     <span class="fr f12 login_ul ff_a">
+      <ul>
+          <li class="w90 h">
+              <div>
+                  <div class="fl mt2 mr4 ml4">
+                      <img src="img_head/login02.png" />
+                  </div>
+                  <div class="fr mt-2 mr10">
+                      <img src="img_head/selll.png" />
+                  </div>
+                  <a href="#" rel="nofollow">掌柜中心</a>
+              </div>
+              <ul class="mt-30 none bl1 br1 bb1 bcfff w90 h ov ff_a z333 btx0">
+                  <li class="w unl_a">
+                      <div class="fl mt2 mr4 ml4">
+                          <img src="img_head/login02.png" />
+                      </div>
+                      <div class="fr mt-2 mr10">
+                          <img src="img_head/selll_a.png" />
+                      </div> <a href="#">掌柜中心</a> </li>
+                  <li class="w unl_a"><a href="#" class="ml18">我的订单</a></li>
+                  <li class="w unl_a"><a href="#" class="ml18">我的优惠券</a></li>
+                  <li class="w unl_a"><a href="#" class="ml18">在线退换货</a></li>
+              </ul> </li>
+          <li><span class="ccc">|</span></li>
+          <li class="w97 h">
+              <div>
+                  <div class="fl mt2 mr4 ml4">
+                      <img src="img_head/login03.png" />
+                  </div>
+                  <a href="#" rel="nofollow">官方商户微信</a>
+              </div>
+              <ul class="dpl_ul none bl1 br1 bb1 bcfff w209 h94 ov ff_a pb10 pl10 pr10">
+                  <li class="w w209 h94 pt10"><img src="img_head/app189.jpg" /></li>
+              </ul> </li>
+          <li><span class="ccc ml8 mr4">|</span></li>
+          <li class="h">
+              <div class="fl mt2 mr4 ml4">
+                  <img src="img_head/login04.png" />
+              </div> <a href="#">帮助中心</a> </li>
+          <li><span class="ccc ml8 mr4">|</span></li>
+          <li class="h">
+              <div>
+                  <div class="fl mt2 mr4 ml4">
+                      <img src="img_head/login06.png" />
+                  </div>
+                  <a href="#" rel="nofollow">客服中心：400-609-9900</a>
+              </div>
+              <ul class="mt-30  none bl1 br1 bb1 bcfff w115 h ov ff_a z333 btx0 pb-10">
+                  <li class="w unl_a">
+                      <div class="fl mt2 mr4 ml4">
+                          <img src="img_head/login06.png" />
+                      </div> <a href="#">客服中心</a> </li>
+                  <li class="w unl_a"><a href="#" class="ml15"><img src="img_head/zx.jpg" /></a></li>
+              </ul> </li>
+      </ul> </span>
+        </div>
+    </div>
+    <!--logo通栏-->
+    <div class="logo w1200  h120 ov m  z333">
+        <!--logoleft-->
+    <span class="fl mt10">
+     <!--logo-->
+     <div class="fl logo_img">
+         <a href="#"><img src="img_head/logo.gif" /></a>
+     </div> </span>
+        <!--logoright-->
+    <span class="fr mt15">
+     <!--搜索-->
+     <div class="middle fl w550">
+         <div class="crk">
+             <ul id="lx_nav">
+                 <li class="li01" onclick="secBoard('lx_nav','vouch','li',1);">搜产品</li>
+                 <li class="li02" onclick="secBoard('lx_nav','vouch','li',2);">搜店铺</li>
+             </ul>
+         </div>
+         <div class="input_boxs bd2 h32 w545 mb5 mt0">
+             <img src="img_head/ioc_01.gif" />
+             <a href="#" style="float:left;background:none;height:25px!important;line-height:25px!important;">
+                 <div class="lx-con" id="vouch_1" style="display: block;">
+                     <ul>
+                         <li><input id="Text1" type="text" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='请输入产品关键字';" onfocus="if(this.value=='请输入产品关键字')value='';" value="请输入产品关键字" maxlength="30" /></li>
+                     </ul>
+                 </div>
+                 <div class="lx-con" id="vouch_2" style="display: none;">
+                     <ul>
+                         <li><input id="Text1" type="text" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='请输入店铺关键字';" onfocus="if(this.value=='请输入店铺关键字')value='';" value="请输入店铺关键字" maxlength="30" /></li>
+                     </ul>
+                 </div> </a>
+             <a href="#">搜索</a>
+         </div>
+         <div class="a_link f12 vt pt2">
+             <a href="#">机柜<img src="img_head/hot.png" /></a>
+             <a href="#">智能手机<img src="img_head/hot.png" /></a>
+             <a href="#">耳机</a>
+             <a href="#">香水</a>
+             <a href="#">游戏机</a>
+             <a href="#">天花板</a>
+         </div>
+     </div>
+        <!--购物车-->
+     <div class="head_recommend">
+         <div class="cart">
+             <a href="#" class="f12">我的选品篮</a>
+             <i class="cart_right">&gt;</i>
+             <i class="cart_count">10</i>
+         </div>
+     </div>
+        <!--<a href="http://www.189.cn/bj/zthd/2016sjyx/?intid=bj-sy-jdt01-sjyx&amp;intaid=bj-sy-ytggw-" target="_blank" class="head_recommend"><img src="img_head/head_recommend.jpg" width="253" height="76"></a>--> </span>
+    </div>
+    <!--menu-->
+    <div class="nav">
+        <!--导航-->
+        <ul class="nav-left">
+            <li class="main home current"><a href="#">首页</a></li>
+            <li class="main list"><a href="#">浏览项目<b class="ico-font">3</b></a>
+                <div class="nav-son">
+                    <ul class="J_navallType category-drop-down">
+                        <li class="first"><a href="#" target="_blank"><b class="ico-font"></b>影音</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font"></b>科技</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font"></b>设计</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font"></b>动漫</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font"></b>游戏</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font"></b>农业</a></li>
+                        <li><a href="#" target="_blank"><b class="ico-font"></b>其他</a></li>
+                    </ul>
+                </div> </li>
+            <li class="main help"><a href="#">新手帮助</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li class="main publish"><a class="headmain_bg"><b class="ico-font">l</b>发布项目</a></li>
+            <li class="main myyzy"><a href="#">我的众筹<b class="ico-font">3</b></a>
+                <div class="nav-son">
+                    <ul class="vice-myyzy category-drop-down">
+                        <li><a class="link" href="#" target="_blank"><b>j</b>我支持的项目</a></li>
+                        <li><a class="link" href="#" target="_blank"><b></b>我喜欢的项目</a></li>
+                        <li><a class="link" href="#" target="_blank"><b></b>我发起的项目</a></li>
+                    </ul>
+                </div> </li>
+        </ul>
+    </div>
+</div>
+<div class="list-main" id="content">
+    <div class="category-types J_CategoryMenu">
+        <div class="wrap">
+            <ul class="category-list">
+                <li class="category all"><a class="types"  href="javascript:void(0);">全部</a></li>
+                <li class="category tech"><a class="types" href="javascript:void(0);">科技</a></li>
+                <li class="category agriculture"><a class="types" href="javascript:void(0);">农业</a></li>
+                <li class="category acg"><a class="types" href="javascript:void(0);">动漫</a></li>
+                <li class="category design"><a class="types"  href="javascript:void(0);">设计</a> </li>
+                <li class="category love"><a class="types"  href="javascript:void(0);">公益</a></li>
+                <li class="category tele"><a class="types"  href="javascript:void(0);">娱乐</a></li>
+                <li class="category music"><a class="types current"  href="javascript:void(0);">影音</a></li>
+            </ul>
+            <a class="category-list-other J_otherTrigger"  href="javascript:void(0);"> <span class="other-content J_otherContent books"  >书籍</span> <span class="other-show J_otherShow"></span> </a>
+            <ul class="other-dropdown J_otherDropdown" style="display:none">
+                <li><a href="javascript:void(0)" class="books"  >书籍<b class="a-icon"></b></a></li>
+                <li><a href="javascript:void(0)" class="game"  >游戏</a></li>
+                <li><a href="javascript:void(0)" class="other"  >其他</a></li>
+            </ul>
+            <div class="filter-name">
+                状态:
+            </div>
+            <div class="filter status-filter">
+                <a class="current-selection J_StatusTrigger" href="javascript:void(0);">全部</a>
+                <div class="filter-drop-down-box">
+                    <ul class="drop-down J_StatusDropDown drop-down-hidden">
+                        <li class="first"><a class="J_Status"  href="javascript:void(0);"><b class="a-icon"></b>全部</a></li>
+                        <li><a class="J_Status"  href="javascript:void(0);">筹款中</a></li>
+                        <li><a class="J_Status"  href="javascript:void(0);">预热中</a></li>
+                        <li class="last"><a class="J_Status"  href="javascript:void(0);">筹款成功</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul></ul>
+            <div class="filter-name">
+                排序:
+            </div>
+            <div class="filter order-filter">
+                <a class="current-selection J_OrderTrigger" href="javascript:void(0);" >最新上线</a>
+                <div class="filter-drop-down-box">
+                    <ul class="drop-down J_OrderDropDown drop-down-hidden">
+                        <li class="first"><a class="J_Sort" data-sort="1" href="javascript:void(0);"><b class="a-icon"></b>最新上线</a></li>
+                        <li><a class="J_Sort" data-sort="3" href="javascript:void(0);">金额最高</a></li>
+                        <li class="last"><a class="J_Sort" data-sort="4" href="javascript:void(0);">最受欢迎</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END 分类-->
+    <div class="layout">
+        <div class="">
+            <ul class="projects clearfloat" id="J_Projects">
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1v0UfJVXXXXXRXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">《蚁人》Ant-Man迷你英雄主题饰品系列</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>138%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>27686.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>165</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1WmKRJFXXXXaqXVXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">娶豪车回家!仅500席,梦想照进现实!</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>796%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>159291.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>109</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1x3eIJFXXXXamXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【限量】柏文《待.渡》中国风专辑</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>105%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>16860.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>117</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1835BJFXXXXbUXVXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">晨光携手梵高博物馆 官方限量“超梵”文具套装</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>186%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>186111.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1836</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1OKTZJVXXXXXwXVXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">荷兰梵高博物馆授权版画，忠于原作，值得收藏！</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1096%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>219391.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>393</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1A7mcKXXXXXXPXFXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【正版授权】【梵高经典】ame手机/平板保护系列</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>561%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>67400.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1834</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1S7SJJFXXXXXQXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">雷柏梵高定制版无线鼠标</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>111%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>77005.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1105</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1Zy3bJVXXXXcUXpXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【佳彩天颜】梵高名画系列之数字油画—0基础绘画</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>489%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>48910.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1210</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1eXzZJVXXXXb2XVXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【渴望生活 致敬梵高】 多喜爱家纺抱枕专场</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>3018%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>301808.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>3422</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1MPqVJFXXXXXBXXXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">杏花初开 全棉帆布印花布艺餐桌布</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>956%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>112867.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1913</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1iMWNJFXXXXasXFXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">杏树花开，写意窗饰-梵高正版授权数码印花艺术窗帘</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1792%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>89605.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>248</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1nXEjJVXXXXbiXFXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">SOLOVE Q2梵高定制设计款蓝牙音箱</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>140%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>140175.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>186</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1ePAbJVXXXXa_XFXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">梵高名画系列宠物服饰</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>171%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>34398.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>882</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1oJJ8KXXXXXabXXXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">【Ijarl 致敬梵高】高端餐具打造餐桌上的艺术</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1110%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>555081.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>6790</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1Lp7tJVXXXXcQXpXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">TOMIC/特美刻梵高纪念版（保温杯/居家壶）</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>340%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>340777.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>2137</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1TTBVKXXXXXbAXpXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【正版授权】【梵高经典】ame笔记本电脑保护套系列</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>162%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>24303.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>259</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1KAEwJVXXXXXiXXXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">印象梵高————致敬大师</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1113%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>222677.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1153</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1fvl1KXXXXXadXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">LOVO乐我家纺 梵高 盛开的杏树 全棉贡缎四件套</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1334%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>667007.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1733</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1kF3CJVXXXXXjXVXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">再遇梵高-天堂伞，向热烈而又癫狂的灵魂致敬！</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>4942%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>988541.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>7849</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB13Mz9JXXXXXbPXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">碟中谍5富朗达定制款苹果6/6plus无线快充套装</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>441%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>44160.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>283</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
+            </ul>
+            <!--END 最新上线-->
+        </div>
+        <!--END 列表-->
+        <p class="pagination" id="J_Pagination"><a class="prev" href=""><span>&lt;上一页</span></a><a class="item" data-page="1" href="">1</a><span class="current">2</span><a class="item" data-page="3" href="">3</a><a class="item" data-page="4" href="">4</a><a class="item" data-page="5" href="">5</a><a class="item" data-page="6" href="">6</a><a class="next" href="">下一页&gt;</a></p>
+    </div>
+</div>
+<!--footer-->
+<div class="footer w1200 h ov m pt40">
+    <!--售后-->
+    <div class="w h ov mt30 bcfoot pt30 pb30">
+        <!--logo-->
+        <!--<span class="fl "><a href="#" rel="nofollow"><img src="img_foot/foot_down_12.png"></a></span>-->
+        <span class="fl "><a href="#" rel="nofollow"><img src="img_head/logo.gif" /></a></span>
+        <!--售后窗口-->
+    <span class="fl aftermarket ff_a">
+     <ul>
+         <li> <p class="fb600 f14_a"><a href="#" rel="nofollow">购物指南</a></p> <p><a href="#" rel="nofollow">卖场须知</a></p> <p><a href="#" rel="nofollow">订单查询</a></p> <p><a href="#" rel="nofollow">网络制式</a></p> <p><a href="#" rel="nofollow">登录帮助</a></p> </li>
+         <li> <p class="fb600 f14_a"><a href="#" rel="nofollow">物流配送</a></p> <p><a href="#" rel="nofollow">配送说明</a></p> <p><a href="#" rel="nofollow">收货须知</a></p> <p><a href="#" rel="nofollow">配送费用标准</a></p> </li>
+         <li> <p class="fb600 f14_a"><a href="#" rel="nofollow">支付方式</a></p> <p><a href="#" rel="nofollow">在线支付</a></p> <p><a href="#" rel="nofollow">货到付款</a></p> <p><a href="#" rel="nofollow">分期付款</a></p> <p><a href="#" rel="nofollow">发票服务</a></p> </li>
+         <li> <p class="fb600 f14_a"><a href="#" rel="nofollow">售后服务</a></p> <p><a href="#" rel="nofollow">售后政策</a></p> <p><a href="#" rel="nofollow">退换货政策</a></p> <p><a href="#" rel="nofollow">取消订单</a></p> <p><a href="#" rel="nofollow">退款说明</a></p> </li>
+         <!--<li>
+                       <p class="fb600 f14_a"><a href="#" rel="nofollow">便民服务</a></p>
+                       <p><a href="#" rel="nofollow">10000知道</a></p>
+                       <p><a href="#" rel="nofollow">常见问题</a></p>
+                       <p><a href="#" rel="nofollow">投诉建议</a></p>
+                       <p><a href="#" rel="nofollow">渠道介绍</a></p>
+                       <p><a href="#" rel="nofollow">常用下载</a></p>
+                   </li>-->
+     </ul> </span>
+        <!--客服-->
+    <span class="fr"> <span class="fl mr50"><img src="img_foot/foot_down_11.jpg" /></span> <span class="fl advisory w140">
+      <ul>
+          <li> <a href="#" rel="nofollow"> <p><img src="img_foot/advisory_01.png" id="img13" /></p> <p>在线客服</p> </a> </li>
+          <li> <a href="#" rel="nofollow"> <p><img src="img_foot/advisory_02.png" id="img14" /></p> <p>客服微博</p> </a> </li>
+          <li class="mt9" rel="nofollow"> <a href="#"> <p><img src="img_foot/advisory_03.png" id="img15" /></p> <p>10000知道</p> </a> </li>
+          <li class="mt9" rel="nofollow"> <a href="#"> <p><img src="img_foot/advisory_04.png" id="img16" /></p> <p>资费专区</p> </a> </li>
+      </ul> </span> </span>
+    </div>
+    <!--链接-->
+    <div class="bellows single w1200 h ov bcfoot pt10">
+        <div class="bellows__header">
+            <ul id="lx_nav2">
+                <li class="li01" onclick="secBoard('lx_nav2','vouchb','li',1);">合作伙伴<span class=" ml20 ccc f12 fb0">|</span></li>
+                <li class="li02" onclick="secBoard('lx_nav2','vouchb','li',2);">合作伙伴</li>
+            </ul>
+        </div>
+        <div class="lx-con w h ov" id="vouchb_1" style="display: block;">
+            <div class="w h ov">
+                <div id="aio" class="bellows__contenta fl" style=" overflow:hidden; height:70px; width:1180px;">
+                    <ul>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                        <li><a href="#">北京欢go网</a><span>|</span></li>
+                        <li><a href="#">安徽欢go网</a><span>|</span></li>
+                        <li><a href="#">上海欢go网</a><span>|</span></li>
+                        <li><a href="#">天津欢go网</a><span>|</span></li>
+                        <li><a href="#">河北欢go网</a><span>|</span></li>
+                        <li><a href="#">山东欢go网</a><span>|</span></li>
+                        <li><a href="#">内蒙古欢go网</a><span>|</span></li>
+                        <li><a href="#">西藏欢go网</a><span>|</span></li>
+                    </ul>
+                </div>
+                <div class="fl p0 mt47 ov">
+                    <a class="footall_a" href="javascript:void(0)" id="show" onclick="document.getElementById('aio').style.height='auto';document.getElementById('hidden').style.display='';document.getElementById('show').style.display='none';"><img src="img_foot/x.png" /></a>
+                    <a class="footall_a" href="javascript:void(0)" id="hidden" style="display:none;" onclick="document.getElementById('aio').style.height='70px';document.getElementById('hidden').style.display='none';document.getElementById('show').style.display='';"><img src="img_foot/s.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="lx-con w h ov" id="vouchb_2" style="display: none;">
+            <div class="w h ov">
+                <div id="aia" class="bellows__content fl" style=" overflow:hidden; height:70px; width:1180px;">
+                    <ul>
+                        <li><a href="#">中国电信</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                        <li><a href="#">中国通信学会</a><span>|</span></li>
+                        <li><a href="#">中国互联网协会</a><span>|</span></li>
+                        <li><a href="#">中国通信企业协会</a><span>|</span></li>
+                        <li><a href="#">中国人民政府网</a><span>|</span></li>
+                    </ul>
+                </div>
+                <div class="fl p0 mt47 ov">
+                    <a class="footall_a" href="javascript:void(0)" id="showa" onclick="document.getElementById('aia').style.height='auto';document.getElementById('hiddena').style.display='';document.getElementById('showa').style.display='none';"><img src="img_foot/x.png" /></a>
+                    <a class="footall_a" href="javascript:void(0)" id="hiddena" style="display:none;" onclick="document.getElementById('aia').style.height='70px';document.getElementById('hiddena').style.display='none';document.getElementById('showa').style.display='';"><img src="img_foot/s.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--版权-->
+    <div class="footTwo pt30 w1200 m">
+        <div class="clearfix cl_style tc w1200 f12">
+            <a href="#">关于我们</a>
+            <span class="f12 999">|</span>
+            <a href="#">欢go网公告</a>
+            <span class="f12 999">|</span>
+            <a href="#">网站导航</a>
+            <span class="f12 999">|</span>
+            <a href="#">代理商专区</a>
+        </div>
+        <div class="clearfix">
+            <p class="foot_style f12 tc mt10">版权所有&copy;2012 中国电信集团公司 [ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP 备 09031924号</p>
+        </div>
+        <div class="foot_img">
+            <img src="img_foot/footerPic7.jpg" />
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".J_StatusTrigger").click(function () {
+            $(".J_StatusDropDown").toggleClass("drop-down-hidden");
+        });
+        $(".J_OrderTrigger").click(function () {
+            $(".J_OrderDropDown ").toggleClass("drop-down-hidden");
+        });
+        $(".J_otherShow").click(function () {
+            $(".J_otherDropdown ").toggle();
+        });
+    });
+</script>
+</body>
+</html>
