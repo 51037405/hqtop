@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.layout{width:990px;margin:0 auto;font:12px/1.5 tahoma,arial,'Hiragino Sans GB',microsoft yahei,\5b8b\4f53,sans-serif}
+.fn-clear:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.fn-clear{zoom:1}
+#content{background-color:#f8f8f8;overflow: auto;}
+.col-sub{width:190px;float:left}
+.col-main{width:790px;float:right;background-color:#fff}
+.kickstarter-main{border:1px solid #d3d3d3;border-radius:5px;padding:0 25px 25px;min-height:500px}
+.kickstarter-main h2{color:#ff8200;font-size:16px;padding:25px 0 12px}
+.kickstarter-main p{color:#2a2a2a;font-size:13px;line-height:24px}
+.left-menu .k-left-menu li{width:100%;background-color:#ff8200;text-align:center;margin-bottom:1px;vertical-align:middle}
+.left-menu .k-left-menu li.current,.left-menu .k-left-menu li:hover{background-color:#CA6B00}
+.left-menu .k-left-menu li a{display:inline-block;*display:inline;*zoom:1;padding:16px 0;width:100%;text-align:center}
+.left-menu .k-left-menu li span{display:inline-block;*display:inline;*zoom:1;color:#fff;font-size:13px;vertical-align:middle}
+.left-menu .k-left-menu li i{display:inline-block;*display:inline;*zoom:1;background:url(../images/T1irXWFuJJXXcPLavl-19-292.png) no-repeat;width:18px;height:17px;vertical-align:middle;margin-right:7px}
+.left-menu .k-left-menu li i.icon-1{background-position:0 0}
+.left-menu .k-left-menu li i.icon-2{background-position:0 -51px}
+.left-menu .k-left-menu li i.icon-3{background-position:0 -99px}
+.left-menu .k-left-menu li i.icon-4{background-position:0 -150px}
+.left-menu .k-left-menu li i.icon-5{background-position:0 -201px}
+.left-menu .k-left-menu li.first-child{border-radius:5px 5px 0 0}
+.left-menu .k-left-menu li.last-child{border-radius:0 0 5px 5px}

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>众筹列表页</title>
+    <title>众筹关于我们</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/headtop.css" />
-    <link rel="stylesheet" href="css/zclist.css" />
+    <link rel="stylesheet" href="css/zchelp.css" />
     <link rel="stylesheet" href="css/zcheader.css" />
     <link rel="stylesheet" href="css/footdown.css" />
 </head>
@@ -136,7 +136,7 @@
         <!--导航-->
         <ul class="nav-left">
             <li class="main home"><a href="#">首页</a></li>
-            <li class="main list current"><a href="#">浏览项目<b class="ico-font">3</b></a>
+            <li class="main list"><a href="#">浏览项目<b class="ico-font">3</b></a>
                 <div class="nav-son">
                     <ul class="J_navallType category-drop-down">
                         <li class="first"><a href="#" target="_blank"><b class="ico-font">&#xe000;</b>影音</a></li>
@@ -148,7 +148,7 @@
                         <li><a href="#" target="_blank"><b class="ico-font">&#xe080;</b>其他</a></li>
                     </ul>
                 </div> </li>
-            <li class="main help"><a href="#">新手帮助</a></li>
+            <li class="main help current"><a href="#">新手帮助</a></li>
         </ul>
         <ul class="nav-right">
             <li class="main publish"><a class="headmain_bg"><b class="ico-font">l</b>发布项目</a></li>
@@ -163,84 +163,41 @@
         </ul>
     </div>
 </div>
-<div class="list-main" id="content">
-    <div class="category-types J_CategoryMenu">
-        <div class="wrap">
-            <ul class="category-list">
-                <li class="category all"><a class="types"  href="javascript:void(0);">全部</a></li>
-                <li class="category tech"><a class="types" href="javascript:void(0);">科技</a></li>
-                <li class="category agriculture"><a class="types" href="javascript:void(0);">农业</a></li>
-                <li class="category acg"><a class="types" href="javascript:void(0);">动漫</a></li>
-                <li class="category design"><a class="types"  href="javascript:void(0);">设计</a> </li>
-                <li class="category love"><a class="types"  href="javascript:void(0);">公益</a></li>
-                <li class="category tele"><a class="types"  href="javascript:void(0);">娱乐</a></li>
-                <li class="category music"><a class="types current"  href="javascript:void(0);">影音</a></li>
-            </ul>
-            <a class="category-list-other J_otherTrigger"  href="javascript:void(0);"> <span class="other-content J_otherContent books"  >书籍</span> <span class="other-show J_otherShow"></span> </a>
-            <ul class="other-dropdown J_otherDropdown" style="display:none">
-                <li><a href="javascript:void(0)" class="books"  >书籍<b class="a-icon"></b></a></li>
-                <li><a href="javascript:void(0)" class="game"  >游戏</a></li>
-                <li><a href="javascript:void(0)" class="other"  >其他</a></li>
-            </ul>
-            <div class="filter-name">
-                状态:
-            </div>
-            <div class="filter status-filter">
-                <a class="current-selection J_StatusTrigger" href="javascript:void(0);">全部</a>
-                <div class="filter-drop-down-box">
-                    <ul class="drop-down J_StatusDropDown drop-down-hidden">
-                        <li class="first"><a class="J_Status"  href="javascript:void(0);"><b class="a-icon"></b>全部</a></li>
-                        <li><a class="J_Status"  href="javascript:void(0);">筹款中</a></li>
-                        <li><a class="J_Status"  href="javascript:void(0);">预热中</a></li>
-                        <li class="last"><a class="J_Status"  href="javascript:void(0);">筹款成功</a></li>
-                    </ul>
-                </div>
-            </div>
-            <ul></ul>
-            <div class="filter-name">
-                排序:
-            </div>
-            <div class="filter order-filter">
-                <a class="current-selection J_OrderTrigger" href="javascript:void(0);" >最新上线</a>
-                <div class="filter-drop-down-box">
-                    <ul class="drop-down J_OrderDropDown drop-down-hidden">
-                        <li class="first"><a class="J_Sort" data-sort="1" href="javascript:void(0);"><b class="a-icon"></b>最新上线</a></li>
-                        <li><a class="J_Sort" data-sort="3" href="javascript:void(0);">金额最高</a></li>
-                        <li class="last"><a class="J_Sort" data-sort="4" href="javascript:void(0);">最受欢迎</a></li>
-                    </ul>
-                </div>
-            </div>
+<div class="detail" id="content">
+    <div class="layout">
+        <div class="headLogo" style="height:20px;">
         </div>
     </div>
-    <!--END 分类-->
-    <div class="layout">
-        <div class="">
-            <ul class="projects clearfloat" id="J_Projects">
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1v0UfJVXXXXXRXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">《蚁人》Ant-Man迷你英雄主题饰品系列</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>138%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>27686.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>165</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1WmKRJFXXXXaqXVXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">娶豪车回家!仅500席,梦想照进现实!</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>796%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>159291.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>109</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1x3eIJFXXXXamXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【限量】柏文《待.渡》中国风专辑</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>105%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>16860.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>117</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1835BJFXXXXbUXVXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">晨光携手梵高博物馆 官方限量“超梵”文具套装</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>186%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>186111.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1836</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1OKTZJVXXXXXwXVXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">荷兰梵高博物馆授权版画，忠于原作，值得收藏！</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1096%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>219391.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>393</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1A7mcKXXXXXXPXFXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【正版授权】【梵高经典】ame手机/平板保护系列</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>561%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>67400.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1834</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1S7SJJFXXXXXQXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">雷柏梵高定制版无线鼠标</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>111%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>77005.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1105</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1Zy3bJVXXXXcUXpXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【佳彩天颜】梵高名画系列之数字油画—0基础绘画</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>489%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>48910.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1210</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1eXzZJVXXXXb2XVXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【渴望生活 致敬梵高】 多喜爱家纺抱枕专场</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>3018%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>301808.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>3422</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1MPqVJFXXXXXBXXXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">杏花初开 全棉帆布印花布艺餐桌布</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>956%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>112867.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1913</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1iMWNJFXXXXasXFXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">杏树花开，写意窗饰-梵高正版授权数码印花艺术窗帘</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1792%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>89605.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>248</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1nXEjJVXXXXbiXFXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">SOLOVE Q2梵高定制设计款蓝牙音箱</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>140%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>140175.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>186</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1ePAbJVXXXXa_XFXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">梵高名画系列宠物服饰</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>171%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>34398.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>882</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1oJJ8KXXXXXabXXXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">【Ijarl 致敬梵高】高端餐具打造餐桌上的艺术</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1110%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>555081.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>6790</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1Lp7tJVXXXXcQXpXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">TOMIC/特美刻梵高纪念版（保温杯/居家壶）</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>340%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>340777.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>2137</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1TTBVKXXXXXbAXpXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">【正版授权】【梵高经典】ame笔记本电脑保护套系列</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>162%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>24303.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>259</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1KAEwJVXXXXXiXXXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">印象梵高————致敬大师</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1113%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>222677.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1153</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1fvl1KXXXXXadXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">LOVO乐我家纺 梵高 盛开的杏树 全棉贡缎四件套</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>1334%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>667007.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>1733</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB1kF3CJVXXXXXjXVXXXXXXXXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step">制作中</span> <b class="shadow"></b> </span> <span class="project-intro">再遇梵高-天堂伞，向热烈而又癫狂的灵魂致敬！</span> <span class="schedule-bar"> <i class="schedule-current full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>4942%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>988541.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>7849</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-                <li class="project-item"> <a href="" target="_blank"> <span class="project-area"> <img src="//img.alicdn.com/tfscom/TB13Mz9JXXXXXbPXpXXSutbFXXX_230x230.jpg" alt="" class="project-pic" /> <span class="project-step project-success">项目成功</span> <b class="shadow"></b> </span> <span class="project-intro">碟中谍5富朗达定制款苹果6/6plus无线快充套装</span> <span class="schedule-bar"> <i class="schedule-current project-success full" style="width:100%;"></i> </span> <span class="project-schedule"> <span class="other-info"> <span class="every-info"> <em>441%</em> <em class="info-name">达成率</em> </span> <span class="every-info info-dollar"> <em>44160.00</em> <em class="info-name">已筹金额</em> </span> <span class="every-info info-left"> <em>283</em> <em class="info-name">支持人数</em> </span> </span> </span> </a> </li>
-            </ul>
-            <!--END 最新上线-->
+    <div class="layout" style="padding-bottom:50px;">
+        <div class="col-sub">
+            <div class="left-menu">
+                <ul class="k-left-menu">
+                    <li class="first-child current">
+                        <a href=""><i class="icon-1"></i><span>关于我们</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="icon-2"></i><span>项目教程</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="icon-3"></i><span>常见问题</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="icon-4"></i><span>服务条款</span></a>
+                    </li>
+                    <li class="last-child">
+                        <a href=""><i class="icon-5"></i><span>项目规则</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!--END 列表-->
-        <p class="pagination" id="J_Pagination"><a class="prev" href=""><span>&lt;上一页</span></a><a class="item" data-page="1" href="">1</a><span class="current">2</span><a class="item" data-page="3" href="">3</a><a class="item" data-page="4" href="">4</a><a class="item" data-page="5" href="">5</a><a class="item" data-page="6" href="">6</a><a class="next" href="">下一页&gt;</a></p>
+        <div class="col-main">
+            <div class="kickstarter-main">
+                <h2>关于众筹</h2>
+                <p>众筹，译自国外crowdfunding一词，即大众筹资或群众筹资。是指用赞助+回报的形式，向网友募集项目资金的模式。众筹利用互联网和SNS传播的特性，让许多有梦想的人可以向公众展示自己的创意，发起项目争取别人的支持与帮助，进而获得所需要的援助，支持者则会获得实物、服务等不同形式的回报。</p>
+                <h2>关于淘宝众筹</h2>
+                <p>淘宝众筹是一个协助亲们发起创意、梦想的平台，不论你是淘宝卖家、买家、学生、白领、艺术家、明星，如果你有一个想完成的计划（例如：电影、音乐、动漫、设计、公益等），你可以在淘宝众筹发起项目向大家展示你的计划，并邀请喜欢你的计划的人以资金支持你。如果你愿意帮助别人，支持别人的梦想，你可以在淘宝众筹浏览到各行各业的人发起的项目计划，也可以成为发起人的梦想合伙人，当你们一起见证项目成功后，你还会获得发起人感谢你支持的回报。</p>
+            </div>
+        </div>
     </div>
 </div>
 <!--footer-->
