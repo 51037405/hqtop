@@ -150,7 +150,7 @@
 .order-container .all-repays .box{vertical-align: top; display: inline-block; *display: inline; *zoom: 1; float: none; margin-right: 0}
 .feeds-list .feed-item:last-child .operation{border-bottom: 0}
 .ks-overlay-close{height:18px;width:18px;border:1px solid transparent;right:18px;top:24px;vertical-align:middle;position:absolute;text-decoration:none;outline:0;_border-color:tomato;_filter:chroma(color=tomato);overflow:hidden;cursor:pointer}
-.ks-overlay-close .ks-dialog-close-x{display:block;background:no-repeat;background-image:url(//img.alicdn.com/tps/i1/T1YOiKFfFhXXX1azE.-13-13.png);height:13px;text-indent:-9999px;width:13px;margin:2.5px}
+.ks-overlay-close .ks-dialog-close-x{display:block;  background: url(../images/T1YOiKFfFhXXX1azE.-13-13.png) no-repeat; height:13px;text-indent:-9999px;width:13px;margin:2.5px}
 .ks-overlay-header{background-color:#f2f2f2;font-size:24px;font-weight:700;height:70px;line-height:70px;padding:0 0 0 18px}
 .ks-overlay-mask{background-color:#000;opacity:.7;filter:alpha(opacity=70);z-index:3!important}
 .ks-overlay{font-family:"microsoft yahei";z-index:3!important}
