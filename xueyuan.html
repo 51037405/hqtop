@@ -975,13 +975,23 @@
 <script type="text/javascript">
     $(function(){
         $(".small li").mouseover(function(){
-            $(".big li").eq($(this).index()).show().siblings().hide();
+            $(".big li").eq($(this).index()).slideDown(1000).siblings().slideUp(1000);
         });
         $(".news-content li h3").mouseenter(function(){
             $(this).next("p").slideDown();
             $(this).parent().siblings().find("p").slideUp("",function(){
             });
         });
+        var begin=0;
+        function slide(){
+            if(begin==4) begin=0;
+            $(".big li").eq(begin).slideDown(1000).siblings().slideUp(1000);
+            begin++;
+            setTimeout(function(){
+                slide(begin+1);
+            },5000);
+        }
+        slide(0);
     });
 </script>
 
