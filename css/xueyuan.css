@@ -1,0 +1,116 @@
+@charset "utf-8";
+/*font*/
+@font-face {
+    font-family: "HQIcons";
+    src:url("fonts/YtoIcons.eot");
+    src:url("fonts/YtoIcons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/YtoIcons.woff") format("woff"),
+    url("fonts/YtoIcons.ttf") format("truetype"),
+    url("fonts/ytoicons-webfont.svg#ElegantIcons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.ico-font{
+    font-family: 'HQIcons';
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*头部自动隐藏*/
+.meun_down{display: none}
+.menu_01:hover .meun_down{display: block}
+.g-bd{width:1160px;margin:0 auto;overflow: hidden; padding:30px 20px 0 20px;}
+.g-left{float:left;width:820px;}
+.g-right{float: right;width: 320px;}
+.xy-banner{width: 820px;height: 365px;overflow: hidden;}
+.xy-banner .big{width: 670px;float: left}
+.xy-banner .big li{display: none;position: relative;}
+.xy-banner .big li a{display:block;font-size: 0;}
+.xy-banner .big li a p{width: 650px; padding-left:20px;height: 45px;position: absolute;bottom: 0;color: #fff;font-size: 17px;font-weight: bold;line-height: 45px;}
+.xy-banner .big li:first-child{display: block;}
+.xy-banner .big .warp{width: 650px; padding-left:20px;height: 45px;position: absolute;bottom: 0;background-color: #000;opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50);}
+.xy-banner .small{float: right;width: 130px;}
+.xy-banner .small li{display: block;width: 110px;height: 64px;margin-bottom: 10px;padding: 10px;overflow: hidden;opacity:0.7; -moz-opacity:0.7; filter:alpha(opacity=70);}
+.xy-banner .small li:hover{opacity:1; -moz-opacity:1; filter:alpha(opacity=100);}
+.xy-banner .small li.one{background-color: #08a7b9}
+.xy-banner .small li.two{background-color: #e5611d}
+.xy-banner .small li.thr{background-color: #c75663}
+.xy-banner .small li.four{background-color: #588753}
+.xy-banner .small li a{font-family: "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53, sans-serif;font-size: 13px;font-weight: bold;color: #ffffff}
+.news{height: 365px;overflow: hidden;}
+.news-title{border-bottom: 3px solid #F5F5F5;padding-bottom: 7px;margin-bottom: 10px;}
+.news-title span{border-bottom: 3px solid #00AA98;margin: 0; padding-bottom: 7px; font-size: 18px; color: #3C3B3C;}
+.news-title span img{position: relative; top: 3px; left: 0; margin-right: 5px;}
+.news-content li{border-bottom: 1px solid #F2F2ED}
+.news-content li:last-child{border-bottom: 0}
+.news-content li h3{font-weight:normal;overflow:hidden;margin:0 0; font-size: 16px; color: #000; height: 40px; line-height: 40px; background: url(../images/xy-nbr.png) no-repeat 0 10px; padding-left: 30px;}
+.news-content li h3.num2{background-position: 0 -25px;}
+.news-content li h3.num3{background-position: 0 -60px;}
+.news-content li h3.num4{background-position: 0 -97px;}
+.news-content li h3.num5{background-position: 0 -134px;}
+.news-content li h3.num6{background-position: 0 -181px;}
+.news-content li h3.num7{background-position: 0 -228px;}
+.news-content li h3.num8{background-position: 0 -275px;}
+.news-content li h3.num9{background-position: 0 -322px;}
+.news-content li h3 a{color: #000;}
+.news-content li h3 a:hover{color: #00AA98;}
+.news-content li p{display:none;text-indent: 2em; height: 85px;  margin-top: 5px; overflow: hidden; width: 279px; margin-left: 15px; color: #929090;font-size: 12px;line-height: 22px;}
+.news-content li:last-child p{display: block}
+.hot-content{}
+.hot-content ul{width: 830px;}
+.hot-content ul li{width: 385px;padding: 10px;background-color: #F1F6F8;float: left;margin: 0 10px 10px 0;}
+.hot-content ul li .left{float:left;width: 130px; height: 85px;}
+.hot-content ul li .left a{font-size: 0}
+.hot-content ul li .left img{width: 130px; height: 85px;}
+.hot-content ul li .right{float:right;width: 240px; height: 85px;overflow: hidden}
+.hot-content ul li h3{font-weight:normal;overflow:hidden;margin:0 0; font-size: 16px; color: #000; line-height: 22px; }
+.hot-content ul li h3 a{color: #000}
+.hot-content ul li h3 a:hover{color: #00AA98; }
+.hot-content ul li p{color: #929090;font-size: 12px;line-height: 22px;}
+.fixed{overflow: hidden}
+.fixed img{-webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;}
+.fixed img:hover{    -webkit-transform: matrix(1.04,0,0,1.04,0,0);
+    -moz-transform: matrix(1.04,0,0,1.04,0,0);
+    -ms-transform: matrix(1.04,0,0,1.04,0,0);
+    -o-transform: matrix(1.04,0,0,1.04,0,0);
+    transform: matrix(1.04,0,0,1.04,0,0);}
+.about-content{width: 320px;height: 335px;background-color: #f4f4f4;overflow: hidden}
+.about-content p{margin: 25px auto;text-align: center}
+.about-content ul{margin: 0 auto;overflow: auto;padding-left: 40px;}
+.about-content ul li{display:inline-block;width: 115px;height: 115px;overflow: hidden;margin: 0 10px 10px 0;}
+.list-content{overflow: hidden;padding-right: 20px;}
+.list-content .left{float: left;width: 250px;height: 165px;position: relative}
+.list-content .left .tip{    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00AA98;
+    text-align: center;
+    line-height: 30px;}
+.list-content .left a{font-size: 0;}
+.list-content .right{float: right;width: 520px;height: 165px;}
+.list-content ul li{overflow: hidden;border-bottom: 1px solid #E5E5E5;padding-bottom: 10px;}
+.list-content ul li h3{font-size: 18px;margin: 0 0 5px 0;font-weight: bold;height: 35px;line-height: 35px;}
+.list-content ul li h3 a{color: #000}
+.list-content ul li h3 a:hover{color: #00AA98}
+.list-content ul li p{height: 102px;overflow: hidden;font-size: 14px;line-height: 26px;}
+.list-content ul li span{font-size: 12px;line-height: 22px;padding-left: 20px;margin-right: 20px;}
+.list-content .read{background: url("../images/xy-symbol-9.png") no-repeat;}
+.list-content .time{background: url("../images/xy-symbol-11.png") no-repeat}
+.media-content ul li{overflow: hidden;border-bottom: 1px dashed #EEEEEE;padding-bottom: 5px; margin-bottom: 10px;}
+.media-content ul li h3{margin:0 0 10px 0;font-size: 16px;font-weight: normal;}
+.media-content ul li h3 a:hover{color: #00AA98}
+.media-content ul li p{font-size: 12px;line-height: 22px;}
+.media-content ul li p img{float: left;margin-right: 10px;}
+
+
