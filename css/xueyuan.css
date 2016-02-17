@@ -51,10 +51,10 @@
 .news-content li h3.num3{background-position: 0 -60px;}
 .news-content li h3.num4{background-position: 0 -97px;}
 .news-content li h3.num5{background-position: 0 -134px;}
-.news-content li h3.num6{background-position: 0 -181px;}
-.news-content li h3.num7{background-position: 0 -228px;}
-.news-content li h3.num8{background-position: 0 -275px;}
-.news-content li h3.num9{background-position: 0 -322px;}
+.news-content li h3.num6{background-position: 0 -171px;}
+.news-content li h3.num7{background-position: 0 -206px;}
+.news-content li h3.num8{background-position: 0 -241px;}
+.news-content li h3.num9{background-position: 0 -278px;}
 .news-content li h3 a{color: #000;}
 .news-content li h3 a:hover{color: #00AA98;}
 .news-content li p{display:none;text-indent: 2em; height: 85px;  margin-top: 5px; overflow: hidden; width: 279px; margin-left: 15px; color: #929090;font-size: 12px;line-height: 22px;}
@@ -99,18 +99,64 @@
     line-height: 30px;}
 .list-content .left a{font-size: 0;}
 .list-content .right{float: right;width: 520px;height: 165px;}
-.list-content ul li{overflow: hidden;border-bottom: 1px solid #E5E5E5;padding-bottom: 10px;}
+.list-content ul li{overflow: hidden;border-bottom: 1px solid #E5E5E5;padding-bottom: 10px;margin-bottom: 10px;}
 .list-content ul li h3{font-size: 18px;margin: 0 0 5px 0;font-weight: bold;height: 35px;line-height: 35px;}
 .list-content ul li h3 a{color: #000}
 .list-content ul li h3 a:hover{color: #00AA98}
 .list-content ul li p{height: 102px;overflow: hidden;font-size: 14px;line-height: 26px;}
 .list-content ul li span{font-size: 12px;line-height: 22px;padding-left: 20px;margin-right: 20px;}
-.list-content .read{background: url("../images/xy-symbol-9.png") no-repeat;}
-.list-content .time{background: url("../images/xy-symbol-11.png") no-repeat}
+.read{background: url("../images/xy-symbol-9.png") no-repeat left center;}
+.time{background: url("../images/xy-symbol-11.png") no-repeat left center}
+.source{background: url("../images/xy-symbol-16.png") no-repeat left center}
+.source a{color: #000}
+.source a:hover,.write a:hover{color: #00AA98}
+.write{background: url("../images/xy-symbol-17.png") no-repeat left center}
+.title{font-size: 18px;
+    color: #fff;
+    background-color: #00AA98;height: 32px;line-height: 32px;display: inline-block;padding: 0 10px;margin-bottom: 10px;}
 .media-content ul li{overflow: hidden;border-bottom: 1px dashed #EEEEEE;padding-bottom: 5px; margin-bottom: 10px;}
 .media-content ul li h3{margin:0 0 10px 0;font-size: 16px;font-weight: normal;}
 .media-content ul li h3 a:hover{color: #00AA98}
 .media-content ul li p{font-size: 12px;line-height: 22px;}
 .media-content ul li p img{float: left;margin-right: 10px;}
-
+.f-border-r{border-right: 1px solid #E5E5E5;min-height: 1435px;}
+.order .by {float: right;}
+.order .by ul li{float: right;margin-left: 10px;line-height: 30px;font-size: 16px}
+.order .by ul li:hover{color: #00AA98;cursor: pointer}
+.order .ad{width: 320px;height: 250px;overflow: hidden;margin: 0 auto 10px;}
+.rec{margin: 20px 0;overflow: hidden}
+.rec-content ul li{width: 150px;float: left;margin-right: 10px;}
+.rec-content ul li img{width: 150px;height: 100px;}
+.rec-content ul li p{font-size: 12px;line-height: 22px;height: 150px;overflow: hidden}
+.rec-content ul li p a:hover{color: #00AA98}
+/* 普通翻页器-默认居中 */
+.m-page{margin:10px 0 0;text-align:center;line-height:32px;font-size:0;letter-spacing:-0.307em;word-wrap:normal;white-space:nowrap;color:#999;}
+.m-page a,.m-page i{display:inline-block;vertical-align:top;padding:0 12px;margin-left:-1px;border:1px solid #ddd;font-size:12px;letter-spacing:normal;text-shadow:0 1px #fff;background:#fff;-webkit-transition:background-color 0.3s;-moz-transition:background-color 0.3s;-ms-transition:background-color 0.3s;transition:background-color 0.3s;}
+.m-page a,.m-page a:hover{text-decoration:none;color:#39c;}
+.m-page a:first-child{margin-left:0;border-top-left-radius:5px;border-bottom-left-radius:5px;}
+.m-page a:last-child{margin-right:0;border-top-right-radius:5px;border-bottom-right-radius:5px;}
+.m-page a.pageprv:before,.m-page a.pagenxt:after{font-weight:bold;font-family:\5b8b\4f53;vertical-align:top;}
+.m-page a.pageprv:before{margin-right:3px;content:'\3C';}
+.m-page a.pagenxt:after{margin-left:3px;content:'\3E';}
+.m-page a:hover{background:#f5f5f5;}
+.m-page a:active{background:#f0f0f0;}
+.m-page a.z-crt,.m-page a.z-crt:hover,.m-page a.z-crt:active{cursor:default;color:#999;background:#f5f5f5;}
+.m-page a.z-dis,.m-page a.z-dis:hover,.m-page a.z-dis:active{cursor:default;color:#ccc;background:#fff;}
+.article-content{overflow: hidden;padding-right: 20px;}
+.detail h2{color: #000}
+.detail .say{background: url("../images/say.jpg") no-repeat ;height: 50px;width: 687px;overflow: hidden;padding:5px 0 5px 110px;border:1px solid #F1F1F1;font-size: 14px;line-height: 25px;}
+.detail .info{margin: 10px 0;border-bottom: 1px solid #f3f3f3;padding-bottom: 10px;}
+.detail .info span{font-size: 14px;line-height: 22px;padding-left: 20px;margin-right: 20px;}
+.detail p.body{font-size: 16px;line-height: 30px;text-indent: 2em;margin-top: 20px;}
+.detail p.body strong{color: #000;line-height: 40px;}
+.cor{margin-top: 30px;}
+.cor-content ul{width: 840px;}
+.cor-content ul li{float:left;margin-right:30px;width: 175px;}
+.cor-content ul li p{font-size: 14px;
+    line-height: 22px;
+    margin-top: 5px;}
+.cor-content ul li a{font-size: 0}
+.cor-content ul li a img{width: 175px;height: 115px;}
+.notice{background-color: #f3f3f3;width: 760px;height: 46px;padding: 20px;font-size: 14px;line-height: 23px;margin-top: 30px;}
+.notice b{display:block;float: left;width: 22px;height: 42px;overflow: hidden;font-size: 16px;font-weight:normal;padding:0 0 4px 6px;color: #fff;background-color:#00AA98;margin-right: 10px; }
 
