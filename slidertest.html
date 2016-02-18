@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        body, div, ul, li {margin: 0;padding: 0;}
+        .slide{width: 360px;height: 253px;position: relative;overflow: hidden}
+        .slide ul li a{font-size: 0;}
+        /*.slide-x ul{width: 12000px;}*/
+        ul li{list-style: none;}
+    </style>
+</head>
+<body>
+<div class="slide">
+    <ul>
+        <li><a href=""><img src="images/zc-temp-1.png"></a></li>
+        <li><a href=""><img src="images/zc-temp-2.png"></a></li>
+        <li><a href=""><img src="images/zc-temp-1.png"></a></li>
+        <li><a href=""><img src="images/zc-temp-2.png"></a></li>
+    </ul>
+</div>
+<div>
+    <a href="javascript:prev_x();">prev-x</a>
+    <a href="javascript:prev_y();">prev-y</a>
+    <a href="javascript:next_x();">next-x</a>
+    <a href="javascript:next_y();">next-y</a>
+    <a href="javascript:autoSlider('slide','x','next',1000);">auto</a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    var begin=0;
+    var isAct=false;
+    var isAuto=false;
+    if(isAuto){
+        autoSlider("slide","x","next",1000)
+    }
+    function autoSlider(cName,mode,prevOrNext,time){
+        slider(cName,mode,prevOrNext,time);
+        setTimeout(function(){
+            autoSlider(cName,mode,prevOrNext,time);
+        },5000);
+    }
+    function slider(cName,mode,prevOrNext,time){
+        if(isAct) return;
+        isAct=true;
+        var warp =$("."+cName+" li");
+        var total = warp.size();
+        if(begin>=total)begin=0;
+        var nowNode = warp.eq(begin);
+        var nextNode =warp.eq((begin+1)%total);
+        var l,r,t,b,w=nowNode.width(),h=nowNode.height();
+        if(mode=="x"&&prevOrNext=="prev"){r=w}
+        if(mode=="y"&&prevOrNext=="prev"){b=h}
+        if(mode=="x"&&prevOrNext=="next"){l=w}
+        if(mode=="y"&&prevOrNext=="next"){t=h}
+        nowNode.css("position","absolute");
+        nextNode.css({"position":"absolute","display":"block","right":r,"left":l,"top":t,"bottom":b});
+        nowNode.animate({right:-r,left:-l,top:-t,bottom:-b},time,function(){
+            nowNode.removeAttr("style").css("display","none");
+            isAct=false;
+        });
+        nextNode.animate({right:r-r,left:l-l,top:t-t,bottom:b-b},time,function(){
+            nextNode.removeAttr("style").css("display","block");
+        });
+        begin++;
+    }
+
+    function prev_x(){
+        slider("slide","x","prev",1000);
+    }
+    function prev_y(){
+        slider("slide","y","prev",1000);
+    }
+    function next_x(){
+        slider("slide","x","next",1000);
+    }
+    function next_y(){
+        slider("slide","y","next",1000);
+    }
+</script>
+</body>
+</html>
