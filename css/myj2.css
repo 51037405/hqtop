@@ -2388,16 +2388,16 @@ select {
 
 /*分页样式修改*/
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    background-color: #428bca;
-    border-color: #428bca;
+    background-color: #f0ad4e;
+    border-color:   #f0ad4e;
 }
 
 .pagination > li > a, .pagination > li > span {
-    color: #428bca;
+    color: #636363;
 }
 
 .pagination > li > a:hover, .pagination > li > span:hover {
-    color: #428bca;
+    color: #636363;
 }
 
  a {
@@ -2557,7 +2557,7 @@ a.fBlue:hover, a.fBlue:focus {
 
 /*色彩*/
 .myj-active {
-    background-color: #428bca;
+    background-color: #f0ad4e;
     color: #fff;
 }
 
@@ -3861,13 +3861,13 @@ a.fBlue:hover, a.fBlue:focus {
 a.myj-aFocus:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #428bca;
+    background-color: #f0ad4e;
 }
 
 a.myj-aFocus:hover {
     text-decoration: none;
     color: #fff;
-    background-color: #428bca;
+    background-color: #f0ad4e;
 }
 
 a.myj-aFocus {

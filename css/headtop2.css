@@ -93,6 +93,7 @@
 .logo img{height: 80px;float: left ;position: relative;margin-right: 20px}
 .logo ul{float: left;margin-top:45px;: }
 .logo ul li{float: left;margin-left: 50px;font: 400 18px/18px "Microsoft YaHei";}
+.logo ul li:hover a{color: #777777}
 .logo ul li:hover{border-bottom: solid 4px #ff8201;padding-bottom: 10px;}
 .line{width: 100%;height: 45px;background-color: #ff8201}
 .line .select1{width: 1200px;margin: 0 auto;}

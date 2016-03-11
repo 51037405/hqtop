@@ -80,3 +80,6 @@ i{ font-style:normal}
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.myj-table tr td{    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 13px;}
+.myj-table tr td a{    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 13px; color: #f0ad4e;}
+.myj-table tr td p{line-height: 15px;}
