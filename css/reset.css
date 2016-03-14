@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-body,ul,ol,li,h1,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{padding: 0;margin: 0 auto;font-size:100%;font: normal normal normal;font-family: \5FAE\8F6F\96C5\9ED1,verdana;color: #777777;}
+body,ul,ol,li,h1,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{padding: 0;margin: 0 auto;font-family: \5FAE\8F6F\96C5\9ED1,verdana;color: #777777;}
 ul,ol,li { list-style:none;}
 img{border:0px; }
 /*Link*/
@@ -11,8 +11,8 @@ a:hover{/*color:#FF6300;*/text-decoration: none;}/*鼠标移动到链接上*/
 a:active {text-decoration: none;color: #F00;}/*选定的链接*/
 a:focus {outline:none;-moz-outline:none;}/*链接虚线*/
 /*文字排版*/
-.f12 {font-size:0.75em;}
-.f14 {font-size:0.85em;}
+.f12 {font-size:12px}
+.f14 {font-size:14px;}
 .f16 {font-size:1em;}
 .f18 {font-size:1.125em;}
 .f20 {font-size:1.25em;}

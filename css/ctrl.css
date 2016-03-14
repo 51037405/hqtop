@@ -16,7 +16,7 @@ i{ font-style:normal}
 .menu-2 li a{border-left: #d7d7d7 solid 3px;height: 21px;  padding-left: 47px;font-size: 14px;line-height: 21px;display: block}
 .menu-2 li a:hover{background-color: #ff8201; color: #FFF; }
 .title{width:1200px;margin:20px auto;}
-.title p{margin-left:20px;font: 600 21px/21px "Microsoft YaHei" ;}
+.title p{font: 500 16px/16px "Microsoft YaHei" ;}
 .order-info,.order-list{padding-left: 20px;margin-bottom:10px;border:1px dashed #c9d6d9}
 .order-list{padding-top: 10px;padding-right: 10px;}
 .order-info{padding-left: 20px;border:1px dashed #c9d6d9}
