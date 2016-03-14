@@ -103,3 +103,4 @@
 .line img{height: 35px;margin-top: 3px;float: right}
 .line a{color: #FFFFFF;line-height: 45px;text-align: center;display: block;float: right;margin-left: 10px ;margin-right: 10px;}
 .line.new_line{height: 10px;}
+.header img{vertical-align: inherit}
