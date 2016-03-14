@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*header*/
 .content{ width:1200px; margin:0 auto; position:relative;}
 .login_ul li {float:left}
@@ -91,10 +91,11 @@
 .footer p{text-align: center;  width: 100%;  color: #7d8b8c;  font-family:"Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53, sans-serif;  font-size: 12px;}
 .logo{width: 1200px;margin: 10px auto;height: 80px;}
 .logo img{height: 80px;float: left ;position: relative;margin-right: 20px}
-.logo ul{float: left;margin-top:45px;: }
-.logo ul li{float: left;margin-left: 50px;font: 400 18px/18px "Microsoft YaHei";}
+.logo ul{float: left;margin-top:45px;}
+.logo ul li{float: left;margin-left: 30px;font: 400 18px/18px "Microsoft YaHei";}
 .logo ul li:hover a{color: #777777}
 .logo ul li:hover{border-bottom: solid 4px #ff8201;padding-bottom: 10px;}
+.logo ul li .current{border-bottom: solid 4px #ff8201;padding-bottom: 10px;}
 .line{width: 100%;height: 45px;background-color: #ff8201}
 .line .select1{width: 1200px;margin: 0 auto;}
 .line .select2{float: right;padding-top: 4px;margin-left: 10px}

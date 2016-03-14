@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*header*/
 .content{ width:1200px; margin:0 auto; position:relative;}
 .login_ul li {float:left}
@@ -25,7 +25,7 @@
 .middle .crk_yes{ background:#ff8201 !important; color:#ffffff !important;}
 /*cart*/
 .head_recommend{ display:block; float:left; margin-left:35px;width: 250px;}
-.cart {position:relative;width: 140px;height: 32px;border: 1px solid #DFDFDF;text-align: center;line-height: 28px;margin-top: 32px;margin-left: 60px;background: url("../images/cart.png") 15px -50px no-repeat}
+.cart {position:relative;width: 140px;height: 32px;border: 1px solid #DFDFDF;text-align: center;line-height: 28px;margin-top: 32px;margin-left: 60px;background: url("../images/cart.png") 15px -50px no-repeat;z-index: -2000;}
 .cart a{font-family: 宋体;}
 .cart .cart_right{right: 10px;top:9px;width: 7px;height: 13px;position: absolute;font:400 12px/12px simsun}
 .cart .cart_count{right: 25px;top:-5px;position: absolute;font:400 13px/13px simsun;background-color:#c81623;border-radius: 7px 7px 7px 0;
@@ -38,7 +38,7 @@
 .menu .toptiocs  li a { color: #fff;cursor: pointer;display: block;float: left;font-family:"Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53, sans-serif;font-size: 16px;height: 45px;line-height: 45px;padding-left: 30px; text-align: left;width: 120px;}
 .menu .toptiocs  li a:hover{ background:url(../img_head/headmain_bg.jpg) no-repeat 20px 17px; color:#fff;font-weight:bold}
 .menu .toptiocs  li .headmain_bg{ background:url(../img_head/headmain_bg.jpg) no-repeat 20px 17px; color:#fff;}
-.menu .toptiocsa{ cursor:pointer; display:block; width:190px;height:45px;}
+.menu .toptiocs a{ cursor:pointer; display:block; width:190px;height:45px;}
 
 /*左侧菜单*/
 .head_top .main .main_01:hover .meun_down{ display:block }

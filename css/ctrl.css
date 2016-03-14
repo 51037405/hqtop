@@ -11,7 +11,7 @@ i{ font-style:normal}
 .menu-1 .menu-1-btn{cursor: pointer;}
 .menu-1 i{color: #ff8200;margin-right: 10px;font-size: 20px;}
 /*.menu-1 .menu-open{background: url("../images/arr_down.png") 170px 5px no-repeat}*/
-.menu-2{}
+.menu-2{padding-bottom: 10px;}
 .menu-2 li{background: none;  padding: 9px 0;  height: 25px;}
 .menu-2 li a{border-left: #d7d7d7 solid 3px;height: 21px;  padding-left: 47px;font-size: 14px;line-height: 21px;display: block}
 .menu-2 li a:hover{background-color: #ff8201; color: #FFF; }
@@ -83,3 +83,5 @@ i{ font-style:normal}
 .myj-table tr td{    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 13px;}
 .myj-table tr td a{    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 13px; color: #f0ad4e;}
 .myj-table tr td p{line-height: 15px;}
+.myj-table .sel-all{float:left;margin-left:10px;}
+.myj-table .goodsId input[type=checkbox]{margin-left:10px; }
