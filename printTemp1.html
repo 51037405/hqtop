@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打印模板1</title>
+    <link rel="stylesheet" href="css/reset2.css" />
+    <link rel="stylesheet" href="css/print1.css" />
+</head>
+<body>
+<div class="f-line"><input type="button" value="Print this page" onclick="printpage()" /></div>
+<div id="print-area">
+<div class="g-main">
+    <div class="g-title">
+        <img src="images/print/logo.png">
+        <p class="title">
+            国际小包面单
+        </p>
+        <p class="title">
+            1
+        </p>
+        <p class="content  f-ml50 ">
+            航&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;空<br/>BY&nbsp;&nbsp;AIR
+        </p>
+        <p class="content  f-ml50 ">
+            Small<br/>packet
+        </p>
+        <p class="title">
+            ES27
+        </p>
+    </div>
+    <div class="g-left">
+        <div class="left-1 f-bb">
+            <p class="content f-txt-t">协议客户：</p>
+            <p class="content">南通大同B(122323233)<br/>12u3u4wjf</p>
+            <p class="title">untracked</p>
+            <img src="images/print/barcode.png">
+        </div>
+        <div class="left-2 f-bb">
+            <p class="content f-txt-t">From:</p><p class="content from">China,JiangSu,NanTong,djfd utorjs djkd tkjkfdk jfdkjf dkfjkdj fkdj fjdkf</p>
+            <p class="content f-p-a">Zip:100000</p><p class="content f-p-a f-left-m">Tel:13333333333</p>
+        </div>
+        <div class="left-3 f-bb">
+            <p class="sub-title f-txt-t">To:</p><p class="content to">China,JiangSu,NanTong,djfd utorjs djkd tkjkfdk jfdkjf dkfjkdj fkdj fjdkf</p>
+            <p class="content f-p-a">Zip:100000</p><p class="content f-p-a f-left-m">Tel:13333333333</p>
+        </div>
+        <div class="left-4 f-bb">
+            <p class="content f-txt-m">退件单位：大环境东方航空电话客服对话框</p>
+        </div>
+        <div class="left-5">
+            <p class="sub-title f-txt-c">
+                <img src="images/print/barcode.png">
+                <br/>FKSD123453545
+            </p>
+        </div>
+    </div>
+    <div class="g-right">
+        <div class="right-1 f-bb">
+            <p class="normal f-ml20">报关签条<br/>（CUSTOMS DECLARATION）</p>
+            <p class="normal f-ml20">邮2113<br/>CN22</p>
+            <p class="normal f-ml20">可以径行开拆 May be<br/>opened officially</p>
+        </div>
+        <div class="right-2">
+            <table>
+                <tr><td rowspan="2" width="40%" height="12px">邮件种类<br/>Category of item<br/>请在适当的内容前划"√"</td><td width="10%">√</td><td width="20%">礼品<br/>Gift</td><td width="10%"></td><td width="20%">礼品<br/>Gift</td></tr>
+                <tr><td height="12px"></td><td>礼品<br/>Gift</td><td></td><td>礼品<br/>Gift</td></tr>
+            </table>
+        </div>
+        <div class="right-3">
+            <table>
+                <tr><td width="70%" height="50px">内件详细名称和数量<br/>Quantity and detailed description of contents</td><td width="20%">重量(千克)<br/>Weight(Kg)</td><td width="15%">价格<br/>Value</td></tr>
+                <tr><td height="16px">cost</td><td></td><td>$12</td></tr>
+                <tr><td height="16px"></td><td></td><td></td></tr>
+                <tr><td height="16px"></td><td></td><td></td></tr>
+                <tr><td height="16px"></td><td></td><td></td></tr>
+                <tr><td height="16px"></td><td></td><td></td></tr>
+                <tr><td height="60px">协调系统税则号列和货物原产国(只对商品邮件填写)<br/>HS tariff number and country of origin of goods (For<br/>commercial items only)</td><td>总重量(千克)<br/>(Kg)<br/>Total Weight</td><td>总价格<br/>Total Value</td></tr>
+                <tr><td height="16px"></td><td></td><td>$12</td></tr>
+            </table>
+        </div>
+        <div class="right-4">
+            <p class="min">我保证上述申报准确无误,本函件内未装寄法律或邮政和海关规章禁止寄递的任何危险物品<br/>I, the undersigned, certify that the particulars given in this declaration arecorrect and this item does not contain any dangerous articles prohibited bylegislation or by postal or customs regulations.<br/><br/>寄件人签字 Sender's signature:</p>
+        </div>
+    </div>
+</div>
+<div class="f-line"></div>
+<div class="g-product">
+    <table>
+        <tr><td colspan="5"><p class="content">2016-3-24 15:00:00</p></td></tr>
+        <tr><td width="70px"><img class="p-img" src="images/print/logo.png"></td><td width="200px"><p class="sub-title">xxxx产品，颜色尺寸</p></td><td width="50px"><p class="sub-title">数量</p></td><td width="100px"><p class="content">价格</p></td><td><p class="min">摘要</p></td></tr>
+        <tr><td colspan="5"><p class="sub-title">留言：</p><p class="content">你好</p></td></tr>
+    </table>
+</div>
+</div>
+
+</body>
+<script>
+    function printpage()
+    {
+        alert("需要设置页面，左右边距 15mm");
+        var printData = document.getElementById("print-area").innerHTML;
+        window.document.body.innerHTML = printData;
+        window.print();
+    }
+</script>
+</html>
